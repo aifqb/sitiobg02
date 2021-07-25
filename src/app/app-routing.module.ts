@@ -4,6 +4,10 @@ import { ErrorPageComponent } from './share/error-page/error-page.component';
 
 const routes: Routes =[
   {
+    path: 'productos',
+    loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule)
+  },
+  {
     path: '404',
     component: ErrorPageComponent
   },
