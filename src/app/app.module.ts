@@ -9,7 +9,12 @@ import { InfoPaginaService } from './services/info-pagina.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ErrorPageComponent } from './share/error-page/error-page.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { EncuentranosComponent } from './pages/encuentranos/encuentranos.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { EventosComponent } from './pages/eventos/eventos.component'
 
 
 @NgModule({
@@ -17,7 +22,12 @@ import { HttpClientModule} from '@angular/common/http'
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    InicioComponent,
+    EncuentranosComponent,
+    ContactoComponent,
+    NosotrosComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,
