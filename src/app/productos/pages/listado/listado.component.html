@@ -17,8 +17,12 @@
 >
         <mat-card >
             <mat-card-header>
-                <mat-card-title> {{ producto.Grupo_menor }}</mat-card-title>
-                <mat-card-subtitle> Presentacion: {{producto.Presentacion }} </mat-card-subtitle>
+                <mat-card-title>
+                <h3>
+                    {{ producto.Grupo_menor | titlecase }}
+                </h3>
+                </mat-card-title>
+                <mat-card-subtitle>{{producto.Presentacion | titlecase}} </mat-card-subtitle>
             </mat-card-header>
             <img mat-card-image src="assets/productos/imagen_ref.jpg">
             <mat-card-content>
