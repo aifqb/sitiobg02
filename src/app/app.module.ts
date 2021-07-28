@@ -14,7 +14,8 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { EncuentranosComponent } from './pages/encuentranos/encuentranos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
-import { EventosComponent } from './pages/eventos/eventos.component'
+import { EventosComponent } from './pages/eventos/eventos.component';
+import { WpButtonComponent } from './share/wp-button/wp-button.component'
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { EventosComponent } from './pages/eventos/eventos.component'
     EncuentranosComponent,
     ContactoComponent,
     NosotrosComponent,
-    EventosComponent
+    EventosComponent,
+    WpButtonComponent
   ],
   imports: [
     BrowserModule,

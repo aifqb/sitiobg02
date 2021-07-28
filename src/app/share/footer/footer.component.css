@@ -1,0 +1,33 @@
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #240d09;
+    /* background: snow; */
+  }
+  .marcapie {
+    height: 13rem;
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+
+.center .content p {
+    text-align: justify;
+  }
+  .main-content {
+    color: #d9d9d9;
+    display: flex;
+  }
+  
+  .main-content .logo {
+    width: 200px;
+  }
+
+  .marcapie {
+    height: 13rem;
+    display: block;
+    margin: 0 auto;
+  }
+      
