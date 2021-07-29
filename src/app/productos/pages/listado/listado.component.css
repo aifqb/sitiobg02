@@ -2,7 +2,8 @@
 
 .mat-card {
     margin-top: 1rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
+    
 }
 .mat-card-subtitle{
     color:darkcyan;
