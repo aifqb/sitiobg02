@@ -1,7 +1,12 @@
 <h1>producto work</h1>
 
-<mat-grid-list cols=1 >
+<mat-grid-list cols=1 *ngIf="!producto; else divproducto" >
     <mat-grid-tile>
         <mat-spinner></mat-spinner>
     </mat-grid-tile>
 </mat-grid-list>
+
+<ng-template #divproducto>
+    {{ producto | json }}
+</ng-template>
+
