@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './share/header/header.component';
 import { FooterComponent } from './share/footer/footer.component';
 import { InfoPaginaService } from './services/info-pagina.service';
+import { MaterialModule } from './material/material.module';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { ErrorPageComponent } from './share/error-page/error-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
@@ -35,7 +38,10 @@ import { WpButtonComponent } from './share/wp-button/wp-button.component'
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
+    
+    
 
   ],
   providers: [

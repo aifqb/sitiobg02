@@ -5,6 +5,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 
 
@@ -16,7 +19,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatButtonModule,
     MatListModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule,
+    MatProgressSpinnerModule
   ]
 })
 export class MaterialModule { }

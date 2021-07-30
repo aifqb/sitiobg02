@@ -1,12 +1,5 @@
 
-<h2>Listado de productos
-   
-</h2>
-
-<form class="d-flex col-3">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Search</button>
-  </form>
+<h2>Listado de productos</h2>
 
 <mat-divider></mat-divider>
 <br>
@@ -44,10 +37,14 @@
             </mat-card-content>
             <mat-card-actions>
 
-                
-                <button mat-raised-button color="accent">
-                    more info
+                <button 
+                mat-raised-button
+                color="warn"
+                [routerLink]="['/productos', producto.Cod_Item_PF ]"
+                >
+                more info
                 </button>
+
             </mat-card-actions>
         </mat-card>
 </div>
