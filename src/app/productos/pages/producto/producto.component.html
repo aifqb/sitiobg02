@@ -7,6 +7,34 @@
 </mat-grid-list>
 
 <ng-template #divproducto>
+    <div
+        fxLayout="row"
+        fxLayout.xs="column"
+        fxLayoutGap="30px">
+        <div fxFlex="50">
+            <h1> {{producto.Producto}} </h1>
+            <mat-divider></mat-divider>
+            <br>
+            <img mat-card-image src="assets/productos/imagen_ref.jpg">
+
+        </div>
+        <div fxFlex="50">
+            <h2> {{producto.Grupo_menor}} </h2>
+            <mat-divider></mat-divider>
+            <mat-list>
+                <mat-list-item> Presentacion: {{producto.Presentacion}} </mat-list-item>
+                <mat-list-item> Peso aproximado: {{producto.Factordepeso}} kg. </mat-list-item>
+                <mat-list-item> Grupo: {{producto.Grupo_mayor}} </mat-list-item>
+                <mat-list-item> Codigo de producto: {{producto.Cod_Item_PF}} </mat-list-item>
+            </mat-list>
+            <br>
+            <button mat-button color="warn">
+                Regresar
+            </button>
+            
+        </div>
+
+    </div>
     {{ producto | json }}
 </ng-template>
 
