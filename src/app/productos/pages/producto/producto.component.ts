@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule, Routes } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap} from 'rxjs/operators';
 import { ProductosServicesService } from '../../services/productos-services.service';
 import { Producto } from '../../interfaces/producto.interface';
@@ -15,8 +15,7 @@ export class ProductoComponent implements OnInit {
 
   constructor( private activatedRoute: ActivatedRoute,
               private ProductosServicesService: ProductosServicesService,
-              private Routes: RouterModule
-    ) { }
+              private router: Router ) { }
 
   ngOnInit(): void {
     this.activatedRoute.params
@@ -25,9 +24,7 @@ export class ProductoComponent implements OnInit {
     )
         .subscribe( Producto => this.producto = Producto); 
   }
-  regresar (){
-
-    
-    // this.Routes.navigate(['/productos/listado']);
+  regresar(){
+    this.router.navigate(['productos/listado'])
   }
 }
