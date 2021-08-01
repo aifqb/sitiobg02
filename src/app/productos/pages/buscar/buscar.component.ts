@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from '../../interfaces/producto.interface';
+import { ProductosServicesService } from '../../services/productos-services.service';
 
 @Component({
   selector: 'app-buscar',
@@ -9,11 +10,14 @@ import { Producto } from '../../interfaces/producto.interface';
 export class BuscarComponent implements OnInit {
 
   termino: string = '';
-  Producto: Producto[] = [];
+  items: Producto[] = [];
 
-  constructor() { }
+  constructor( private ProductosServicesService: ProductosServicesService) { }
 
   ngOnInit(): void {
   }
-
+  buscando() {
+    this.ProductosServicesService.getSugerencias( this.termino)
+        .subscribe( items => this.items = items)
+  }
 }

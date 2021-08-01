@@ -17,5 +17,8 @@ export class ProductosServicesService {
   getProductosPorId( id: string): Observable<Producto> {
     return this.http.get<Producto>(`https://angular-html-517d8-default-rtdb.firebaseio.com/productos/${ id }.json`) 
   }
+  getSugerencias( termino: string ): Observable<Producto[]> { 
+    return this.http.get<Producto[]>(`https://angular-html-517d8-default-rtdb.firebaseio.com/productos.json?q=${ termino }&_limit=6`) 
+  }
 
 }
