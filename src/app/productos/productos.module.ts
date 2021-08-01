@@ -9,6 +9,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { ListadoComponent } from './pages/listado/listado.component';
     CommonModule,
     ProductosRoutingModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class ProductosModule { }
