@@ -9,7 +9,7 @@ import { InfoPagina } from '../intefaces/info-pagina.interface';
 export class InfoPaginaService {
 
 
-    constructor( private http: HttpClient) { }
+    constructor( private http: HttpClient ) { }
 
   infoPagina(){
     return this.http.get<InfoPagina[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/info.json')

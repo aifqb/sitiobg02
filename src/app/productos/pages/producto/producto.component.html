@@ -1,4 +1,4 @@
-<h1>producto work</h1>
+<h1>Descripcion del producto</h1>
 
 <mat-grid-list cols=1 *ngIf="!producto; else divproducto" >
     <mat-grid-tile>
@@ -10,23 +10,35 @@
     <div
         fxLayout="row"
         fxLayout.xs="column"
+        
         fxLayoutGap="30px">
         <div fxFlex="50">
-            <h1> {{producto.Producto}} </h1>
-            <mat-divider></mat-divider>
-            <br>
-            <img mat-card-image src="assets/productos/imagen_ref.jpg">
 
+            <img class="shadow " mat-card-image src="assets/productos/imagen_ref.jpg">
         </div>
         <div fxFlex="50">
-            <h2> {{producto.Grupo_menor}} </h2>
-            <mat-divider></mat-divider>
-            <mat-list>
-                <mat-list-item> Presentacion: {{producto.Presentacion}} </mat-list-item>
-                <mat-list-item> Peso aproximado: {{producto.Factordepeso}} kg. </mat-list-item>
-                <mat-list-item> Grupo: {{producto.Grupo_mayor}} </mat-list-item>
-                <mat-list-item> Codigo de producto: {{producto.Cod_Item_PF}} </mat-list-item>
-            </mat-list>
+            <h2>{{producto.Producto | titlecase}}  </h2>
+
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Presentacion</th>
+                    <td>{{producto.Presentacion}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Peso</th>
+                    <td>{{producto.Factordepeso}} kg.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Codigo de producto</th>
+                    <td colspan="2">{{producto.Cod_Item_PF}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Grupo</th>
+                    <td colspan="2"> {{producto.Grupo_mayor}}</td>
+                  </tr>
+                </tbody>
+              </table>
             <br>
             <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
                 <mat-icon>favorite</mat-icon>
@@ -42,6 +54,5 @@
         </div>
 
     </div>
-    {{ producto | json }}
 </ng-template>
 

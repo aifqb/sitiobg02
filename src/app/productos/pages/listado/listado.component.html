@@ -1,5 +1,6 @@
 
-<h2>Listado de productos</h2>
+<h2
+fxLayoutAlign="center">Listado de productos</h2>
 
 <mat-divider></mat-divider>
 <br>
@@ -13,36 +14,38 @@
 <div fxFlex="30"
      fxFlex.lg="20"
      fx
+     
      *ngFor="let producto of productos"
 >
         <mat-card>
+         
             <mat-card-header>
                 <mat-card-title>
                 <h3>
                     {{ producto.Grupo_menor | titlecase }}
                 </h3>
                 </mat-card-title>
-                <mat-card-subtitle>{{producto.Presentacion | titlecase}} </mat-card-subtitle>
+                <mat-card-subtitle>{{producto.Presentacion | titlecase}}</mat-card-subtitle>
             </mat-card-header>
             <img mat-card-image src="assets/productos/imagen_ref.jpg">
             <mat-card-content>
-                <h3>Codigo:
-                    <strong>
+                <h3>
+                    <small>
+                    Codigo de producto:
+                    </small> 
                     {{producto.Cod_Item_PF}} 
-                    </strong>
                 </h3>
-                <p>Peso aproximado:
-                    {{producto.Factordepeso}} kg.
-                </p>
             </mat-card-content>
-            <mat-card-actions>
+            <mat-card-actions
+                fxLayoutAlign="center">
 
                 <button 
-                mat-raised-button
-                color="warn"
+                
+                mat-stroked-button
+                color="primary"
                 [routerLink]="['/productos', producto.Cod_Item_PF ]"
                 >
-                more info
+                mas informacion
                 </button>
 
             </mat-card-actions>
