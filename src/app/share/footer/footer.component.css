@@ -31,4 +31,10 @@ footer {
     display: block;
     margin: 0 auto;
   }
-      
+    
+  
+.mat-card{
+  background: #f3f3f3;
+  margin: 1rem;
+  height: 450px;
+}

@@ -1,15 +1,50 @@
-<div    fxLayout="row wrap"
-        fxLayout.xs="column"
-        fxLayoutAlign="center"
-        fx>
+<div
+    fxLayout="row warp"
+    fxLayout.xs="column"
+    fxLayoutAlign="center"
+    >
     <div fxFlex="30"
-         fxFlex.lg="20"   >
-        <mat-card >
+    >
+        <mat-card>
             <mat-card-title>
-                <h2>hola</h2>
+                <h2
+                fxLayoutAlign="center"
+                >hola</h2>
+                <mat-progress-bar color="warn" mode="determinate" value="50"></mat-progress-bar>
             </mat-card-title>
             <mat-card-content>
-                <div class="p-3">
+                <div>
+                    <img class="marcapie" src="assets/imagenes/logobg.svg" alt="Logo bon gusto">
+                </div>
+                <p class="h5 text-capitalize">Linea <br>embutidos y fiambres</p>
+                <span>
+                    <p class="h4" style="color: #ff7d01;">{{_servicio.info.lema01}}! </p>
+                </span>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-title>
+                <h2>hola</h2>
+                <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+            </mat-card-title>
+            <mat-card-content>
+<mat-list>
+    <mat-list-item>
+        <mat-icon mat-list-icon>android</mat-icon>
+        <div mat-line>central: {{_servicio.info.central}}</div>
+        <div mat-line>interno: {{_servicio.info.interno_ventas}}</div>
+
+    </mat-list-item>
+</mat-list>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-title>
+                <h2>hola</h2>
+                <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+            </mat-card-title>
+            <mat-card-content>
+                <div>
                     <img class="marcapie" src="assets/imagenes/logobg.svg" alt="Logo bon gusto">
                 </div>
                 <p class="h5 text-capitalize">Linea <br>embutidos y fiambres</p>
@@ -18,19 +53,7 @@
                 </span>
             </mat-card-content>
         </mat-card>
-        <mat-card>
-            <mat-card-title>
-                <h2>hola</h2>
-            </mat-card-title>
-        </mat-card>
-        <mat-card>
-            <mat-card-title>
-                <h2>hola</h2>
-            </mat-card-title>
-        </mat-card>
-
     </div>
-    
 </div>
 
 <footer>
