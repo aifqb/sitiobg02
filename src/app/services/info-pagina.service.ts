@@ -18,7 +18,6 @@ export class InfoPaginaService {
       this.http.get('https://angular-html-517d8-default-rtdb.firebaseio.com/info.json')
         .subscribe(( resp: InfoPagina ) => {
             this.info = resp;
-            console.log(resp);
           });
 
       
