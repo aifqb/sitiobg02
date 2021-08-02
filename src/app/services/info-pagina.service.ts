@@ -8,11 +8,19 @@ import { InfoPagina } from '../intefaces/info-pagina.interface';
 })
 export class InfoPaginaService {
 
+  info: InfoPagina = {};
 
-    constructor( private http: HttpClient) { }
 
-  infoPagina(){
-    return this.http.get<InfoPagina[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/info.json')
-    
-  }
+
+    constructor( private http: HttpClient ) {
+
+      
+      this.http.get('https://angular-html-517d8-default-rtdb.firebaseio.com/info.json')
+        .subscribe(( resp: InfoPagina ) => {
+            this.info = resp;
+          });
+
+      
+    }
+
 }

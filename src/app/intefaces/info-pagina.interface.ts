@@ -7,7 +7,7 @@ export interface InfoPagina {
     depto?: string;
     direccion?: string;
     email?: string;
-    facebook: string;
+    facebook?: string;
     instagram?: string;
     interno_ventas?: number;
     lema01?: string;
