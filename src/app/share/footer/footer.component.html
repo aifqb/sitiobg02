@@ -1,10 +1,13 @@
-<div
+<footer>
+<div class="container"
     fxLayout="row warp"
     fxLayout.xs="column"
     fxLayoutAlign="center"
+    fxLayoutGap="10px"
     >
     <div fxFlex="30"
-    >
+    fxFlex.md="25"
+    fxFlex.sm="40">
         <mat-card>
             <mat-card-title>
                 <h2
@@ -22,23 +25,29 @@
                 </span>
             </mat-card-content>
         </mat-card>
+    </div>
+    <div fxFlex="30"
+    fxFlex.md="25"
+    fxFlex.sm="40">
         <mat-card>
             <mat-card-title>
                 <h2>hola</h2>
                 <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
             </mat-card-title>
             <mat-card-content>
-<mat-list>
-    <mat-list-item>
-        <mat-icon mat-list-icon>android</mat-icon>
-        <div mat-line>central: {{_servicio.info.central}}</div>
-        <div mat-line>interno: {{_servicio.info.interno_ventas}}</div>
-
-    </mat-list-item>
-</mat-list>
+                <mat-list>
+                    <mat-list-item>
+                    <div mat-line>central: {{_servicio.info.central}}</div>
+                    <div mat-line>interno: {{_servicio.info.interno_ventas}}</div>
+                </mat-list-item>
+                </mat-list>
             </mat-card-content>
         </mat-card>
-        <mat-card>
+    </div>
+    <div fxFlex="30"
+    fxFlex.md="25"
+    fxFlex.sm="40">
+        <mat-card> 
             <mat-card-title>
                 <h2>hola</h2>
                 <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
@@ -55,6 +64,8 @@
         </mat-card>
     </div>
 </div>
+</footer>
+
 
 <footer>
     <div class="main-content container justify-content-around">
