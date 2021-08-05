@@ -1,0 +1,13 @@
+<h3>buscar por categoria {{categoriaActiva | titlecase}}</h3>
+<br>
+<h4>seleccione la categoria</h4>
+<div class="row">
+    <div class="col">
+        <button *ngFor="let categoria of categorias"
+                [class]="getClaseCSS( categoria )"
+                (click)="activaCategoria( categoria )">
+            {{categoria}}
+        </button>
+    </div>
+</div>
+<br>
