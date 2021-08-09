@@ -3,11 +3,9 @@ footer {
     bottom: 0px;
     width: 100%;
     padding-bottom: 2rem;
-
-    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);    /* background: snow; */
-  }
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,241,255,1) 10%, rgba(255,249,244,1) 100%);  }
   .marcapie {
-    height: 13rem;
+    height: 9rem;
     display: block;
     margin: 0 auto;
   }
@@ -34,7 +32,7 @@ footer {
     
   
 .mat-card{
-  background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);}
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,241,255,1) 10%, rgba(255,249,244,1) 100%);  }
 .foot {
   position: relative;
   bottom: 0px;

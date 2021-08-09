@@ -5,6 +5,26 @@
     fxLayoutAlign="center"
     fxLayoutGap="10px"
     >
+
+    <div fxFlex="30"
+    fxFlex.md="25"
+    fxFlex.sm="40">
+        <mat-card>
+            <mat-card-title>
+                <h2 class="fs-1" >hola</h2>
+                <h1>hola</h1>
+                <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+            </mat-card-title>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item>
+                    <div mat-line>central: {{_servicio.info.central}}</div>
+                    <div mat-line>interno: {{_servicio.info.interno_ventas}}</div>
+                </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
     <div fxFlex="30"
     fxFlex.md="25"
     fxFlex.sm="40">
@@ -26,24 +46,7 @@
             </mat-card-content>
         </mat-card>
     </div>
-    <div fxFlex="30"
-    fxFlex.md="25"
-    fxFlex.sm="40">
-        <mat-card>
-            <mat-card-title>
-                <h2>hola</h2>
-                <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
-            </mat-card-title>
-            <mat-card-content>
-                <mat-list>
-                    <mat-list-item>
-                    <div mat-line>central: {{_servicio.info.central}}</div>
-                    <div mat-line>interno: {{_servicio.info.interno_ventas}}</div>
-                </mat-list-item>
-                </mat-list>
-            </mat-card-content>
-        </mat-card>
-    </div>
+    
     <div fxFlex="30"
     fxFlex.md="25"
     fxFlex.sm="40">
