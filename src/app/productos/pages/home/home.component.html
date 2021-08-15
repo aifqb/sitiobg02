@@ -1,24 +1,20 @@
 
-<div  class="container"
+<div  class="container  py-sm-1 col-lg-5 col-sm-12"
       fxLayout="column"
       fxLayoutAlign="center">
-    <h2 class="text-info"
+    <h2 class="text-info py-4 fs-1"
     fxLayoutAlign="center">
     Linea De Productos
     </h2>
     <img height="200px" src="assets/imagenes/logobg.svg" alt="Logo bon gusto">
-      <p fxLayoutAlign="center">
-        Conoce nuestra línea de productos y déjate llevar por esta experiencia, nuestros productos tienen la calidad de las marcas líderes a menor precio.
-      </p>
+    <h2 fxLayoutAlign="center" class="text-center">
+      Conoce nuestra línea de productos y déjate llevar por esta experiencia, nuestros productos tienen la calidad de las marcas líderes a menor precio.
+    </h2>  
 </div>
-
-<hr>
-
-<mat-drawer-container class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <div>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav justify-content-center">
               <li class="nav-item">
                 <a class="nav-link" routerLink='listado'>Lista de productos</a>
               </li>
@@ -32,5 +28,7 @@
           </div>
         </div>
     </nav>
+
+
+    
  <router-outlet></router-outlet>   
-</mat-drawer-container>

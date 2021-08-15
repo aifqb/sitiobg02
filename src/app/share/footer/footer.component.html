@@ -1,14 +1,14 @@
 <div class="container-fluid min-vh-25 bg-warning">
     <section class="row justify-content-center">
-        <div class="div col-lg-3 bg-warning col-sm-12 align-items-center py-2">
+        <div class="div col-lg-3 col-md-5 bg-warning col-sm-12 align-items-center py-2">
             <app-piecard></app-piecard>
         </div>
-        <div class="div col-lg-3 bg-warning col-sm-12 align-items-center py-2">
+        <div class="div col-lg-3 col-md-5 bg-warning col-sm-12 align-items-center py-2">
             <mat-list>
                 <div mat-header class="text-center h3 p-2">Contacto</div>
                 <mat-divider></mat-divider>
                 <mat-list-item>
-                        <mat-icon mat-list-icon>
+                        <mat-icon mat-list-icon class="social">
                             <a href="tel:+59169900944" target="_blank" class="text-reset" onclick="return(navigator.userAgent.match(/Android | iphone | movile /i)) != null;">
                                 <span class="fa fa-phone fa-lg"></span>
                             </a>
@@ -22,7 +22,7 @@
                         <div mat-line>Ventas interno: {{_servicio.info.interno_ventas}}</div>    
                 </mat-list-item>
                 <mat-list-item> 
-                    <mat-icon mat-list-icon>
+                    <mat-icon mat-list-icon class="social">
                         <a href="https://wa.me/59169900944?text=Hola%20estoy%20interesado%20en%20los%20productos%20Bon%20Gusto%20msjw" target="_blank" class="text-reset">
                             <span class="fab fa-whatsapp fa-lg"></span>
                         </a>
@@ -35,7 +35,7 @@
                         <div mat-line>WhastApp ventas</div>    
                 </mat-list-item>
                 <mat-list-item> 
-                    <mat-icon mat-list-icon>
+                    <mat-icon mat-list-icon class="social">
                         <a href="https://wa.me/59177779389?text=Hola%20estoy%20interesado%20en%20los%20productos%20Bon%20Gusto%20msjw" target="_blank" class="text-reset">
                             <span class="fab fa-whatsapp fa-lg"></span>
                         </a>
@@ -48,7 +48,7 @@
                     <div mat-line>WhastApp consultas</div> 
                 </mat-list-item>
                 <mat-list-item> 
-                    <mat-icon mat-list-icon>
+                    <mat-icon mat-list-icon class="social">
                         <a href="mailto:ventas@bongusto.com.bo?Subject=Estoy%20interesado%20en%20los%20productos%20Bon%20Gusto"target="_blank" class="text-reset">
                             <span class="fa fa-envelope fa-lg"></span>
                         </a>
@@ -58,15 +58,15 @@
                 </mat-list-item>
             </mat-list>
         </div>
-        <div class="div col-lg-3 bg-warning col-sm-12 align-items-center py-2">
+        <div class="div col-lg-3 col-md-5 bg-warning col-sm-12 align-items-center py-2">
             <mat-list>
                 <div mat-header class="text-center h3 p-2">Redes sociales</div>
                 <mat-divider></mat-divider>
                 <div class=" text-center pt-1">
                     <button mat-icon-button>
                         <mat-icon mat-list-icon>
-                            <a href="{{_servicio.info.facebook}}" target="_blank" class="text-reset">
-                                <span class="fa fa-facebook-square social fa-lg "></span>
+                            <a href="{{_servicio.info.facebook}}" target="_blank" class="text-reset ">
+                                <span class="fa fa-facebook-square fa-lg "></span>
                             </a>
                         </mat-icon>
                     </button>

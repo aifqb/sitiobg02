@@ -1,45 +1,15 @@
-footer {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    padding-bottom: 2rem;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,241,255,1) 10%, rgba(255,249,244,1) 100%);  }
-  .marcapie {
-    height: 9rem;
-    display: block;
-    margin: 0 auto;
-  }
-  
 
-
-.center .content p {
-    text-align: justify;
-  }
-  .main-content {
-    color: #d9d9d9;
-    display: flex;
-  }
-  
-  .main-content .logo {
-    width: 200px;
-  }
-
-    
-  
-.mat-card{
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,241,255,1) 10%, rgba(255,249,244,1) 100%);  }
-.foot {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-
-  background: #240d09;
-  /* background: snow; */
-}
 
 button:hover{
   cursor: pointer;
   color: #ee2e0c;
-  transition: 0.3s;
+  transition: 0.2s;
+
+}
+
+.social:hover{
+  cursor: pointer;
+  color: #ee2e0c;
+  transition: 0.2s;
 
 }
