@@ -69,6 +69,7 @@
 </div>
 </footer>
 
+<span class="fab fa-whatsapp"></span>
 
 <footer>
     <div class="main-content container justify-content-around">
@@ -205,11 +206,82 @@
     </div>
 </footer>
 
-<div class="container-fluid min-vh-50 bg-secondary">
+<div class="container-fluid min-vh-25 bg-warning">
     <section class="row justify-content-center">
-        <div class="col-md-3 col-sm-12 text-sm-center"><h2>hola</h2><p>hola a todos</p></div>
-        <div class="col-md-3 col-sm-12 text-sm-center"><h2>hola</h2><p>hola a todos</p></div>
-        <div class="col-md-3 col-sm-12 text-sm-center"><h2>hola</h2><p>hola a todos</p></div>
+        <div class="div col-lg-3 bg-warning col-sm-12 align-items-center py-2">
+            <app-piecard></app-piecard>
+        </div>
+        <div class="div col-lg-3 bg-warning col-sm-12 align-items-center py-2">
+            <mat-list>
+                <div mat-header class="text-center h3 p-2">Contacto</div>
+                <mat-divider></mat-divider>
+                <mat-list-item> 
+                        <mat-icon mat-list-icon>
+                            <span class="fa fa-phone fa-flip-horizontal fa-lg"></span>
+                        </mat-icon>
+                        <div mat-line>
+                            <strong class="h5">
+                                {{_servicio.info.central}}
+                            </strong>    
+                        </div>
+                        <div mat-line>Central telefonica</div>    
+                        <div mat-line>Ventas interno: {{_servicio.info.interno_ventas}}</div>    
+                </mat-list-item>
+                <mat-list-item> 
+                    <mat-icon mat-list-icon>
+                        <span class="fab fa-whatsapp fa-lg"></span>
+                    </mat-icon>
+                        <div mat-line>
+                            <strong class="h5">
+                                {{_servicio.info.central}}
+                            </strong>
+                        </div>
+                        <div mat-line>WhastApp ventas</div>    
+                </mat-list-item>
+                <mat-list-item> 
+                    <mat-icon mat-list-icon>
+                        <span class="fab fa-whatsapp fa-lg"></span>
+                    </mat-icon>
+                    <div mat-line>
+                    <div class="strong h5">
+                        {{_servicio.info.celular_alex}}
+                    </div>
+                    </div>
+                    <div mat-line>WhastApp consultas</div> 
+                </mat-list-item>
+                <mat-list-item> 
+                    <mat-icon mat-list-icon>
+                        <span class="fa fa-envelope fa-lg"></span>
+                    </mat-icon>
+                    <div mat-line>{{_servicio.info.email}}</div>
+                    <div mat-line>Email</div>   
+                </mat-list-item>
+            </mat-list>
+        </div>
+        <div class="div col-lg-3 bg-warning col-sm-12 align-items-center py-2">
+            <mat-list>
+                <div mat-header class="text-center h3 p-2">Redes</div>
+                <mat-divider></mat-divider>
+                <mat-list-item> 
+                        <mat-icon mat-list-icon>
+                            <span class="fa fa-facebook-square fa-lg"></span>
+                        </mat-icon>
+                        
+                </mat-list-item>
+
+                <mat-list-item> 
+                    <mat-icon mat-list-icon>
+                        <span class="fab fa-instagram fa-lg"></span>
+                    </mat-icon>
+                </mat-list-item>
+                <mat-list-item> 
+                    <mat-icon mat-list-icon>
+                        <span class="fa fa-youtube-play fa-lg"></span>
+                    </mat-icon>
+                </mat-list-item>
+                
+            </mat-list>
+        </div>
         <div class="col-12 bg-dark text-white text-center text-capitalize">
             <span class="far fa-copyright"></span>
                 <span>{{_servicio.info.nombre}} </span>

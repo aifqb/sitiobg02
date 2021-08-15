@@ -19,7 +19,8 @@ import { EncuentranosComponent } from './pages/encuentranos/encuentranos.compone
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
-import { WpButtonComponent } from './share/wp-button/wp-button.component'
+import { WpButtonComponent } from './share/wp-button/wp-button.component';
+import { PiecardComponent } from './share/piecard/piecard.component'
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { WpButtonComponent } from './share/wp-button/wp-button.component'
     ContactoComponent,
     NosotrosComponent,
     EventosComponent,
-    WpButtonComponent
+    WpButtonComponent,
+    PiecardComponent
   ],
   imports: [
     BrowserModule,
