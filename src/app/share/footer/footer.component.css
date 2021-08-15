@@ -36,3 +36,10 @@ footer {
   background: #240d09;
   /* background: snow; */
 }
+
+button:hover{
+  cursor: pointer;
+  color: #ee2e0c;
+  transition: 0.3s;
+
+}
