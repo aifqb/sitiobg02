@@ -1,4 +1,4 @@
-<h1>Descripcion del producto</h1>
+<h2 class="text-center py-3 fs-3">Descripcion del producto: <br> <br>{{producto.Producto | titlecase}}</h2>
 
 <mat-grid-list cols=1 *ngIf="!producto; else divproducto" >
     <mat-grid-tile>
@@ -7,14 +7,14 @@
 </mat-grid-list>
 
 <ng-template #divproducto>
-    <div
+    <div class="container py-3"
         fxLayout="row"
         fxLayout.xs="column"
         fxLayoutGap="30px">
         <div fxFlex="50">
             <img class="shadow " mat-card-image src="assets/productos/imagen_ref.jpg">
         </div>
-        <div fxFlex="50">
+        <div fxFlex="50" class="px-5">
             <h2>{{producto.Producto | titlecase}}  </h2>
 
             <table class="table">
@@ -50,6 +50,9 @@
             </button>
             
         </div>
+    </div>
+</ng-template>
+    
 
 
 
