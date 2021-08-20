@@ -1,4 +1,4 @@
-<h2 class="text-center py-3 fs-3">Descripcion del producto: <br> <br>{{producto.Producto | titlecase}}</h2>
+<h2 class="text-center py-3 fs-3">Descripcion del producto: <br> <br>{{producto.producto_Nombre| titlecase}}</h2>
 
 <mat-grid-list cols=1 *ngIf="!producto; else divproducto" >
     <mat-grid-tile>
@@ -15,25 +15,25 @@
             <img class="shadow " mat-card-image src="assets/productos/imagen_ref.jpg">
         </div>
         <div fxFlex="50" class="px-5">
-            <h2>{{producto.Producto | titlecase}}  </h2>
+            <h2>{{producto.producto_Nombre| titlecase}}  </h2>
 
             <table class="table">
                 <tbody>
                   <tr>
                     <th scope="row">Presentacion</th>
-                    <td>{{producto.Presentacion}}</td>
+                    <td>{{producto.presentacion}}</td>
                   </tr>
                   <tr>
                     <th scope="row">Peso</th>
-                    <td>{{producto.Factordepeso}} kg.</td>
+                    <td>{{producto.peso_aprox}} kg.</td>
                   </tr>
                   <tr>
                     <th scope="row">Codigo de producto</th>
-                    <td colspan="2">{{producto.Cod_Item_PF}}</td>
+                    <td colspan="2">{{producto.cod_Item_PF}}</td>
                   </tr>
                   <tr>
                     <th scope="row">Grupo</th>
-                    <td colspan="2"> {{producto.Grupo_mayor}}</td>
+                    <td colspan="2"> {{producto.proceso}}</td>
                   </tr>
                 </tbody>
               </table>

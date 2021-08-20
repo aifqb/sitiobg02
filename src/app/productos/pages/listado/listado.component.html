@@ -22,10 +22,10 @@ fxLayoutAlign="center">Listado de productos</h2>
             <mat-card-header>
                 <mat-card-title>
                 <h3>
-                    {{ producto.Grupo_menor | titlecase }}
+                    {{ producto.producto_Nombre }}
                 </h3>
                 </mat-card-title>
-                <mat-card-subtitle>{{producto.Presentacion | titlecase}}</mat-card-subtitle>
+                <mat-card-subtitle>{{producto.presentacion| titlecase}}</mat-card-subtitle>
             </mat-card-header>
             <img mat-card-image src="assets/productos/imagen_ref.jpg">
             <mat-card-content>
@@ -33,7 +33,7 @@ fxLayoutAlign="center">Listado de productos</h2>
                     <small>
                     Codigo de producto:
                     </small> 
-                    {{producto.Cod_Item_PF}} 
+                    {{producto.cod_Item_PF}} 
                 </h3>
             </mat-card-content>
             <mat-card-actions
@@ -43,7 +43,7 @@ fxLayoutAlign="center">Listado de productos</h2>
                 
                 mat-stroked-button
                 color="primary"
-                [routerLink]="['/productos', producto.Cod_Item_PF ]"
+                [routerLink]="['/productos', producto.cod_Item_PF ]"
                 >
                 mas informacion
                 </button>

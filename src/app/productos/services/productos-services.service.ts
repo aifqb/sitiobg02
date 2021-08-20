@@ -11,14 +11,15 @@ export class ProductosServicesService {
   constructor( private http: HttpClient) { }
 
   getProductos(): Observable<Producto[]> {
-    return this.http.get<Producto[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/productos.json')
+    // return this.http.get<Producto[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/productos.json')
+    return this.http.get<Producto[]>('https://localhost:44342/api/productos')
   }
   
   getProductosPorId( id: string): Observable<Producto> {
     return this.http.get<Producto>(`https://angular-html-517d8-default-rtdb.firebaseio.com/productos/${ id }.json`) 
   }
   getSugerencias( termino: string ): Observable<Producto[]> { 
-    return this.http.get<Producto[]>(`https://angular-html-517d8-default-rtdb.firebaseio.com/productos.json?q=${ termino }&_limit=6`) 
+    return this.http.get<Producto[]>(`https://localhost:44342/api/productos/busqueda?cantidadRegistrosPorPagina=50&ProductoNombre=${ termino }`) 
   }
 
 }
