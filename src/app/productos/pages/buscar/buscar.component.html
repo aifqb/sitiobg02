@@ -15,8 +15,8 @@
                     [matAutocomplete]="auto"
                     (input)="buscando()">
             <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-              <mat-option *ngFor="let item of items" [value]="item.Producto">
-                {{ item.Producto }}
+              <mat-option *ngFor="let item of items" [value]="item.producto_Nombre">
+                {{ item.producto_Nombre }}
                 </mat-option>
             </mat-autocomplete>
         </mat-form-field> 
