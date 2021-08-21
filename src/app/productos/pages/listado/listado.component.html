@@ -5,54 +5,68 @@ fxLayoutAlign="center">Listado de productos</h2>
 <mat-divider></mat-divider>
 <br>
 
-<div class="py-5" fxLayout="row wrap"
-     fxLayout.xs="column"
-     fxLayoutAlign="center"
-     fxLayoutGap="1rem"
->
+<mat-grid-list cols=1 *ngIf="!productos; else listado" >
+    <mat-grid-tile>
+        <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+</mat-grid-list>
 
-<div fxFlex="30"
-     fxFlex.lg="20"
-     fx
-     
-     *ngFor="let producto of productos"
->
-        <mat-card>
+
+<ng-template #listado>
+    
+    
+    <div class="py-5" fxLayout="row wrap"
+         fxLayout.xs="column"
+         fxLayoutAlign="center"
+         fxLayoutGap="1rem"
+    >
+    
+    <div fxFlex="30"
+         fxFlex.lg="20"
+         fx
          
-            <mat-card-header>
-                <mat-card-title>
-                <h3>
-                    {{ producto.producto_Nombre }}
-                </h3>
-                </mat-card-title>
-                <mat-card-subtitle>{{producto.presentacion| titlecase}}</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="assets/productos/imagen_ref.jpg">
-            <mat-card-content>
-                <h3>
-                    <small>
-                    Codigo de producto:
-                    </small> 
-                    {{producto.cod_Item_PF}} 
-                </h3>
-            </mat-card-content>
-            <mat-card-actions
-                fxLayoutAlign="center">
+         *ngFor="let producto of productos"
+    >
+            <mat-card>
+             
+                <mat-card-header>
+                    <mat-card-title>
+                    <h3>
+                        {{ producto.producto_Nombre }}
+                    </h3>
+                    </mat-card-title>
+                    <mat-card-subtitle>{{producto.presentacion| titlecase}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="assets/productos/imagen_ref.jpg">
+                <mat-card-content>
+                    <h3>
+                        <small>
+                        Codigo de producto:
+                        </small> 
+                        {{producto.cod_Item_PF}} 
+                    </h3>
+                </mat-card-content>
+                <mat-card-actions
+                    fxLayoutAlign="center">
+    
+                    <button 
+                    
+                    mat-stroked-button
+                    color="primary"
+                    [routerLink]="['/productos', producto.idPr]"
+                    >
+                    mas informacion
+                    </button>
+    
+                </mat-card-actions>
+            </mat-card>
+    </div>
+    
+    </div>
 
-                <button 
-                
-                mat-stroked-button
-                color="primary"
-                [routerLink]="['/productos', producto.idPr]"
-                >
-                mas informacion
-                </button>
+</ng-template>
 
-            </mat-card-actions>
-        </mat-card>
-</div>
 
-</div>
 
 
 
