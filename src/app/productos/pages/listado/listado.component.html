@@ -5,7 +5,7 @@ fxLayoutAlign="center">Listado de productos</h2>
 <mat-divider></mat-divider>
 <br>
 
-<div fxLayout="row wrap"
+<div class="py-5" fxLayout="row wrap"
      fxLayout.xs="column"
      fxLayoutAlign="center"
      fxLayoutGap="1rem"
@@ -22,7 +22,7 @@ fxLayoutAlign="center">Listado de productos</h2>
             <mat-card-header>
                 <mat-card-title>
                 <h3>
-                    {{ producto.producto_Nombre| titlecase }}
+                    {{ producto.producto_Nombre }}
                 </h3>
                 </mat-card-title>
                 <mat-card-subtitle>{{producto.presentacion| titlecase}}</mat-card-subtitle>
