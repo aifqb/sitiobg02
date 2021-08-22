@@ -1,11 +1,11 @@
-<div fxLayout="column" class="container col-3 p-lg-3">
+<div fxLayout="column" class="container col-12 p-lg-3">
     <div>
         <h1 class="text-center">buscar producto</h1>
         <mat-divider></mat-divider>
     </div>
-    <div class="example-form">
+    <div fxLayout="column">
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field  >
             <mat-label>buscar producto</mat-label>
             <input  type="text"
                     placeholder="Escriba aqui"
@@ -14,13 +14,30 @@
                     [(ngModel)]="termino"
                     [matAutocomplete]="auto"
                     (input)="buscando()">
-            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-              <mat-option *ngFor="let item of items" [value]="item.producto_Nombre">
+            <mat-autocomplete   autoActiveFirstOption 
+                                #auto="matAutocomplete"
+                                (optionSelected)="opcionselecionada( $event )"
+
+                                >
+              <mat-option *ngFor="let item of items" [value]="item">
                 {{ item.producto_Nombre }}
                 </mat-option>
+
+                <mat-option value="" *ngIf="items.length === 0 && termino.trim().length > 0 ">
+                        no se encontro el termino
+                </mat-option>
+
+
             </mat-autocomplete>
         </mat-form-field>
 
     </div>
+    <div>
+        <pre>
+            {{ productoSelecionado | json }}
+        </pre>
+        <!-- <h2>{{ producto.producto_Nombre| titlecase }}  </h2> -->
+    </div>
+    
 </div>
 
