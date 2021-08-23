@@ -1,11 +1,6 @@
+<h2 fxLayoutAlign="center" class="bg-dark text-light m-0 fs-2 py-lg-5">lista de productos</h2>
 
-<h2
-fxLayoutAlign="center">Listado de productos</h2>
-
-<mat-divider></mat-divider>
-<br>
-
-<mat-grid-list cols=1 *ngIf="!productos; else listado" >
+<mat-grid-list cols=1 *ngIf="!productos; else listado">
     <mat-grid-tile>
         <mat-spinner></mat-spinner>
     </mat-grid-tile>
@@ -13,61 +8,27 @@ fxLayoutAlign="center">Listado de productos</h2>
 
 
 <ng-template #listado>
-    
-    
-    <div class="py-5" fxLayout="row wrap"
-         fxLayout.xs="column"
-         fxLayoutAlign="center"
-         fxLayoutGap="1rem"
-    >
-    
-    <div fxFlex="30"
-         fxFlex.lg="20"
-         fx
-         
-         *ngFor="let producto of productos"
-    >
-            <mat-card>
-             
-                <mat-card-header>
-                    <mat-card-title>
-                    <h3 >
-                        {{ producto.menor_Nuevo| titlecase  }}
-                    </h3>
-                    </mat-card-title>
-                    <mat-card-subtitle>{{producto.presentacion| titlecase}}</mat-card-subtitle>
-                </mat-card-header>
-                <img mat-card-image src="assets/productos/imagen_ref.jpg">
-                <mat-card-content>
-                    <h3>
-                        <small>
-                        Codigo de producto:
-                        </small> 
-                        {{producto.cod_Item_PF}} 
-                    </h3>
-                </mat-card-content>
-                <mat-card-actions
-                    fxLayoutAlign="center">
-    
-                    <button 
-                    
-                    mat-stroked-button
-                    color="primary"
-                    [routerLink]="['/productos', producto.idPr]"
-                    >
-                    mas informacion
-                    </button>
-    
-                </mat-card-actions>
-            </mat-card>
-    </div>
-    
+
+
+    <div class="bg-grad py-lg-2" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="1rem">
+        <div fxFlex.md="30" class="px-4 py-2" fxFlex.lg="20" *ngFor="let producto of productos">
+            <div class="d-flex justify-content-center">
+                <div class="card shadow" style="width: 20rem">
+                    <div class="innerz">
+                        <img class="card-img-top" src="assets/productos/imagen_ref.jpg" alt="">
+                    </div>
+                    <div class="card-prod card-body text-center bg-light">
+                        <h3 class="card-title fw-normal m-0">{{ producto.menor_Nuevo| titlecase }}</h3>
+                        <h3 class="card-text m-0 text-secondary">{{producto.presentacion| titlecase}}</h3>
+                        <mat-divider></mat-divider>
+                        <h4 class="card-text my-1 fw-normal"> <small>Codigo producto:</small> {{producto.cod_Item_PF}}</h4>
+                        <button class="btn btn-sm btn-prod" [routerLink]="['/productos', producto.cod_Item_PF]">
+                            mas informacion
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </ng-template>
-
-
-
-
-
-

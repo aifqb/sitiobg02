@@ -16,7 +16,7 @@ export class ProductosServicesService {
   }
   
   getProductosPorId( id: number): Observable<Producto> {
-    return this.http.get<Producto>(`https://webapiproductos.azurewebsites.net/api/productos/IdPr:int?IdPr=${ id }`) 
+    return this.http.get<Producto>(`https://webapiproductos.azurewebsites.net/api/productos/Cod_Item_PF:int?Cod_Item_PF=${ id }`) 
   }
   getSugerencias( termino: string ): Observable<Producto[]> { 
     return this.http.get<Producto[]>(`https://webapiproductos.azurewebsites.net/api/productos/busqueda?cantidadRegistrosPorPagina=50&ProductoNombre=${ termino }`) 

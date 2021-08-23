@@ -7,14 +7,16 @@
 </mat-grid-list>
 
 <ng-template #divproducto>
-    <div class="container py-3"
+    <div class="container py-lg-3 py-sm-1"
         fxLayout="row"
         fxLayout.xs="column"
-        fxLayoutGap="30px">
+        fxLayoutGap="30px"
+        
+        >
         <div fxFlex="50">
-            <img class="shadow " mat-card-image src="assets/productos/imagen_ref.jpg">
+            <img class="shadow" mat-card-image src="assets/productos/imagen_ref.jpg">
         </div>
-        <div fxFlex="50" class="px-5">
+        <div fxFlex="50" class="px-lg-5 px-sm-0">
             <h2>{{producto.producto_Nombre| titlecase}}  </h2>
 
             <table class="table">
@@ -37,11 +39,6 @@
                   </tr>
                 </tbody>
               </table>
-            <br>
-            <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
-                <mat-icon>favorite</mat-icon>
-              </button>
-              <br>
             <button
                 mat-raised-button
                 color="warn"

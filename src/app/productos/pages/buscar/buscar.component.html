@@ -4,7 +4,6 @@
         <mat-divider></mat-divider>
     </div>
     <div fxLayout="column">
-
         <mat-form-field  >
             <mat-label>buscar producto</mat-label>
             <input  type="text"
@@ -17,27 +16,21 @@
             <mat-autocomplete   autoActiveFirstOption 
                                 #auto="matAutocomplete"
                                 (optionSelected)="opcionselecionada( $event )"
-
                                 >
               <mat-option *ngFor="let item of items" [value]="item">
                 {{ item.producto_Nombre }}
                 </mat-option>
-
                 <mat-option value="" *ngIf="items.length === 0 && termino.trim().length > 0 ">
                         no se encontro el termino
                 </mat-option>
-
-
             </mat-autocomplete>
         </mat-form-field>
-
     </div>
     <div>
         <pre>
             {{ productoSelecionado | json }}
         </pre>
-        <!-- <h2>{{ producto.producto_Nombre| titlecase }}  </h2> -->
     </div>
-    
+
 </div>
 
