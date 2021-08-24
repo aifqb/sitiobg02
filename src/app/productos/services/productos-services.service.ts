@@ -8,18 +8,27 @@ import { Observable } from 'rxjs';
 })
 export class ProductosServicesService {
 
+  private apiUrl: string = 'https://webapiproductos.azurewebsites.net/api/productos';
+
   constructor( private http: HttpClient) { }
 
   getProductos(): Observable<Producto[]> {
-    // return this.http.get<Producto[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/productos.json')
-    return this.http.get<Producto[]>('https://webapiproductos.azurewebsites.net/api/productos')
+    const url = `${ this.apiUrl }`
+    return this.http.get<Producto[]>(url)
   }
   
   getProductosPorId( id: number): Observable<Producto> {
-    return this.http.get<Producto>(`https://webapiproductos.azurewebsites.net/api/productos/Cod_Item_PF:int?Cod_Item_PF=${ id }`) 
+    const url = `${ this.apiUrl }/Cod_Item_PF:int?Cod_Item_PF=${ id }`
+    return this.http.get<Producto>(url) 
   }
   getSugerencias( termino: string ): Observable<Producto[]> { 
-    return this.http.get<Producto[]>(`https://webapiproductos.azurewebsites.net/api/productos/busqueda?cantidadRegistrosPorPagina=50&ProductoNombre=${ termino }`) 
+    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=200&ProductoNombre=${ termino }`
+    return this.http.get<Producto[]>(url) 
+  }
+
+  buscarGrupoMayor( grupoMayor: string): Observable<Producto[]> {
+    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=200&Grupo_mayor=${ grupoMayor }`
+    return this.http.get<Producto[]>(url) 
   }
 
 }

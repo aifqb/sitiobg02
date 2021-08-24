@@ -11,6 +11,8 @@ import { ProductoComponent } from './pages/producto/producto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
+import { ProductoTablaComponent } from './components/producto-tabla/producto-tabla.component';
+import { ProductoSeachComponent } from './components/producto-seach/producto-seach.component';
 
 
 
@@ -23,7 +25,9 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
     ProductoComponent,
     HomeComponent,
     ListadoComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ProductoTablaComponent,
+    ProductoSeachComponent
   ],
     
   imports: [
