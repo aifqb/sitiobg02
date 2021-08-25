@@ -13,6 +13,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+
+
 
 
 
@@ -33,7 +38,10 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatGridListModule,
     MatProgressSpinnerModule,
     MatTabsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class MaterialModule { }

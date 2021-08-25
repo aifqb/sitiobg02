@@ -3,11 +3,14 @@ import { Producto } from '../../interfaces/producto.interface';
 
 
 
+
 @Component({
   selector: 'app-producto-tabla',
   templateUrl: './producto-tabla.component.html',
   styleUrls: ['./producto-tabla.component.css']
 })
+
+
 export class ProductoTablaComponent implements OnInit {
 
   @Input() productos: Producto[] = []  
