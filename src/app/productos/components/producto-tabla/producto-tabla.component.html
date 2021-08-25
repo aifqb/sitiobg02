@@ -1,1 +1,20 @@
-<p>producto-tabla works!</p>
+  <table class="table shadow py-3">
+      <thead>
+        <tr>
+          <th scope="col">Codigo</th>
+          <th scope="col">Producto</th>
+          <th scope="col">Presentacion</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of productos">
+          <th scope="row"> {{producto.cod_Item_PF}} </th>      
+          <td>{{producto.menor_Nuevo| titlecase}}</td>
+          <td>{{producto.presentacion| titlecase}}</td>
+          <td>
+              <a class="link-secondary" [routerLink]="['/productos', producto.cod_Item_PF]">mas informacion</a>
+          </td>
+        </tr>
+      </tbody>
+  </table>

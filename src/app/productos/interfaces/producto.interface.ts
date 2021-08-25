@@ -9,5 +9,6 @@ export interface Producto {
   proceso: string;
   peso_aprox: number;
   vigente: string;
+  precio: number;
     
   }

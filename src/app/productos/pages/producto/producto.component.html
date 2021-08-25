@@ -17,7 +17,7 @@
             <img class="shadow" mat-card-image src="assets/productos/imagen_ref.jpg">
         </div>
         <div fxFlex="50" class="px-lg-5 px-sm-0">
-            <h2>{{producto.producto_Nombre| titlecase}}  </h2>
+            <h2>{{producto.producto_Nombre| titlecase}}</h2>
 
             <table class="table">
                 <tbody>
@@ -36,6 +36,10 @@
                   <tr>
                     <th scope="row">Grupo</th>
                     <td colspan="2"> {{producto.proceso}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Precio</th>
+                    <td colspan="2"> {{producto.precio}}</td>
                   </tr>
                 </tbody>
               </table>

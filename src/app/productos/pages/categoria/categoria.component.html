@@ -5,8 +5,8 @@
 </h3>
 
 <h4 class="fs-3 text-lg-center">Seleccione la categoria:</h4>
-<div class="row">
-    <div class="col text-center py-3">
+<div class="container">
+    <div class="col-12 text-center py-3">
         <button *ngFor="let categoria of categorias"
                 [class]="getClaseCSS( categoria )"
                 (click)="activaCategoria( categoria )">
@@ -14,9 +14,18 @@
         </button>
     </div>
 </div>
-<div>
-    <div>
-        <app-producto-tabla></app-producto-tabla>
+<mat-grid-list cols=1 *ngIf="!productos; else listado">
+    <mat-grid-tile>
+        <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+</mat-grid-list>
+
+
+<ng-template #listado >
+<div class="container">
+    <div class="col-12">
+        <app-producto-tabla [productos]="productos"></app-producto-tabla>
     </div>
 </div>
 
+</ng-template>
