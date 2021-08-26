@@ -1,4 +1,4 @@
-<h2 fxLayoutAlign="center" class="bg-dark text-light m-0 fs-2 py-lg-5">lista de productos</h2>
+<h2 fxLayoutAlign="center" class="bg-dark text-light m-0 fs-2 py-lg-3 py-sm-1">lista de productos</h2>
 
 <mat-grid-list cols=1 *ngIf="!productos; else listado">
     <mat-grid-tile>
@@ -11,7 +11,7 @@
 <div class="container">
     <div class="col-12">
         <app-producto-tabla [productos]="productos"></app-producto-tabla>
-        <app-producto-seach [productos]="productos"></app-producto-seach>
+
     </div>
 
 </div>

@@ -1,9 +1,4 @@
-<h3 class="text-center fs-3 py-4">Buscar por categoria:  
-    <strong>
-        {{categoriaActiva | titlecase}}
-    </strong>
-</h3>
-
+<h2 fxLayoutAlign="center" class="bg-dark text-light m-0 fs-2 py-lg-3 py-sm-1">linea de productos</h2>
 <h4 class="fs-3 text-lg-center">Seleccione la categoria:</h4>
 <div class="container">
     <div class="col-12 text-center py-3">
@@ -14,6 +9,12 @@
         </button>
     </div>
 </div>
+<h3 class="text-center fs-3 py-4">Linea de producto:  
+    <strong>
+        {{categoriaActiva | titlecase}}
+    </strong>
+</h3>
+
 <mat-grid-list cols=1 *ngIf="!productos; else listado">
     <mat-grid-tile>
         <mat-spinner></mat-spinner>
@@ -25,7 +26,7 @@
 <div class="container">
     <div class="col-12">
         <app-producto-tabla [productos]="productos"></app-producto-tabla>
-        <app-producto-seach [productos]="productos"></app-producto-seach>
+
     </div>
 </div>
 
