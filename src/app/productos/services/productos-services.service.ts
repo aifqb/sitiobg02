@@ -27,7 +27,7 @@ export class ProductosServicesService {
   }
 
   buscarGrupoMayor( grupoMayor: string): Observable<Producto[]> {
-    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=200&Grupo_mayor=${ grupoMayor }`
+    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=200&CampoOrdenar=menor_Nuevo&OrdenAscendente=true&Grupo_Mayor=${ grupoMayor }`
     return this.http.get<Producto[]>(url) 
   }
 

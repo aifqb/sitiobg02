@@ -1,4 +1,4 @@
-<h2 class="text-center py-3 fs-3">{{producto.producto_Nombre| titlecase}}</h2>
+
 
 <mat-grid-list cols=1 *ngIf="!producto; else divproducto">
   <mat-grid-tile>
@@ -7,40 +7,45 @@
 </mat-grid-list>
 
 <ng-template #divproducto>
-  <div class="container py-lg-3 py-sm-1" fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
-    <div>
-      <img class="shadow" mat-card-image src="assets/productos/imagen_ref.jpg">
+
+  <div class="container-fluid bg-light">
+    <div class="row py-3 justify-content-center">
+      <div class="col-12 align-items-center">
+        <h2 class="text-center py-3 m-0 fs-3">{{producto.producto_Nombre| titlecase}}</h2>
+      </div>
+      <div class="col-lg-5 col-sm-12 p-0 align-items-center mx-auto">
+        <img class="shadow" mat-card-image src="assets/productos/imagen_ref.jpg">
+      </div>
+      <div class="col-lg-5 col-sm-12 p-3 align-items-center">
+        <table class="table shadow-lg" style="border-radius: 10px;">
+          <tbody>
+            <tr>
+              <th scope="row">Presentacion</th>
+              <td>{{producto.presentacion}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Peso</th>
+              <td>{{producto.peso_aprox}} kg.</td>
+            </tr>
+            <tr>
+              <th scope="row">Codigo de producto</th>
+              <td colspan="2">{{producto.cod_Item_PF}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Grupo</th>
+              <td colspan="2"> {{producto.proceso}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Precio</th>
+              <td colspan="2"> {{producto.precio}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <button  mat-raised-button color="warn" (click)="regresar()">
+          Regresar
+        </button>
+      </div>
+
     </div>
-    <div class="px-sm-0">
-      <table class="table">
-        <tbody>
-          <tr>
-            <th scope="row">Presentacion</th>
-            <td>{{producto.presentacion}}</td>
-          </tr>
-          <tr>
-            <th scope="row">Peso</th>
-            <td>{{producto.peso_aprox}} kg.</td>
-          </tr>
-          <tr>
-            <th scope="row">Codigo de producto</th>
-            <td colspan="2">{{producto.cod_Item_PF}}</td>
-          </tr>
-          <tr>
-            <th scope="row">Grupo</th>
-            <td colspan="2"> {{producto.proceso}}</td>
-          </tr>
-          <tr>
-            <th scope="row">Precio</th>
-            <td colspan="2"> {{producto.precio}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="py-3 align-content-center">
-    <button mat-raised-button color="warn" (click)="regresar()">
-      Regresar
-    </button>
   </div>
 </ng-template>

@@ -1,6 +1,7 @@
 <h2 fxLayoutAlign="center" class="bg-dark text-light m-0 fs-2 py-lg-3 py-sm-1">linea de productos</h2>
-<h4 class="fs-3 text-lg-center">Seleccione la categoria:</h4>
+
 <div class="container">
+    <h4 fxLayoutAlign="center" class="fs-3 py-lg-3 pt-3">Seleccione la categoria:</h4>
     <div class="col-12 text-center py-3">
         <button *ngFor="let categoria of categorias"
                 [class]="getClaseCSS( categoria )"
@@ -24,7 +25,7 @@
 
 <ng-template #listado >
 <div class="container">
-    <div class="col-12">
+    <div class="col-12 py-lg-3 py-sm-1">
         <app-producto-tabla [productos]="productos"></app-producto-tabla>
 
     </div>
