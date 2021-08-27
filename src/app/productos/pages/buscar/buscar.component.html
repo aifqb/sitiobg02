@@ -19,20 +19,15 @@
                 {{ item.producto_Nombre }}
                 </mat-option>
                 <mat-option value="" *ngIf="items.length === 0 && termino.trim().length > 0 ">
-                        no se encontro el termino
+                        no se encontro el producto que busca
                 </mat-option>
             </mat-autocomplete>
         </mat-form-field>
     </div>
-
-
-    <div>
-        <pre>
-            {{ productoSelecionado | json }}
-        </pre>
+    <div class="col-3" *ngIf="productoSelecionado">
+        <app-producto-tarjeta [producto]="productoSelecionado"></app-producto-tarjeta>
     </div>
-
 </div>
 
-<app-producto-seach ></app-producto-seach>
+
 

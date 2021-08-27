@@ -25,6 +25,6 @@ export class ProductoComponent implements OnInit {
         .subscribe( Producto => this.producto = Producto); 
   }
   regresar(){
-    this.router.navigate(['productos/listado'])
+    this.router.navigate(['productos/categoria'])
   }
 }
