@@ -7,13 +7,23 @@ import { FullScreenComponent } from './pages/full-screen/full-screen.component';
 import { MarcadoresComponent } from './pages/marcadores/marcadores.component';
 import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
 import { PropiedadesComponent } from './pages/propiedades/propiedades.component';
-
+import { HomeComponent } from './pages/home/home.component';
+import { MenuComponent } from './share/menu/menu.component';
 
 @NgModule({
-  declarations: [MiniMapaComponent, FullScreenComponent, MarcadoresComponent, ZoomRangeComponent, PropiedadesComponent],
-  imports: [
-    CommonModule,
-    MapasRoutingModule
-  ]
+  declarations: 
+  [
+    MiniMapaComponent,
+    FullScreenComponent,
+    MarcadoresComponent,
+    ZoomRangeComponent,
+    PropiedadesComponent,
+    HomeComponent,
+    MenuComponent,
+  ],
+  imports: 
+  [
+    CommonModule, 
+    MapasRoutingModule],
 })
-export class MapasModule { }
+export class MapasModule {}

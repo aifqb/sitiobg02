@@ -6,11 +6,16 @@ import { ErrorPageComponent } from './share/error-page/error-page.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { EncuentranosComponent } from './pages/encuentranos/encuentranos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { MapasModule } from './mapas/mapas.module';
 
 const routes: Routes =[
   {
     path: 'productos',
     loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule)
+  },
+  {
+    path: 'encuentranos',
+    loadChildren: () => import('./mapas/mapas.module').then(m => m.MapasModule)
   },
   {
     path: '404',
@@ -28,10 +33,7 @@ const routes: Routes =[
     path: 'contacto',
     component: ContactoComponent
   },
-  {
-    path: 'encuentranos',
-    component: EncuentranosComponent
-  },
+
   {
     path: 'eventos',
     component: EventosComponent
