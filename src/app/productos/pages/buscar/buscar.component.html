@@ -1,9 +1,7 @@
+<h2 fxLayoutAlign="center" class="bg-dark text-light m-0 fs-2 py-lg-3 py-sm-1">buscar productos</h2>
 <div fxLayout="column" class="container col-12 p-lg-3">
-    <div>
-        <h1 class="text-center">buscar producto</h1>
-        <mat-divider></mat-divider>
-    </div>
-    <div fxLayout="column">
+
+    <div fxLayout="column" class="py-lg-3 py-sm-1">
         <mat-form-field  >
             <mat-label>buscar producto</mat-label>
             <input  type="text"
@@ -21,20 +19,15 @@
                 {{ item.producto_Nombre }}
                 </mat-option>
                 <mat-option value="" *ngIf="items.length === 0 && termino.trim().length > 0 ">
-                        no se encontro el termino
+                        no se encontro el producto que busca
                 </mat-option>
             </mat-autocomplete>
         </mat-form-field>
     </div>
-
-
-    <div>
-        <pre>
-            {{ productoSelecionado | json }}
-        </pre>
+    <div class="col-3" *ngIf="productoSelecionado">
+        <app-producto-tarjeta [producto]="productoSelecionado"></app-producto-tarjeta>
     </div>
-
 </div>
 
-<app-producto-seach ></app-producto-seach>
+
 

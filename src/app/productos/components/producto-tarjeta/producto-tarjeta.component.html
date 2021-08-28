@@ -1,0 +1,48 @@
+
+<mat-card class="mat-elevation-z8">
+    <mat-card-header>
+        <mat-card-title> {{ producto.menor_Nuevo| titlecase }} </mat-card-title>
+        <mat-card-subtitle> 
+            <small class="text-info">
+                Presentacion:
+            </small>
+            <br>{{ producto.presentacion| titlecase }} </mat-card-subtitle>
+    </mat-card-header>
+    <img  mat-card-image src="assets/productos/imagen_ref.jpg">
+    <mat-card-content>
+        <p> {{ producto.producto_Nombre }} </p>
+        <h4>Codigo: {{ producto.cod_Item_PF }}</h4>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-button 
+                color="warn"
+                [routerLink]="['/productos', producto.cod_Item_PF]">más detalles</button>
+    </mat-card-actions>
+
+</mat-card>
+
+
+
+
+<!-- 
+<div class="bg-grad py-lg-2" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="1rem">
+    <div fxFlex.md="30" class="px-4 py-2" fxFlex.lg="20" *ngFor="let producto of productos">
+        <div class="d-flex justify-content-center">
+            <div class="card shadow" style="width: 20rem">
+                <div class="innerz">
+                    <img class="card-img-top" src="assets/productos/imagen_ref.jpg" alt="">
+                </div>
+                <div class="card-prod card-body text-center bg-light">
+                    <h3 class="card-title fw-normal m-0">{{ producto.menor_Nuevo| titlecase }}</h3>
+                    <h3 class="card-text m-0 text-secondary">{{producto.presentacion| titlecase}}</h3>
+                    <mat-divider></mat-divider>
+                    <h4 class="card-text my-1 fw-normal"> <small>Codigo producto:</small> {{producto.cod_Item_PF}}</h4>
+                    <button class="btn btn-sm btn-prod" [routerLink]="['/productos', producto.cod_Item_PF]">
+                        mas informacion
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -1,19 +1,20 @@
-  <table class="table shadow py-3">
+  <table class="table bg-light shadow py-3">
       <thead>
         <tr>
           <th scope="col">Codigo</th>
+          <th scope="col">Imagen</th>
           <th scope="col">Producto</th>
-          <th scope="col">Presentacion</th>
+
           <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let producto of productos">
-          <th scope="row"> {{producto.cod_Item_PF}} </th>      
-          <td>{{producto.menor_Nuevo| titlecase}}</td>
-          <td>{{producto.presentacion| titlecase}}</td>
+          <th scope="row"> {{producto.cod_Item_PF}} </th>
+          <th> <img style="width: 120px;" mat-card-image src="assets/productos/imagen_ref.jpg"></th>    
+          <td>{{producto.menor_Nuevo| titlecase}}<br> <small class="text-info mt-2"> Presentacion:</small><br>{{producto.presentacion| titlecase}}</td>
           <td>
-              <a class="link-secondary" [routerLink]="['/productos', producto.cod_Item_PF]">mas informacion</a>
+              <a class="link-secondary" [routerLink]="['/productos', producto.cod_Item_PF]">más detalles</a>
           </td>
         </tr>
       </tbody>
