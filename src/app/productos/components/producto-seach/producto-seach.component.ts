@@ -37,7 +37,6 @@ export class ProductoSeachComponent implements OnInit {
   
   displayedColumns: string[] = ['Codigo', 'Producto', 'Presentacion', 'accion'];
 
-
   dataSource = new MatTableDataSource(this.productos);
  
   @ViewChild(MatPaginator) paginator!: MatPaginator;

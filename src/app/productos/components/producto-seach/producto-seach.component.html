@@ -4,7 +4,7 @@
         <input matInput (keyup)="applyFilter($event)" placeholder="Buscar producto" #input autocomplete="off">
     </mat-form-field>
     <div class="mat-elevation-z5">
-        <table mat-table [dataSource]="dataSource" matSort>
+        <table mat-table [dataSource]="dataSource" matSort *ngFor="let producto of productos">
 
             <!-- Position Column -->
             <ng-container matColumnDef="Codigo">
