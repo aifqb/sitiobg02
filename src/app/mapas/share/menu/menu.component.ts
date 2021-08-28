@@ -13,19 +13,19 @@ export class MenuComponent {
 
   menuItems: MenuItem [] = [
     {
-      ruta: '/mapas/fullscreen',
+      ruta: 'fullscreen',
       nombre: 'Fullscreen'
     },
     {
-      ruta: '/mapas/zoom-range',
+      ruta: 'zoom-range',
       nombre: 'Zoom Range'
     },
     {
-      ruta: '/mapas/marcadores',
+      ruta: 'marcadores',
       nombre: 'Marcadores'
     },
     {
-      ruta: '/mapas/propiedades',
+      ruta: 'propiedades',
       nombre: 'Propiedades'
     },
   ];
