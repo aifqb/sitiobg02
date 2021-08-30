@@ -11,7 +11,7 @@
     <img  mat-card-image src="assets/productos/imagen_ref.jpg">
     <mat-card-content>
         <p> {{ producto.producto_Nombre }} </p>
-        <h4>Codigo: {{ producto.cod_Item_PF }}</h4>
+        <h4>Codigo: {{ producto.cod_Item_PF|number: '3.0' }}</h4>
     </mat-card-content>
 
     <mat-card-actions>

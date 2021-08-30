@@ -1,5 +1,14 @@
+
+
 img{
 
-    border-radius: 2rem;
-    width: 300px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+table{
+    max-width: 400px;
+}
+.fond{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }

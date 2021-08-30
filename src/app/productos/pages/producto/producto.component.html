@@ -8,6 +8,50 @@
 
 <ng-template #divproducto>
 
+<div  fxLayout="row"
+      fxLayout.xs="column"
+      fxLayoutGap="30px"
+      class="py-5 fond">
+      <div fxFlex="50" fxLayoutAlign="center center">
+        <img class="shadow" mat-card-image src="assets/productos/imagen_ref.jpg">
+      </div>
+      <div fxFlex="50" fxLayoutAlign.xs="center center">
+<div>
+        <h2 class="text-sm-center text-lg-start py-3 m-0 fs-3">{{producto.producto_Nombre| titlecase}}</h2>
+        <table class="table shadow"  style="border-radius: 10px;">
+          <tbody>
+            <tr>
+              <th scope="row">Presentacion:</th>
+              <td>{{producto.presentacion}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Peso aproximado:</th>
+              <td>{{producto.peso_aprox}} kg.</td>
+            </tr>
+            <tr>
+              <th scope="row">Codigo de producto:</th>
+              <td colspan="2">{{producto.cod_Item_PF| number: '3.0'}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Grupo:</th>
+              <td colspan="2"> {{producto.proceso}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Precio:</th>
+              <td colspan="2"> {{producto.precio}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <button  mat-raised-button color="warn" (click)="regresar()">
+          Regresar
+        </button>
+      </div>
+      </div>
+
+</div>
+
+<!-- 
   <div class="container-fluid bg-light">
     <div class="row py-3 justify-content-center">
       <div class="col-12 align-items-center">
@@ -47,5 +91,5 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
 </ng-template>
