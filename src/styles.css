@@ -5,3 +5,10 @@ html, body {
     width: 100%;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-menu{
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    z-index: 999;
+}
