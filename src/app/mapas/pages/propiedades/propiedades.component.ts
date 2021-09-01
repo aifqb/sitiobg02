@@ -19,7 +19,7 @@ export class PropiedadesComponent {
     {
       titulo: 'Casa residencial, Canadá',
       descripcion: 'Frial x, Canadá',
-      lngLat: [ -68.072882, -16.535059],
+      lngLat: [ -16.535059, -68.072882],
       enlace: 'https://goo.gl/maps/oy97RVKSRNja5Tvh8'
     },
     {
