@@ -4,7 +4,6 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ErrorPageComponent } from './share/error-page/error-page.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
-import { EncuentranosComponent } from './pages/encuentranos/encuentranos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { MapasModule } from './mapas/mapas.module';
 
@@ -14,7 +13,7 @@ const routes: Routes =[
     loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule)
   },
   {
-    path: 'encuentranos',
+    path: 'mapas',
     loadChildren: () => import('./mapas/mapas.module').then(m => m.MapasModule)
   },
   {

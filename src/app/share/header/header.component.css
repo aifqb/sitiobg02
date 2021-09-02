@@ -7,3 +7,8 @@ background: linear-gradient(90deg, rgba(236,233,230,1) 0%, rgba(255,255,255,1) 1
 .navbar-ligh{
     color: red;
 }
+
+.sticky-top{
+    position: sticky;
+    top: -0.15rem;
+  }

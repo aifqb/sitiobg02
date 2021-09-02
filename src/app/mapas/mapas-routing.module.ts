@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    children:[
+    children: [
       {path: 'fullscreen', component: FullScreenComponent },
       {path: 'zoom-range', component: ZoomRangeComponent },
       {path: 'marcadores', component: MarcadoresComponent },
