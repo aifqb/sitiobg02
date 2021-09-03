@@ -1,7 +1,7 @@
 .navbar{
     background: rgb(236,233,230);
-background: linear-gradient(90deg, rgba(236,233,230,1) 0%, rgba(255,255,255,1) 100%);
-    
+    background: linear-gradient(to right, rgba(255, 36, 23, 1) 0%, 50%, rgba(255, 125, 0, 1) 100%);
+
 }
 
 .navbar-ligh{
@@ -12,3 +12,19 @@ background: linear-gradient(90deg, rgba(236,233,230,1) 0%, rgba(255,255,255,1) 1
     position: sticky;
     top: -0.15rem;
   }
+
+
+  
+.cool::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s;
+  }
+  .cool:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+  

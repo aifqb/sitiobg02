@@ -14,3 +14,9 @@ mat-grid-tile {
 border-radius: 20px;
 padding: 20px;
 }
+
+.pag-inicio{
+  background-color: darkslategray;
+
+  padding: 10px;
+}
