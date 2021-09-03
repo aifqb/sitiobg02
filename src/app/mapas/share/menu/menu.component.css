@@ -1,4 +1,4 @@
-li{
-    cursor: pointer;
-    width: 120px;
+button{
+    min-width: 120px;
+    margin-top: 5px;
 }

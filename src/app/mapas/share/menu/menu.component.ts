@@ -26,7 +26,7 @@ export class MenuComponent {
     },
     {
       ruta: 'propiedades',
-      nombre: 'Propiedades'
+      nombre: 'puntos de venta'
     },
   ];
 

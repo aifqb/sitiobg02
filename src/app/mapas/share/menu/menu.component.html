@@ -1,12 +1,10 @@
 
-
-<ul class="list-group">
-    <li *ngFor="let item of menuItems"
-        [routerLink]="[ item.ruta ]"
-        routerLinkActive="active"
-        class="list-group-item">
-        {{ item.nombre }}
-    </li>
-</ul>
+<nav class="navbar navbar-light bg-dark">
+    <form class="container-fluid justify-content-center">
+      <button *ngFor="let item of menuItems"
+      [routerLink]="[ item.ruta ]"
+      routerLinkActive="active" class="btn btn-sm btn-outline-danger me-2" type="button">{{ item.nombre }}</button>
+    </form>
+  </nav>
 
 
