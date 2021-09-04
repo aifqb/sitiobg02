@@ -1,30 +1,36 @@
-.navbar{
-    background: rgb(236,233,230);
-    background: linear-gradient(to right, rgba(255, 36, 23, 1) 0%, 50%, rgba(255, 125, 0, 1) 100%);
-
+.navbar {
+  background: rgb(236, 233, 230);
+  background: linear-gradient(
+    to right,
+    rgba(255, 36, 23, 1) 0%,
+    50%,
+    rgba(255, 125, 0, 1) 100%
+  );
 }
 
-.navbar-ligh{
-    color: red;
+.navbar-ligh {
+  color: red;
 }
 
-.sticky-top{
-    position: sticky;
-    top: -0.15rem;
-  }
+.sticky-top {
+  position: sticky;
+  top: -0.25rem;
+}
 
-
-  
 .cool::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffffff;
-    transition: width 0.3s;
-  }
-  .cool:hover::after {
-    width: 100%;
-    transition: width 0.3s;
-  }
-  
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+}
+.cool:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+  color: black;
+}
+.color-nav {
+  color: whitesmoke
+}
