@@ -8,6 +8,24 @@
   );
 }
 
+button{
+  background: rgb(236, 233, 230);
+  background: linear-gradient(
+    to right,
+    rgba(255, 36, 23, 1) 0%,
+    50%,
+    rgba(255, 125, 0, 1) 100%
+  );
+
+}
+
+.objetfit > img{
+  width:  80px;
+	height: 80px;
+  padding: 0;
+	object-fit: cover;
+}
+
 .navbar-ligh {
   color: red;
 }

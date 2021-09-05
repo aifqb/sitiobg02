@@ -1,35 +1,57 @@
-<nav class="navbar sticky-top navbar-expand-md shadow ">
-  <div class="container-fluid">
-    <div class="col-2">
+<!-- <nav class="navbar sticky-top navbar-expand-md shadow ">
+  <div class="container-fluid row">
+    <div class="col-2 col-sm-12">
       <img class="navbar-brand d-flex m-0 " routerLink="inicio" height="50px"
-        src="assets/imagenes/bongustoline.svg" alt="Logo bon gusto" routerLink="inicio">
-    </div>
-
-    <div class="col-8 navbar-collapse collapse" id="collapsingNavbar3">
-      <ul class="navbar-nav color-nav w-100 justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link fs-6 cool text-reset" routerLink="inicio">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6 cool text-reset" routerLink="productos">PRODUCTOS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6 cool text-reset" routerLink="mapas">ENCUENTRANOS</a>
-        <li class="nav-item">
-          <a class="nav-link fs-6 cool text-reset" routerLink="contacto">CONTACTO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6 cool text-reset" routerLink="nosotros">NOSOTROS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6 cool text-reset" routerLink="eventos">EVENTOS</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-2">
+      src="assets/imagenes/bongustoline.svg" alt="Logo bon gusto" routerLink="inicio">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3" aria-controls="collapsingNavbar3" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+    </div>
+    <div class="col-8 navbar-collapse collapse" id="collapsingNavbar3">
+      <ul class="navbar-nav color-nav w-100 justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link fs-7 cool text-reset" routerLink="inicio">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-7 cool text-reset" routerLink="productos">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-7 cool text-reset" routerLink="mapas">ENCUENTRANOS</a>
+        <li class="nav-item">
+          <a class="nav-link fs-7 cool text-reset" routerLink="contacto">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-7 cool text-reset" routerLink="nosotros">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-7 cool text-reset" routerLink="eventos">EVENTOS</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-2 d-sm-block">
+
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg py-0 shadow sticky-top navbar-dark bg-light">
+  <div class="container">
+    <a class="navbar-brand objetfit py-0" href="#">
+      <img class="navbar-brand d-flex m-0" routerLink="inicio" 
+      src="assets/imagenes/logobg.svg" alt="Logo bon gusto" routerLink="inicio">
+    </a>
+    <button mat-fab class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <mat-icon class="text-light">menu</mat-icon>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="fs-7 cool nav-link active" aria-current="page"  routerLink="inicio">INICIO</a>
+        <a class="fs-7 cool nav-link"                             routerLink="productos">PRODUCTOS</a>
+        <a class="fs-7 cool nav-link"                             routerLink="mapas">ENCUENTRANOS</a>
+        <a class="fs-7 cool nav-link"                             routerLink="contacto">CONTACTO</a>
+        <a class="fs-7 cool nav-link"                             routerLink="nosotros">NOSOTROS</a>
+        <a class="fs-7 cool nav-link"                             routerLink="eventos">EVENTOS</a>
+
+      </div>
     </div>
   </div>
 </nav>
