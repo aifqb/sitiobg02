@@ -1,0 +1,38 @@
+
+.pag-inicio {
+  /* background-image: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/barras%20banner%20gris.webp?alt=media&token=ad40174d-26d1-406d-9fca-abf1cf6378cc"); */
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 125, 0, 1) 75%,
+      rgba(255, 97, 0, 1) 100%
+    ); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  padding-top: 5vh;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
+.desborde {
+  padding-top: 20vh;
+}
+.mat-card {
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.pag-dos {
+  margin-top: 20px;
+  background-color: #fe7235;
+  min-height: 60vh;
+}
+mat-grid-tile img {
+  background-size: cover;
+  background-clip: content-box;
+  display: block;
+  margin: auto;
+  background-color: whitesmoke;
+}

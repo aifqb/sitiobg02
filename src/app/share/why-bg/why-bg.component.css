@@ -1,0 +1,14 @@
+.innerz2 {
+    overflow: hidden;
+  
+  }
+  
+  .innerz2 div {
+    transition: all 1.5s ease;
+  }
+  
+  .innerz2:hover div {
+    transform: scale(1.15);
+    filter: brightness(0.85);
+  }
+  

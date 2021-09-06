@@ -20,7 +20,12 @@ import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { WpButtonComponent } from './share/wp-button/wp-button.component';
 import { PiecardComponent } from './share/piecard/piecard.component';
-import { MenuComponent } from './share/menu/menu.component'
+import { MenuComponent } from './share/menu/menu.component';
+import { CaruselUnoComponent } from './share/carusel-uno/carusel-uno.component';
+import { WhyBgComponent } from './share/why-bg/why-bg.component';
+import { TarjetaComponent } from './share/tarjeta/tarjeta.component';
+import { PortadaComponent } from './share/portada/portada.component';
+import { CompranosComponent } from './share/compranos/compranos.component'
 
 
 @NgModule({
@@ -35,7 +40,12 @@ import { MenuComponent } from './share/menu/menu.component'
     EventosComponent,
     WpButtonComponent,
     PiecardComponent,
-    MenuComponent
+    MenuComponent,
+    CaruselUnoComponent,
+    WhyBgComponent,
+    TarjetaComponent,
+    PortadaComponent,
+    CompranosComponent
   ],
   imports: [
     BrowserModule,
