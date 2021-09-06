@@ -45,16 +45,16 @@ border-radius: 20px;
 .pag-inicio {
   /* background-image: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/barras%20banner%20gris.webp?alt=media&token=ad40174d-26d1-406d-9fca-abf1cf6378cc"); */
   background: rgb(255, 255, 255);
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 125, 0, 1) 75%,
     rgba(255, 97, 0, 1) 100%
-  );
+  ); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 60vh;
-  padding-top: 25vh;
+  padding-top: 5vh;
   align-items: center;
   display: block;
   margin: auto;
@@ -78,4 +78,9 @@ mat-grid-tile img {
   display: block;
   margin: auto;
   background-color: floralwhite;
+}
+
+.porbg{
+  padding-left: 20vh;
+  padding-right: 20vh;
 }
