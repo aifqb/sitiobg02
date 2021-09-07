@@ -12,7 +12,6 @@ export class CategoriaComponent {
     'chorizo',
     'jamon',
     'mortadela',
-    'pate',
     'peperoni',
     'queso',
     'salame',

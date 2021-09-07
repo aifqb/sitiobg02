@@ -14,6 +14,7 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { ProductoTablaComponent } from './components/producto-tabla/producto-tabla.component';
 import { ProductoSeachComponent } from './components/producto-seach/producto-seach.component';
 import { ProductoTarjetaComponent } from './components/producto-tarjeta/producto-tarjeta.component';
+import { ProductoTarjetaCategoriaComponent } from './components/producto-tarjeta-categoria/producto-tarjeta-categoria.component';
 
 
 
@@ -29,7 +30,8 @@ import { ProductoTarjetaComponent } from './components/producto-tarjeta/producto
     CategoriaComponent,
     ProductoTablaComponent,
     ProductoSeachComponent,
-    ProductoTarjetaComponent
+    ProductoTarjetaComponent,
+    ProductoTarjetaCategoriaComponent
   ],
     
   imports: [
