@@ -25,7 +25,8 @@ import { CaruselUnoComponent } from './share/carusel-uno/carusel-uno.component';
 import { WhyBgComponent } from './share/why-bg/why-bg.component';
 import { TarjetaComponent } from './share/tarjeta/tarjeta.component';
 import { PortadaComponent } from './share/portada/portada.component';
-import { CompranosComponent } from './share/compranos/compranos.component'
+import { CompranosComponent } from './share/compranos/compranos.component';
+import { HistoriaComponent } from './share/historia/historia.component'
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { CompranosComponent } from './share/compranos/compranos.component'
     WhyBgComponent,
     TarjetaComponent,
     PortadaComponent,
-    CompranosComponent
+    CompranosComponent,
+    HistoriaComponent
   ],
   imports: [
     BrowserModule,

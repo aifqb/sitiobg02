@@ -1,20 +1,20 @@
-
-
-button:hover{
+button:hover {
   cursor: pointer;
   color: #ee2e0c;
   transition: 0.2s;
-
 }
 
-.social:hover{
+.social:hover {
   cursor: pointer;
   color: #ee2e0c;
   transition: 0.2s;
-
 }
 
-.bg-naranja{
-  background: rgb(236,233,230);
-background: linear-gradient(90deg, rgba(236,233,230,1) 0%, rgba(255,255,255,1) 100%);
+.bg-naranja {
+  background: rgb(236, 233, 230);
+  background: linear-gradient(
+    90deg,
+    #fee5d3,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
