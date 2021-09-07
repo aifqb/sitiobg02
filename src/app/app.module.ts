@@ -26,7 +26,8 @@ import { WhyBgComponent } from './share/why-bg/why-bg.component';
 import { TarjetaComponent } from './share/tarjeta/tarjeta.component';
 import { PortadaComponent } from './share/portada/portada.component';
 import { CompranosComponent } from './share/compranos/compranos.component';
-import { HistoriaComponent } from './share/historia/historia.component'
+import { HistoriaComponent } from './share/historia/historia.component';
+import { InLineComponent } from './share/in-line/in-line.component'
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { HistoriaComponent } from './share/historia/historia.component'
     TarjetaComponent,
     PortadaComponent,
     CompranosComponent,
-    HistoriaComponent
+    HistoriaComponent,
+    InLineComponent
   ],
   imports: [
     BrowserModule,
