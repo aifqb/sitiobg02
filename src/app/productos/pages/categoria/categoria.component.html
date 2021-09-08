@@ -9,11 +9,14 @@
         </button>
     </div>
 </div>
-<h3 class="text-center fs-3 py-4">Linea de producto:
+
+<p class="text-center text-dark fs-3 py-4">Linea de producto:
     <strong>
         {{categoriaActiva | titlecase}}
     </strong>
-</h3>
+</p>
+
+
 
 <mat-grid-list cols=1 *ngIf="!productos; else listado">
     <mat-grid-tile>
@@ -22,9 +25,17 @@
 </mat-grid-list>
 
 <ng-template #listado>
-    <div class="bg-dark" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
-        <div class="mx-lg-2 p-0">
+
+    <div>
+        <div>
             <app-producto-tarjeta-categoria [productos]="productos"></app-producto-tarjeta-categoria>
         </div>
     </div>
+
 </ng-template>
+
+
+<!-- <div class="pb-2 col-12"  fxLayout="row wrap"  fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
+                <div fxFlex="20">
+                </div>
+            </div> -->

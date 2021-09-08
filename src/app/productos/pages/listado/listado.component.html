@@ -7,8 +7,8 @@
 </mat-grid-list>
 
 <ng-template #listado>
-    <div class="bg-dark" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
-        <div class="mx-lg-2 p-0" *ngFor="let producto of productos">
+    <div class="bg-dark" fxLayout="row wrap"  fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
+        <div class="mx-lg-2 pb-2" fxFlex="15" *ngFor="let producto of productos">
             <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
         </div>
     </div>

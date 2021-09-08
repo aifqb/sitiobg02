@@ -1,5 +1,7 @@
-<mat-card *ngFor="let producto of productos" class="mat-elevation-z8 m-0">
-    <mat-card-header>
+<div fxLayout="row wrap" fxLayoutAlign="center" >
+
+<mat-card *ngFor="let producto of productos"  class=" col-lg-2 col-5  col-md-3 m-sm-3 m-1 mb-2">
+    <mat-card-header fxLayoutAlign="center">
         <mat-card-title> {{ producto.menor_Nuevo| titlecase }} </mat-card-title>
         <mat-card-subtitle> 
             <small class="text-info">
@@ -10,7 +12,9 @@
     <img  mat-card-image src="assets/productos/imagen_ref.jpg">
     <mat-card-content>
         <p> {{ producto.producto_Nombre }} </p>
-        <h4>Codigo: {{ producto.cod_Item_PF|number: '3.0' }}</h4>
+        <p class="fw-bold">
+            Codigo: {{ producto.cod_Item_PF|number: '3.0' }}
+        </p>
     </mat-card-content>
     <mat-card-actions>
         <button mat-button 
@@ -18,3 +22,7 @@
                 [routerLink]="['/productos', producto.cod_Item_PF]">más detalles</button>
     </mat-card-actions>
 </mat-card>
+
+</div>
+
+<!-- fxFlex="35" fxFlex.sm="35" fxFlex.lg="25" -->
