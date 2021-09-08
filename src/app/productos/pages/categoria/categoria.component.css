@@ -1,6 +1,10 @@
 button{
     margin-right: 5px;
     margin-block: 5px;
-    min-width: 130px;
 
+    /* min-width: 130px; */
+
+}
+.container{
+    border-radius: 15px;
 }

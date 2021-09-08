@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as mapboxgl from 'mapbox-gl';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,9 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
+    (mapboxgl as any).accessToken = environment.mapboxToken;
   }
 
 }
+

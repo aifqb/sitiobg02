@@ -1,8 +1,8 @@
-<h2 fxLayoutAlign="center" class="bg-dark text-light m-0 fs-2 py-lg-3 py-sm-1">linea de productos</h2>
+<!-- <p fxLayoutAlign="center" class="m-0 fs-2 pb-lg-3 h3 pb-sm-1">lineas de productos</p> -->
 
-<div class="container">
-    <h4 fxLayoutAlign="center" class="fs-3 py-lg-3 pt-3">Seleccione la categoria:</h4>
-    <div class="col-12 text-center py-3">
+<div class="container shadow-sm py-2">
+    <p fxLayoutAlign="center" class="pt-1">Seleccione una categoria:</p>
+    <div class="col-12 text-center">
         <button *ngFor="let categoria of categorias" [class]="getClaseCSS( categoria )"
             (click)="activaCategoria( categoria )">
             {{categoria}}
@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<p class="text-center text-dark fs-3 py-4">Linea de producto:
+<p class="text-center pt-lg-3 text-dark fs-3 m-2">Linea de producto:
     <strong>
         {{categoriaActiva | titlecase}}
     </strong>
