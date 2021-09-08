@@ -3,14 +3,13 @@
 <div class="container">
     <h4 fxLayoutAlign="center" class="fs-3 py-lg-3 pt-3">Seleccione la categoria:</h4>
     <div class="col-12 text-center py-3">
-        <button *ngFor="let categoria of categorias"
-                [class]="getClaseCSS( categoria )"
-                (click)="activaCategoria( categoria )">
+        <button *ngFor="let categoria of categorias" [class]="getClaseCSS( categoria )"
+            (click)="activaCategoria( categoria )">
             {{categoria}}
         </button>
     </div>
 </div>
-<h3 class="text-center fs-3 py-4">Linea de producto:  
+<h3 class="text-center fs-3 py-4">Linea de producto:
     <strong>
         {{categoriaActiva | titlecase}}
     </strong>
@@ -22,14 +21,10 @@
     </mat-grid-tile>
 </mat-grid-list>
 
-
-<ng-template #listado >
-<div class="container p-0 ">
-    <div class="col-sm-12  col-lg-6">
-
-        <app-producto-tabla [productos]="productos"></app-producto-tabla>
-
-        
+<ng-template #listado>
+    <div class="bg-dark" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
+        <div class="mx-lg-2 p-0">
+            <app-producto-tarjeta-categoria [productos]="productos"></app-producto-tarjeta-categoria>
+        </div>
     </div>
-</div>
 </ng-template>

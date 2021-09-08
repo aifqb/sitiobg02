@@ -1,1 +1,20 @@
-<p>producto-tarjeta-categoria works!</p>
+<mat-card *ngFor="let producto of productos" class="mat-elevation-z8 m-0">
+    <mat-card-header>
+        <mat-card-title> {{ producto.menor_Nuevo| titlecase }} </mat-card-title>
+        <mat-card-subtitle> 
+            <small class="text-info">
+                Presentacion:
+            </small>
+            <br>{{ producto.presentacion| titlecase }} </mat-card-subtitle>
+    </mat-card-header>
+    <img  mat-card-image src="assets/productos/imagen_ref.jpg">
+    <mat-card-content>
+        <p> {{ producto.producto_Nombre }} </p>
+        <h4>Codigo: {{ producto.cod_Item_PF|number: '3.0' }}</h4>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button 
+                color="warn"
+                [routerLink]="['/productos', producto.cod_Item_PF]">más detalles</button>
+    </mat-card-actions>
+</mat-card>
