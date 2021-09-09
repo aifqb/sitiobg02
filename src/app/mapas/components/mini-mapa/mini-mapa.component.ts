@@ -21,7 +21,6 @@ export class MiniMapaComponent implements AfterViewInit {
       zoom: 16,
       interactive: false
     });
-
     new mapboxgl.Marker()
         .setLngLat( this.lngLat )
         .addTo( mapa );
