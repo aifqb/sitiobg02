@@ -1,3 +1,15 @@
-mat-card{
-    margin-top: 20px;
+mat-card {
+  margin-top: 20px;
+}
+
+mat-card {
+  overflow: hidden;
+}
+
+mat-card img {
+  transition: all 0.3s ease;
+}
+
+mat-card:hover img {
+  transform: scale(1.5);
 }
