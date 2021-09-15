@@ -42,7 +42,7 @@ button{
   width: 0;
   height: 3px;
   border-radius: 2px;
-  background: #ffffff;
+  background: #1B0B0B;
   transition: width 0.3s;
 }
 .cool:hover::after {
@@ -53,3 +53,16 @@ button{
 .color-nav {
   color: whitesmoke
 }
+
+nav a{
+  font-size: large;
+  color: white
+  
+}
+
+nav a:hover{
+  font-size: large;
+  color: #1B0B0B;
+  
+}
+
