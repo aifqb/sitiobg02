@@ -26,7 +26,7 @@ export class FullScreenComponent implements AfterViewInit {
     });
     this.mapa.on('click', ({ point }) => {
       const features = this.mapa.queryRenderedFeatures(point, {
-        layers: ['Basicbg'],
+        layers: ['symbols'],
       });
 
       if (!features.length) {
