@@ -9,6 +9,9 @@ import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
 import { PropiedadesComponent } from './pages/propiedades/propiedades.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './share/menu/menu.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '../material/material.module';
+import { TarjetaPuntoVentaComponent } from './components/tarjeta-punto-venta/tarjeta-punto-venta.component';
 
 @NgModule({
   declarations: 
@@ -20,10 +23,13 @@ import { MenuComponent } from './share/menu/menu.component';
     PropiedadesComponent,
     HomeComponent,
     MenuComponent,
+    TarjetaPuntoVentaComponent,
   ],
   imports: 
   [
-    CommonModule, 
+    CommonModule,
+    FlexLayoutModule,
+    MaterialModule,
     MapasRoutingModule],
 })
 export class MapasModule {}
