@@ -1,8 +1,7 @@
 <mat-form-field appearance="fill">
     <mat-label>Departamento</mat-label>
-    <mat-select [(value)]="selectedFood">
-        <mat-option></mat-option>
-        <mat-option [value]="option.value" *ngFor="let option of foods">{{ option.viewValue }}</mat-option>
+    <mat-select [(value)]="selectedDepto">
+        <mat-option [value]="option.departamento" *ngFor="let option of departamentos">{{ option.departamento }}</mat-option>
     </mat-select>
 </mat-form-field>
-<p>Usted esta en: {{selectedFood}}</p>
+<p>Usted esta en: {{selectedDepto}}</p>
