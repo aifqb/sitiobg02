@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import * as mapboxgl from 'mapbox-gl';
 interface Food {
   value: string;
   viewValue: string;
@@ -10,7 +10,7 @@ interface Food {
   templateUrl: './propiedades.component.html',
   styleUrls: ['./propiedades.component.css'],
 })
-export class PropiedadesComponent implements OnInit {
+export class PropiedadesComponent implements AfterViewInit {
   foods: Food[] = [
     { value: 'La Paz', viewValue: 'La Paz' },
     { value: 'Oruro', viewValue: 'Oruro' },
@@ -24,9 +24,26 @@ export class PropiedadesComponent implements OnInit {
   ];
   selectedFood = this.foods[0].value;
 
+
+  @ViewChild('mapa') divMapa!: ElementRef;
+  mapa!: mapboxgl.Map;
+  zoomLevel: number = 10;
+  center: [number, number] = [-68.1280372, -16.5028083];
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngAfterViewInit(): void {
+    this.mapa = new mapboxgl.Map({
+      container: this.divMapa.nativeElement,
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: this.center,
+      zoom: this.zoomLevel
+    });
+    
+    const maker = new mapboxgl.Marker()
+    .setLngLat(this.center)
+    .addTo( this.mapa);
+  }
 }
 
 // export class SelectOverviewExample {
