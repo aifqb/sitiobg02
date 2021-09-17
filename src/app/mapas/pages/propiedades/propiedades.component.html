@@ -1,18 +1,9 @@
 <div class="row">
     <div class="col-6">
-        <mat-form-field appearance="fill">
-            <mat-label>Departamento</mat-label>
-            <mat-select [(value)]="selectedFood">
-                <mat-option></mat-option>
-                <mat-option [value]="option.value" *ngFor="let option of foods">{{ option.viewValue }}</mat-option>
-            </mat-select>
-        </mat-form-field>
-        <p>Usted esta en: {{selectedFood}}</p>
+        <app-depto></app-depto>
         <app-tarjeta-punto-venta></app-tarjeta-punto-venta>
     </div>
     <div class="col-6">
-
-        <div class="mapa1" #mapa ></div>
+        <div class="mapa1" #mapa></div>
     </div>
-
 </div>

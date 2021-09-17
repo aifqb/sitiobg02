@@ -12,6 +12,7 @@ import { MenuComponent } from './share/menu/menu.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
 import { TarjetaPuntoVentaComponent } from './components/tarjeta-punto-venta/tarjeta-punto-venta.component';
+import { DeptoComponent } from './components/depto/depto.component';
 
 @NgModule({
   declarations: 
@@ -24,6 +25,7 @@ import { TarjetaPuntoVentaComponent } from './components/tarjeta-punto-venta/tar
     HomeComponent,
     MenuComponent,
     TarjetaPuntoVentaComponent,
+    DeptoComponent,
   ],
   imports: 
   [
