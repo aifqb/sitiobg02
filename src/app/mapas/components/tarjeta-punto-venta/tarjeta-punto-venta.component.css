@@ -1,6 +1,6 @@
 mat-card{
   margin-top: 10px;
-  width: 250px;
+  /* width: 250px; */
 }
 
 
@@ -13,5 +13,5 @@ mat-card-subtitle {
 }
 
 mat-card-content{
-  max-width: 220px;
+  /* max-width: 220px; */
 }

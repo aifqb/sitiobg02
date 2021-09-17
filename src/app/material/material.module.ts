@@ -16,7 +16,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
-
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -41,7 +41,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatProgressBarModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }
