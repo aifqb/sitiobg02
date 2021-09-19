@@ -1,9 +1,20 @@
-<app-depto></app-depto>
+<!-- <app-depto></app-depto> -->
 <div class="row">
     <div class="tarjeta col-lg-4 col-md-4 col-12 overflow-auto">
+        <mat-form-field appearance="fill">
+            <mat-label>Departamento</mat-label>
+            <mat-select [(value)]="selectedDepto">
+                <mat-option 
+                [value]="option.departamento" 
+                *ngFor="let option of departamentos"
+                (click)="activarRegion( option.departamento)"
+                >{{ option.departamento }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p>Usted esta en: {{selectedDepto}}</p>
         <app-tarjeta-punto-venta></app-tarjeta-punto-venta>
     </div>
     <div class="col-lg-8 col-md-8 col-12">
-        <!-- <div class="mapa1" #mapa></div> -->
+        <!-- <div class="mapa1" #mapa></div>  -->
     </div>
 </div>
