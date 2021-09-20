@@ -1,14 +1,17 @@
-<div class="container-fluid bg-dark py-sm-1 " fxLayout="column" fxLayoutAlign="center">
-    <h2 class="text-light text-center py-4 fs-1 text-u" fxLayoutAlign="center">
+<div 
+class="container-fluid shadow-sm pve" 
+fxLayout="column" 
+fxLayoutAlign="center">
+    <p class="text-center py-4 fs-1 text-u" fxLayoutAlign="center">
         Puntos de venta
-    </h2>
-    <p class="text-white text-center">Puedes encontrarnos en los los puntos de venta mas representativos de tu ciudad, si quieres encontrar un punto de venta más cercano a tu ubicación déjanos un mensaje que te atendemos a la brevedad posible.</p>
-
+    </p>
+    <p class="text-center fw-light h4 py-1 mb-2 px-lg-4">
+        Puedes encontrarnos en los los puntos de venta mas representativos de tu ciudad.
+    </p>
 </div>
 
 <app-menu>
 </app-menu>
-    
-<router-outlet></router-outlet>
-
-
+<div class="my-4 shadow-sm bg-light p-3" style="border-radius: 15px;">
+    <router-outlet></router-outlet>
+</div>

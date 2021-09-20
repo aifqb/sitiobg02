@@ -2,3 +2,15 @@ button{
     min-width: 120px;
     margin-top: 5px;
 }
+
+.navbar{
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.styki{
+    position: sticky;
+    top: 85px;
+    z-index: 999;
+}

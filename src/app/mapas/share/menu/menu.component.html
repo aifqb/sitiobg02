@@ -1,9 +1,9 @@
 
-<nav class="navbar navbar-light bg-dark">
+<nav class="navbar styki bg-white p-0 shadow-sm navbar-light m-0 ">
     <form class="container-fluid justify-content-center">
       <button *ngFor="let item of menuItems"
       [routerLink]="[ item.ruta ]"
-      routerLinkActive="active" class="btn btn-sm btn-outline-danger me-2" type="button">{{ item.nombre }}</button>
+      routerLinkActive="active" class="btn btn-sm btn-outline-danger m-lg-3 m-md-3 m-1" type="button">{{ item.nombre }}</button>
     </form>
   </nav>
 

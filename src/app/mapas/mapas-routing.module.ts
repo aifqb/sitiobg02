@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FullScreenComponent } from './pages/full-screen/full-screen.component';
-import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
-import { MarcadoresComponent } from './pages/marcadores/marcadores.component';
-import { PropiedadesComponent } from './pages/propiedades/propiedades.component';
+import { LapazComponent } from './pages/lapaz/lapaz.component';
+import { OruroComponent } from './pages/oruro/oruro.component';
+import { CbbaComponent } from './pages/cbba/cbba.component';
+import { BoliviaComponent } from './pages/bolivia/bolivia.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
@@ -11,10 +11,10 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      { path: 'lapaz', component: FullScreenComponent },
-      { path: 'oruro', component: ZoomRangeComponent },
-      { path: 'cbba', component: MarcadoresComponent },
-      { path: 'bolivia', component: PropiedadesComponent },
+      { path: 'lapaz', component: LapazComponent },
+      { path: 'oruro', component: OruroComponent },
+      { path: 'cbba', component: CbbaComponent },
+      { path: 'bolivia', component: BoliviaComponent },
       { path: '**', redirectTo: 'lapaz' },
     ],
   },

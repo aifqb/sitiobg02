@@ -7,15 +7,11 @@ import * as mapboxgl from 'mapbox-gl';
   styleUrls: ['./lapaz.component.css']
 })
 export class LapazComponent implements AfterViewInit {
+  
   @ViewChild('mapa') divMapa!: ElementRef;
   mapa!: mapboxgl.Map;
   zoomLevel: number = 12;
   center: [number, number] = [-68.121970, -16.501737];
-
-
-  // Arreglo de marcadores
-  marcadores: mapboxgl.Marker[] = [];
-  puntos: Puntoventa[] = [];
 
   constructor() {}
 
@@ -26,7 +22,7 @@ export class LapazComponent implements AfterViewInit {
       center: this.center,
       zoom: this.zoomLevel,
     });
-
+    this.mapa.addControl(new mapboxgl.NavigationControl());
     const marker = new mapboxgl.Marker()
       .setLngLat(this.center)
       .addTo(this.mapa);
