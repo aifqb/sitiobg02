@@ -1,12 +1,28 @@
-.home-prod{
-    background-color: #FE7235;
-    border-radius: 15px;
-    color: #050F1F;
-    margin-bottom: 1rem;
+.home-producto{
+    background-color: tomato;
+    margin-bottom: 10px;
 }
+
 
 .styki{
     position: sticky;
     top: 85px;
     z-index: 999;
+    height: 5vh;
+    background-color: whitesmoke;
 }
+
+.hero-image-prod {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Ftable-top-with-background1.webp?alt=media&token=6f0f84b6-9cc0-437a-9b97-042d7fa2cb93")
+    no-repeat center;
+    background-size: cover;
+    background-color: whitesmoke;
+    color: #050F1F;
+    margin-bottom: 1rem;
+  }
+
+  
+  

@@ -1,0 +1,45 @@
+<div class="hero-image-contacto">
+    <div class="container contacto">
+        <!-- <h2><span>un gusto diferente</span></h2> -->
+    </div>
+</div>
+<div class="container my-3">
+    <div class="row align-items-center">
+        <div class="col-lg-8">
+            <mat-card>
+                <mat-card-title class="text-center fs-3 pb-4">
+                    ¿Cómo podemos ayudarte?
+                </mat-card-title>
+                <mat-card-subtitle class="text-center h4 ">
+                    Nos encantaría ayudarte en tu proceso de compra o brindarte mayor información sobre nuestros
+                    productos, contáctanos.
+                </mat-card-subtitle>
+                <mat-card-content class="fs-5 py-3 fw-light">
+                    <mat-list-item class="text-center">
+                        <mat-icon mat-list-icon class="social">
+                            <a href="tel:+59169900944" target="_blank" class="text-reset"
+                                onclick="return(navigator.userAgent.match(/Android | iphone | movile /i)) != null;">
+                                <span class=" fs-2 material-icons">
+                                    dialer_sip
+                                </span>
+                            </a>
+                        </mat-icon>
+                        <div mat-line>
+                            <strong class="h5">
+                                {{_servicio.info.central}}
+                            </strong>
+                        </div>
+                        <div mat-line class="uppercase">Central telefonica</div>
+                        <div mat-line>
+                            <strong>
+                                Ventas interno: {{_servicio.info.interno_ventas}}
+
+                            </strong>
+                        </div>
+                    </mat-list-item>
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+    </div>
+</div>

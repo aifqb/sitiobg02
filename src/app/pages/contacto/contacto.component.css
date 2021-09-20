@@ -1,0 +1,37 @@
+
+.hero-image-contacto {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fcontacto-phone.webp?alt=media&token=2336622f-4617-4465-8d21-b318bad1ae08")
+
+    /* background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/heroimage.webp?alt=media&token=0a3279bb-a718-458e-95da-f1556ccb863c") */
+      no-repeat center;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .contacto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: azure;
+    font-weight: 700;
+  }
+  .contacto h2 {
+    font-size: 50px;
+    font-family: ubuntu;
+    letter-spacing: 0.2em;
+  
+    margin: 0;
+  }
+  .contacto h2 span {
+    background: rgba(0, 0, 0, 0.096);
+    border-radius: 20px;
+    padding: 20px 10px;
+    display: inline-block;
+  }
+

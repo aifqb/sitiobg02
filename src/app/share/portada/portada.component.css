@@ -3,7 +3,9 @@
     position: relative;
     height: 70vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/heroimage.webp?alt=media&token=0a3279bb-a718-458e-95da-f1556ccb863c")
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fp12021.webp?alt=media&token=13584325-32bc-4854-a0d3-49319d505e8d")
+
+    /* background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/heroimage.webp?alt=media&token=0a3279bb-a718-458e-95da-f1556ccb863c") */
       no-repeat center;
     background-size: cover;
     border-radius: 15px;

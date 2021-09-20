@@ -1,7 +1,7 @@
 <!-- <p fxLayoutAlign="center" class="m-0 fs-2 pb-lg-3 h3 pb-sm-1">lineas de productos</p> -->
 
 <div class="container shadow-sm py-2">
-    <p fxLayoutAlign="center" class="pt-1">Seleccione una categoria:</p>
+    <p fxLayoutAlign="center" class="pt-1 fw-light h4">Seleccione una linea:</p>
     <div class="col-12 text-center">
         <button *ngFor="let categoria of categorias" [class]="getClaseCSS( categoria )"
             (click)="activaCategoria( categoria )">
