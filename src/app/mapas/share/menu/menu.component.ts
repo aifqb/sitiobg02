@@ -28,6 +28,22 @@ export class MenuComponent {
       ruta: 'propiedades',
       nombre: 'puntos de venta'
     },
+    {
+      ruta: 'lapaz',
+      nombre: 'La paz'
+    },
+    {
+      ruta: 'oruro',
+      nombre: 'Oruro'
+    },
+    {
+      ruta: 'cbba',
+      nombre: 'Cochabamba'
+    },
+    {
+      ruta: 'bolivia',
+      nombre: 'Bolivia'
+    },
   ];
 
 }

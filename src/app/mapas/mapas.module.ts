@@ -13,6 +13,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
 import { TarjetaPuntoVentaComponent } from './components/tarjeta-punto-venta/tarjeta-punto-venta.component';
 import { DeptoComponent } from './components/depto/depto.component';
+import { LapazComponent } from './pages/lapaz/lapaz.component';
+import { OruroComponent } from './pages/oruro/oruro.component';
+import { CbbaComponent } from './pages/cbba/cbba.component';
+import { BoliviaComponent } from './pages/bolivia/bolivia.component';
 
 @NgModule({
   declarations: 
@@ -26,6 +30,10 @@ import { DeptoComponent } from './components/depto/depto.component';
     MenuComponent,
     TarjetaPuntoVentaComponent,
     DeptoComponent,
+    LapazComponent,
+    OruroComponent,
+    CbbaComponent,
+    BoliviaComponent,
   ],
   imports: 
   [

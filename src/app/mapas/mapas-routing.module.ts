@@ -11,12 +11,11 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      { path: 'fullscreen', component: FullScreenComponent },
-      { path: 'zoom-range', component: ZoomRangeComponent },
-      { path: 'marcadores', component: MarcadoresComponent },
-      { path: 'propiedades', component: PropiedadesComponent },
-      { path: 'fullscreen', component: FullScreenComponent },
-      { path: '**', redirectTo: 'fullscreen' },
+      { path: 'lapaz', component: FullScreenComponent },
+      { path: 'oruro', component: ZoomRangeComponent },
+      { path: 'cbba', component: MarcadoresComponent },
+      { path: 'bolivia', component: PropiedadesComponent },
+      { path: '**', redirectTo: 'lapaz' },
     ],
   },
 ];

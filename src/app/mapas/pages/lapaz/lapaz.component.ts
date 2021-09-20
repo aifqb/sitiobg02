@@ -1,13 +1,12 @@
-import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 
-
 @Component({
-  selector: 'app-propiedades',
-  templateUrl: './propiedades.component.html',
-  styleUrls: ['./propiedades.component.css'],
+  selector: 'app-lapaz',
+  templateUrl: './lapaz.component.html',
+  styleUrls: ['./lapaz.component.css']
 })
-export class PropiedadesComponent implements AfterViewInit {
+export class LapazComponent implements AfterViewInit {
   @ViewChild('mapa') divMapa!: ElementRef;
   mapa!: mapboxgl.Map;
   zoomLevel: number = 12;
