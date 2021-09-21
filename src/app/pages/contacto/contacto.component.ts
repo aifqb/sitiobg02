@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoContacto } from 'src/app/intefaces/info-contacto.interface';
 import { InfoContactoService } from '../../services/info-contacto.service';
 
 @Component({
@@ -8,12 +9,12 @@ import { InfoContactoService } from '../../services/info-contacto.service';
 })
 export class ContactoComponent implements OnInit {
 
+  contactos: InfoContacto[] = [];
   
-  
-  constructor( public _sercon: InfoContactoService) { }
+  constructor( public contatosServices: InfoContactoService) { }
 
   ngOnInit(): void {
-    
+    this.contatosServices.getContactos()
+      .subscribe( contactos => this.contactos = contactos);
   }
-
 }
