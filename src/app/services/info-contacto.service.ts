@@ -7,6 +7,8 @@ import { InfoContacto } from '../intefaces/info-contacto.interface';
 })
 export class InfoContactoService {
 
+  
+
   contacto: InfoContacto = {};
 
   constructor( private http: HttpClient) { 
