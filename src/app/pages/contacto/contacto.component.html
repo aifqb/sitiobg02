@@ -3,43 +3,85 @@
         <!-- <h2><span>un gusto diferente</span></h2> -->
     </div>
 </div>
-<div class="container my-3">
-    <div class="row align-items-center">
-        <div class="col-lg-8">
-            <mat-card>
+<div class="container align-self-center my-3">
+    <div class="row ">
+        <div class="col-12">
+            <mat-card class="ayuda mx-auto">
                 <mat-card-title class="text-center fs-3 pb-4">
                     ¿Cómo podemos ayudarte?
                 </mat-card-title>
-                <mat-card-subtitle class="text-center h4 ">
+                <mat-card-subtitle>
                     Nos encantaría ayudarte en tu proceso de compra o brindarte mayor información sobre nuestros
                     productos, contáctanos.
                 </mat-card-subtitle>
-                <mat-card-content class="fs-5 py-3 fw-light">
-                    <mat-list-item class="text-center">
+                <mat-card-content class="fs-5 py-2">
+                    <p>
+                        <strong class="fw-bold">
+                            Central telefonica:
+                        </strong>
+                        <a href="tel:+59169900944" target="_blank" class="text-reset"
+                            onclick="return(navigator.userAgent.match(/Android | iphone | movile /i)) != null;">
+                            {{_servicio.info.central}}
+                        </a>
+                        <small>
+                            interno: {{_servicio.info.interno_ventas}}
+                        </small>
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="bg-light col- shadow" style="border-radius: 10px;">
+            <p class="text-center fs-5 p-1 m-0 p-md-4">
+                O contáctanos mediante nuestros WhatsApp para hacernos llegar tu mensaje directo.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container">
+        <div class="row justify-content-evenly py-5 m-5">
+            <div class="col-md-6 col-lg-4 col-12">
+                <mat-card class="example-card shadow">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
                         <mat-icon mat-list-icon class="social">
-                            <a href="tel:+59169900944" target="_blank" class="text-reset"
-                                onclick="return(navigator.userAgent.match(/Android | iphone | movile /i)) != null;">
-                                <span class=" fs-2 material-icons">
-                                    dialer_sip
+                            <a href="https://wa.me/59169900944?text=Hola%20estoy%20interesado%20en%20los%20productos%20Bon%20Gusto%20msjw"
+                                target="_blank" class="text-reset">
+                                <span style="font-size: 30px">
+                                    <i class="fab fa-whatsapp fa-lg"></i>
                                 </span>
                             </a>
                         </mat-icon>
-                        <div mat-line>
-                            <strong class="h5">
-                                {{_servicio.info.central}}
-                            </strong>
-                        </div>
-                        <div mat-line class="uppercase">Central telefonica</div>
-                        <div mat-line>
-                            <strong>
-                                Ventas interno: {{_servicio.info.interno_ventas}}
-
-                            </strong>
-                        </div>
-                    </mat-list-item>
-                </mat-card-content>
-            </mat-card>
-
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed | ventas lp</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </div>
         </div>
-    </div>
 </div>

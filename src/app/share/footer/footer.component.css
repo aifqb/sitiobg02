@@ -13,8 +13,13 @@ button:hover {
 .bg-naranja {
   background: rgb(236, 233, 230);
   background: linear-gradient(
-    90deg,
-    #fee5d3,
-    rgba(255, 255, 255, 1) 100%
+    to right,
+    rgba(255, 36, 23, 1) 0%,
+    50%,
+    rgba(255, 125, 0, 1) 100%
   );
+  border-radius: 15px;
+  color: whitesmoke;
 }
+
+

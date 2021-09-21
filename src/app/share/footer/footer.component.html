@@ -7,7 +7,8 @@
             <mat-list>
                 <div mat-header class="text-center h3 p-2">Contacto</div>
                 <mat-divider></mat-divider>
-                <mat-list-item>
+                <div>
+                    <mat-list-item>
                         <mat-icon mat-list-icon class="social">
                             <a href="tel:+59169900944" target="_blank" class="text-reset" onclick="return(navigator.userAgent.match(/Android | iphone | movile /i)) != null;">
                                 <span class=" fs-2 material-icons">
@@ -58,6 +59,8 @@
                     <div mat-line>{{_servicio.info.email}}</div>
                     <div mat-line>Email</div>   
                 </mat-list-item>
+                </div>
+
             </mat-list>
         </div>
         <div class="div col-lg-3 col-md-5 col-sm-12 align-items-center py-2">
