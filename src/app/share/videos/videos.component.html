@@ -1,0 +1,16 @@
+<div class="row noticias p-lg-3 p-1" *ngFor="let video of videos">
+    <div class="col-md-4 col-lg-3 col-12 p-0 shadow tarjeta-video">
+        <div class="ratio ratio-16x9">
+            <iframe src=" {{video.enlace}} " title="clip Bon gusto tv" allowfullscreen></iframe>
+        </div>
+        <div class="shadow caption-video">
+            <p class="titulo-video">
+                {{video.titulo}}
+            </p>
+            <mat-divider></mat-divider>
+            <p>
+                {{video.descripcion}}
+            </p>
+        </div>
+    </div>
+</div>

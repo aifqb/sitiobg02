@@ -1,0 +1,24 @@
+
+
+p{
+    padding: 1rem;
+}
+
+iframe{
+    border-radius: 15px 15px 0px 0px;
+}
+.tarjeta-video{
+    border-radius: 15px;
+}
+.caption-video{
+    border-radius: 0px 0px 15px 15px;
+}
+
+.titulo-video{
+    font-size: large;
+    color: #008b8b;
+}
+
+div p{
+    margin-bottom: 0;
+}

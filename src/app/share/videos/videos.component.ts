@@ -3,11 +3,11 @@ import { Videos } from 'src/app/intefaces/info-video.interface';
 import { InfoContactoService } from 'src/app/services/info-contacto.service';
 
 @Component({
-  selector: 'app-eventos',
-  templateUrl: './eventos.component.html',
-  styleUrls: ['./eventos.component.css']
+  selector: 'app-videos',
+  templateUrl: './videos.component.html',
+  styleUrls: ['./videos.component.css']
 })
-export class EventosComponent implements OnInit {
+export class VideosComponent implements OnInit {
 
   videos: Videos[] = [];
 

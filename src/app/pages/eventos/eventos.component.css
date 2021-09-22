@@ -1,0 +1,31 @@
+.hero-image-eventos {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/fotos%20de%20perfil%2Feventos.webp?alt=media&token=4532bafd-d265-4a9f-a8f7-aa4c3b5cc4c0")
+    no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+}
+p{
+  padding: 1rem;
+}
+
+iframe{
+  border-radius: 15px 15px 0px 0px;
+}
+.tarjeta-video{
+  border-radius: 15px;
+}
+.caption-video{
+  border-radius: 0px 0px 15px 15px;
+}
+
+.titulo-video{
+  font-size: large;
+  color: #008b8b;
+}
+
+div p{
+  margin-bottom: 0;
+}

@@ -27,7 +27,8 @@ import { TarjetaComponent } from './share/tarjeta/tarjeta.component';
 import { PortadaComponent } from './share/portada/portada.component';
 import { CompranosComponent } from './share/compranos/compranos.component';
 import { HistoriaComponent } from './share/historia/historia.component';
-import { InLineComponent } from './share/in-line/in-line.component'
+import { InLineComponent } from './share/in-line/in-line.component';
+import { VideosComponent } from './share/videos/videos.component'
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { InLineComponent } from './share/in-line/in-line.component'
     PortadaComponent,
     CompranosComponent,
     HistoriaComponent,
-    InLineComponent
+    InLineComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
