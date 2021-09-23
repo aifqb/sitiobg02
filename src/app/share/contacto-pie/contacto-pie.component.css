@@ -1,0 +1,13 @@
+div{
+    color: white;
+}
+
+
+div span{
+    color: white;
+}
+
+
+div span:hover{
+    color: #240d09;
+}

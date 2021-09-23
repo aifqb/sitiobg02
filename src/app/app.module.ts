@@ -28,7 +28,9 @@ import { PortadaComponent } from './share/portada/portada.component';
 import { CompranosComponent } from './share/compranos/compranos.component';
 import { HistoriaComponent } from './share/historia/historia.component';
 import { InLineComponent } from './share/in-line/in-line.component';
-import { VideosComponent } from './share/videos/videos.component'
+import { VideosComponent } from './share/videos/videos.component';
+import { ContactoPieComponent } from './share/contacto-pie/contacto-pie.component';
+import { ConceptoComponent } from './share/concepto/concepto.component'
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { VideosComponent } from './share/videos/videos.component'
     CompranosComponent,
     HistoriaComponent,
     InLineComponent,
-    VideosComponent
+    VideosComponent,
+    ContactoPieComponent,
+    ConceptoComponent
   ],
   imports: [
     BrowserModule,

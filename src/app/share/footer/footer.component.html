@@ -4,64 +4,7 @@
             <app-piecard></app-piecard>
         </div>
         <div class="div col-lg-3 col-md-5 col-sm-12 align-items-center py-2">
-            <mat-list>
-                <div mat-header class="text-center h3 p-2">Contacto</div>
-                <mat-divider></mat-divider>
-                <div>
-                    <mat-list-item>
-                        <mat-icon mat-list-icon class="social">
-                            <a href="tel:+59169900944" target="_blank" class="text-reset" onclick="return(navigator.userAgent.match(/Android | iphone | movile /i)) != null;">
-                                <span class=" fs-2 material-icons">
-                                    dialer_sip
-                                </span>
-                            </a>
-                        </mat-icon>
-                        <div mat-line>
-                            <strong class="h5">
-                                {{_servicio.info.central}}
-                            </strong>    
-                        </div>
-                        <div mat-line>Central telefonica</div>    
-                        <div mat-line>Ventas interno: {{_servicio.info.interno_ventas}}</div>    
-                </mat-list-item>
-                <mat-list-item> 
-                    <mat-icon mat-list-icon class="social">
-                        <a href="https://wa.me/59169900944?text=Hola%20estoy%20interesado%20en%20los%20productos%20Bon%20Gusto%20msjw" target="_blank" class="text-reset">
-                            <span class="fab fa-whatsapp fa-lg"></span>
-                        </a>
-                    </mat-icon>
-                        <div mat-line>
-                            <strong class="h5">
-                                {{_servicio.info.central}}
-                            </strong>
-                        </div>
-                        <div mat-line>WhastApp ventas</div>    
-                </mat-list-item>
-                <mat-list-item> 
-                    <mat-icon mat-list-icon class="social">
-                        <a href="https://wa.me/59177779389?text=Hola%20estoy%20interesado%20en%20los%20productos%20Bon%20Gusto%20msjw" target="_blank" class="text-reset">
-                            <span class="fab fa-whatsapp fa-lg"></span>
-                        </a>
-                    </mat-icon>
-                    <div mat-line>
-                    <div class="strong h5">
-                        {{_servicio.info.celular_alex}}
-                    </div>
-                    </div>
-                    <div mat-line>WhastApp consultas</div> 
-                </mat-list-item>
-                <mat-list-item> 
-                    <mat-icon mat-list-icon class="social">
-                        <a href="mailto:ventas@bongusto.com.bo?Subject=Estoy%20interesado%20en%20los%20productos%20Bon%20Gusto"target="_blank" class="text-reset">
-                            <span class="fa fa-envelope fa-lg"></span>
-                        </a>
-                    </mat-icon>
-                    <div mat-line>{{_servicio.info.email}}</div>
-                    <div mat-line>Email</div>   
-                </mat-list-item>
-                </div>
-
-            </mat-list>
+            <app-contacto-pie></app-contacto-pie>
         </div>
         <div class="div col-lg-3 col-md-5 col-sm-12 align-items-center py-2">
             <mat-list>
@@ -108,9 +51,9 @@
         </div>
         <div class="col-12 bg-dark text-white text-center text-capitalize">
             <span class="far fa-copyright"></span>
-                <span>{{_servicio.info.nombre}} </span>
-                <span>{{anio}} </span>
-                <span>All rights reserved. | <a href="">Descarga</a>  nuestros logos oficiales</span> 
+            <span>{{_servicio.info.nombre}} </span>
+            <span>{{anio}} </span>
+            <span>All rights reserved. | <a href="">Descarga</a> nuestros logos oficiales</span>
         </div>
     </section>
 </div>
