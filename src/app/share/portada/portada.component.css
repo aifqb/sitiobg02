@@ -1,12 +1,10 @@
 
 .hero-image {
     position: relative;
-    height: 70vh;
+    height: 50vh;
     overflow: hidden;
     background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fp12021.webp?alt=media&token=13584325-32bc-4854-a0d3-49319d505e8d")
-
-    /* background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/heroimage.webp?alt=media&token=0a3279bb-a718-458e-95da-f1556ccb863c") */
-      no-repeat center;
+    no-repeat center;
     background-size: cover;
     border-radius: 15px;
   }
@@ -19,19 +17,58 @@
     overflow: hidden;
     text-align: center;
     color: azure;
-    font-weight: 700;
+      }
+
+      a:hover{
+        cursor: pointer;
+      }
+
+
+  .hero-image2 {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsalchipapa.webp?alt=media&token=7c58ee15-d35c-41cd-b20d-7020d6acb156")
+    no-repeat center;
+    background-size: cover;
   }
-  .container h2 {
-    font-size: 50px;
-    font-family: ubuntu;
-    letter-spacing: 0.2em;
+  .hero-image3 {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsandwich-web.webp?alt=media&token=82416efd-9926-40fd-bfdc-49c0247cbccc")
+    no-repeat center;
+    background-size: cover;
+  }
   
-    margin: 0;
+  .hero-image4 {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fingredientes-pizza.webp?alt=media&token=d5099fda-2b52-456d-8c78-495abaad68aa")
+    no-repeat center;
+    background-size: cover;
   }
-  .container h2 span {
-    background: rgba(0, 0, 0, 0.096);
-    border-radius: 20px;
-    padding: 20px 10px;
-    display: inline-block;
+  .hero-image5 {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2FBACON-TOCINO.webp?alt=media&token=5b6d51ea-6e88-4eb9-b45c-905c15f58352")
+    no-repeat center;
+    background-size: cover;
   }
 
+  .hero-image6 {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fgrilled-sausage.webp?alt=media&token=1ae47daf-3233-4909-a2a7-260c307e333c")
+    no-repeat center;
+    background-size: cover;
+  }
+
+
+a{
+  height: 40vh;
+
+  }

@@ -1,4 +1,9 @@
 img{
-    height: 15vh;
+    height: 10vh;
     background: royalblue;
+}
+
+div p{
+    font-size: xx-large;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
