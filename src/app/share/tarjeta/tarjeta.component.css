@@ -1,4 +1,5 @@
 
+
 .pag-inicio {
   background: rgb(255, 255, 255);
   background-size: cover;
@@ -27,4 +28,9 @@ mat-grid-tile img {
   display: block;
 
   background-color: whitesmoke;
+}
+
+mat-card-title{
+  font-weight: 300;
+  color: #fe7235;
 }
