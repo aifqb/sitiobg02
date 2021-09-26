@@ -1,0 +1,29 @@
+<div class="container">
+    <div>
+        <p class="text-center fs-5 p-1 m-0 p-md-4">
+            Contáctanos mediante nuestros WhatsApp para hacernos llegar tu mensaje directo.
+        </p>
+    </div>
+    <div class="row justify-content-evenly py-3 m-3">
+        <div class="col-md-6 col-lg-4 col-12" *ngFor="let contacto of contactos">
+            <mat-card class="example-card shadow">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-icon mat-list-icon class="social">
+                        <a href="https://api.whatsapp.com/send?phone={{contacto.celular}}&text=%C2%A1Hola!%20Deseo%20mayor%20informaci%C3%B3n%20sobre%20los%20productos%20Bongusto.%20Me%20encuentro%20en%20la%20p%C3%A1gina%20de%20Contacto%20%7C%20Bongusto%20-%20http://www.bongusto.com.bo/contacto"
+                            target="_blank" class="text-reset">
+                            <span style="font-size: 30px">
+                                <i class="fab fa-whatsapp fa-lg"></i>
+                            </span>
+                        </a>
+                    </mat-icon>
+                    <mat-card-title> {{ contacto.celular }} </mat-card-title>
+                    <mat-card-subtitle class="fw-bold"> {{contacto.titular}} </mat-card-subtitle>
+                    <mat-card-subtitle> {{ contacto.cargo }} | <strong>
+                            {{contacto.ciudad}}
+                        </strong></mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+</div>

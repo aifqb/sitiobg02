@@ -1,0 +1,34 @@
+
+  mat-card{
+    background-color: whitesmoke;
+  }
+
+.ayuda{
+  max-width: 400px;
+  margin: 20px;
+
+}
+
+  .example-card {
+    max-width: 350px;
+    background-color: #25d366;
+    color: #0F223D;
+    margin: 15px;
+    border-radius: 10px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/fotos%20de%20perfil%2Fuser-icon-vector.jpg?alt=media&token=ca0eae40-cf12-45f8-958b-04eeabcda148');
+    background-size: cover;
+  }
+
+  mat-card-subtitle{
+    color:#0A0909;
+    margin-bottom: 5px;
+  }
+
+  mat-icon span:hover{
+    color: white;
+
+  }
+

@@ -30,7 +30,8 @@ import { HistoriaComponent } from './share/historia/historia.component';
 import { InLineComponent } from './share/in-line/in-line.component';
 import { VideosComponent } from './share/videos/videos.component';
 import { ContactoPieComponent } from './share/contacto-pie/contacto-pie.component';
-import { ConceptoComponent } from './share/concepto/concepto.component'
+import { ConceptoComponent } from './share/concepto/concepto.component';
+import { HablanosComponent } from './share/hablanos/hablanos.component'
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { ConceptoComponent } from './share/concepto/concepto.component'
     InLineComponent,
     VideosComponent,
     ContactoPieComponent,
-    ConceptoComponent
+    ConceptoComponent,
+    HablanosComponent
   ],
   imports: [
     BrowserModule,

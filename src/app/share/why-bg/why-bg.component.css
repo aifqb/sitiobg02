@@ -11,4 +11,7 @@
     transform: scale(1.15);
     filter: brightness(0.85);
   }
-  
+
+.texto-info{
+  color: #014e88;
+}

@@ -31,6 +31,10 @@ mat-grid-tile img {
 }
 
 mat-card-title{
-  font-weight: 300;
+  font-weight: 500;
   color: #fe7235;
+}
+
+.tarjetas{
+  background-color: royalblue;
 }
