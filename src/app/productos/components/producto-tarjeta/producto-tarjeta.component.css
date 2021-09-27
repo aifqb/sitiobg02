@@ -4,14 +4,18 @@ mat-card {
 
 mat-card {
   overflow: hidden;
+  z-index: 100;
 }
 
 mat-card img {
   transition: all 0.3s ease;
+  z-index: -20;
 }
 
 mat-card:hover img {
+  overflow: hidden;
   transform: scale(1.2);
+
 }
 
 button:hover{
