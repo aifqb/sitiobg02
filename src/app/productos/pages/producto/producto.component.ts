@@ -27,4 +27,7 @@ export class ProductoComponent implements OnInit {
   regresar(){
     this.router.navigate(['productos/categoria'])
   }
+  buscarp(){
+    this.router.navigate(['productos/buscar'])
+  }
 }

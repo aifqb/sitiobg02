@@ -1,5 +1,3 @@
-
-
 <mat-grid-list cols=1 *ngIf="!producto; else divproducto">
   <mat-grid-tile>
     <mat-spinner></mat-spinner>
@@ -8,17 +6,15 @@
 
 <ng-template #divproducto>
 
-<div  fxLayout="row"
-      fxLayout.xs="column"
-      fxLayoutGap="30px"
-      class="py-5 fond">
-      <div fxFlex="50" fxLayoutAlign="center center">
-        <img class="shadow" mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
-      </div>
-      <div fxFlex="50" fxLayoutAlign.xs="center center">
-<div>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px" class="py-5 fond">
+    <div fxFlex="50" fxLayoutAlign="center center">
+      <img class="shadow" mat-card-image
+        src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
+    </div>
+    <div fxFlex="50" fxLayoutAlign.xs="center center">
+      <div>
         <h2 class="text-sm-center text-lg-start py-3 m-0 fs-3">{{producto.producto_Nombre| titlecase}}</h2>
-        <table class="table shadow"  style="border-radius: 10px;">
+        <table class="table shadow" style="border-radius: 10px;">
           <tbody>
             <tr>
               <th scope="row">Presentacion:</th>
@@ -43,54 +39,32 @@
           </tbody>
         </table>
         <br>
-        <button  mat-raised-button color="warn" (click)="regresar()">
-          Regresar
-        </button>
-      </div>
-      </div>
-</div>
+
+        <div class="row">
+          <div class="col align-self-center">
+            <button mat-raised-button color="warn" (click)="buscarp()">
+              buscar productos
+            </button>
+            <button mat-raised-button color="warn" (click)="regresar()">
+              lineas de productos
+            </button>
+            <a mat-raised-button class="btn-wp" style="text-decoration:none"
+              href="https://api.whatsapp.com/send?phone=69900944&text=hola%20estoy%20en%20el%20sitio%20web%20de%20bongusto%20y%20estoy%20interesado%20en%20el%20producto:%20{{producto.producto_Nombre| titlecase}}"
+              target="_blank">
+              <span>
+                <i class="fab fa-whatsapp">
+                  escribenos
+                </i>
+              </span>
+            </a>
+          </div>
 
 
+        </div>
 
-<!-- 
-  <div class="container-fluid bg-light">
-    <div class="row py-3 justify-content-center">
-      <div class="col-12 align-items-center">
-        <h2 class="text-center py-3 m-0 fs-3">{{producto.producto_Nombre| titlecase}}</h2>
-      </div>
-      <div class="col-lg-5 col-sm-12 p-0 align-items-center mx-auto">
-        <img class="shadow" mat-card-image src="assets/productos/imagen_ref.jpg">
-      </div>
-      <div class="col-lg-5 col-sm-12 p-3 align-items-center">
-        <table class="table shadow-lg" style="border-radius: 10px;">
-          <tbody>
-            <tr>
-              <th scope="row">Presentacion</th>
-              <td>{{producto.presentacion}}</td>
-            </tr>
-            <tr>
-              <th scope="row">Peso</th>
-              <td>{{producto.peso_aprox}} kg.</td>
-            </tr>
-            <tr>
-              <th scope="row">Codigo de producto</th>
-              <td colspan="2">{{producto.cod_Item_PF}}</td>
-            </tr>
-            <tr>
-              <th scope="row">Grupo</th>
-              <td colspan="2"> {{producto.proceso}}</td>
-            </tr>
-            <tr>
-              <th scope="row">Precio</th>
-              <td colspan="2"> {{producto.precio}}</td>
-            </tr>
-          </tbody>
-        </table>
-        <button  mat-raised-button color="warn" (click)="regresar()">
-          Regresar
-        </button>
-      </div>
 
+      </div>
     </div>
-  </div> -->
+  </div>
+
 </ng-template>

@@ -1,15 +1,8 @@
 <p fxLayoutAlign="center" class="m-0 fs-2 pb-lg-3 h3 pb-sm-1">lista de productos</p>
 
-<mat-grid-list cols=1 *ngIf="!productos; else listado">
-    <mat-grid-tile>
-        <mat-spinner></mat-spinner>
-    </mat-grid-tile>
-</mat-grid-list>
 
-<ng-template #listado>
     <div fxLayout="row wrap"  fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
         <div class="mx-lg-2 pb-2 animate__animated animate__fadeIn" fxFlex="15" *ngFor="let producto of productos">
             <app-producto-tarjeta  [producto]="producto"></app-producto-tarjeta>
         </div>
     </div>
-</ng-template>

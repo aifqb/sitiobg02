@@ -1,14 +1,37 @@
-
-
-img{
-
-    border-radius: 15px;
-    max-width: 400px;
-    width: 100%;
+img {
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
 }
-table{
-    max-width: 400px;
+table {
+  max-width: 400px;
 }
-.fond{
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+.fond {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
+
+.btn-wp {
+
+  background: #25d366;
+  color: #ffffff;
+  font-size: 1.2rem;
+  box-shadow: 0rem 0.065rem 0.65rem rgba(105, 101, 101, 0.3);
+  z-index: 100;
+  margin: 1rem;
+}
+
+.btn-wp:hover {
+  text-decoration: none;
+  color: #25d366;
+  background: #ffffff;
+}
+
+button{
+  margin-left: 1rem;
+}
+
+button:hover{
+  color: #f44336;
+  background: #ffffff;
+}
+
