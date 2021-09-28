@@ -3,22 +3,19 @@ import { Puntoventa } from '../../interfaces/puntos.interface';
 import { puntosService } from '../../services/puntos.service';
 
 @Component({
-  selector: 'app-tarjeta-punto-venta',
-  templateUrl: './tarjeta-punto-venta.component.html',
-  styleUrls: ['./tarjeta-punto-venta.component.css']
+  selector: 'app-pv-bo',
+  templateUrl: './pv-bo.component.html',
+  styleUrls: ['./pv-bo.component.css']
 })
-export class TarjetaPuntoVentaComponent implements OnInit {
+export class PvBoComponent implements OnInit {
 
   puntos: Puntoventa[] = [];
   
   constructor( private puntosVenta: puntosService) { }
 
   ngOnInit(): void {
-    this.puntosVenta.puntosLp()
+    this.puntosVenta.PuntosBo()
       .subscribe( puntos => this.puntos = puntos );
   }
 
 }
-
-
-

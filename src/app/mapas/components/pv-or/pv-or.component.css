@@ -1,0 +1,14 @@
+mat-card{
+    margin-top: 10px;
+    /* width: 250px; */
+  }
+  
+  
+  mat-card-title {
+    color: #ff7d01;
+  }
+  
+  mat-card-subtitle {
+    font-size: large;
+  }
+  

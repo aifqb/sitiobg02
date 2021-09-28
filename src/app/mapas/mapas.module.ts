@@ -13,6 +13,9 @@ import { LapazComponent } from './pages/lapaz/lapaz.component';
 import { OruroComponent } from './pages/oruro/oruro.component';
 import { CbbaComponent } from './pages/cbba/cbba.component';
 import { BoliviaComponent } from './pages/bolivia/bolivia.component';
+import { PvOrComponent } from './components/pv-or/pv-or.component';
+import { PvBoComponent } from './components/pv-bo/pv-bo.component';
+import { PvCbComponent } from './components/pv-cb/pv-cb.component';
 
 @NgModule({
   declarations: 
@@ -26,6 +29,9 @@ import { BoliviaComponent } from './pages/bolivia/bolivia.component';
     OruroComponent,
     CbbaComponent,
     BoliviaComponent,
+    PvOrComponent,
+    PvBoComponent,
+    PvCbComponent,
   ],
   imports: 
   [

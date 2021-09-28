@@ -10,8 +10,20 @@ export class puntosService {
 
     constructor( private http: HttpClient ) {}
 
-      getPuntos(): Observable<Puntoventa[]> {
-        return this.http.get<Puntoventa[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/pdv.json')
+      puntosLp(): Observable<Puntoventa[]> {
+        return this.http.get<Puntoventa[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/lp.json')
+      }
+
+      puntosOr(): Observable<Puntoventa[]> {
+        return this.http.get<Puntoventa[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/or.json')
+      } 
+
+      PuntosCb(): Observable<Puntoventa[]> {
+        return this.http.get<Puntoventa[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/bol.json')
+      } 
+
+      PuntosBo(): Observable<Puntoventa[]> {
+        return this.http.get<Puntoventa[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/bol.json')
       } 
 
       
