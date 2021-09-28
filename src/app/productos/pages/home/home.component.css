@@ -1,34 +1,28 @@
-.home-producto {
-  background-color: tomato;
-  margin-bottom: 10px;
+.home-producto{
+    background-color: tomato;
+    margin-bottom: 10px;
 }
 
-.styki {
-  position: sticky;
-  top: 85px;
-  z-index: 999;
-  padding: 1rem;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+.styki{
+    position: sticky;
+    top: 85px;
+    z-index: 999;
+    height: 5vh;
+    background-color: whitesmoke;
 }
 
 .hero-image-prod {
-  position: relative;
-  height: 40vh;
-  overflow: hidden;
-  background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Ftable-top-with-background1.webp?alt=media&token=6f0f84b6-9cc0-437a-9b97-042d7fa2cb93")
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Ftable-top-with-background1.webp?alt=media&token=6f0f84b6-9cc0-437a-9b97-042d7fa2cb93")
     no-repeat center;
-  background-size: cover;
-  background-color: whitesmoke;
-  color: #050f1f;
-  margin-bottom: 1rem;
-}
+    background-size: cover;
+    background-color: whitesmoke;
+    color: #050F1F;
+    margin-bottom: 1rem;
+  }
 
-button {
-  margin: 0.15rem;
-}
-
-button:hover {
-  transition: 50ms;
-  background-color: #f44336;
-  color: whitesmoke;
-}
+  
+  
