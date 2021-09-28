@@ -2,6 +2,21 @@
 p{
   padding: 1rem;
 }
+.cuerpo-evento{
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+.card{
+  border-radius: 15px;
+  width: 20rem;
+  margin: 1rem;
+
+}
+
+.titulo-vid h4{
+  font-size: medium;
+  text-transform: uppercase;
+}
 
 iframe{
   border-radius: 15px 15px 0px 0px;
@@ -26,7 +41,7 @@ div p{
   height: 15vh;
   font-size: 3rem;
   text-transform: uppercase;
-  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: normal;
   display: block;
 
