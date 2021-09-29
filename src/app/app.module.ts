@@ -68,9 +68,6 @@ import { YouTubePlayerModule } from "@angular/youtube-player";
     MaterialModule,
     FlexLayoutModule,
     YouTubePlayerModule
-    
-    
-
   ],
   providers: [
     InfoPaginaService
