@@ -32,7 +32,7 @@ import { VideosComponent } from './share/videos/videos.component';
 import { ContactoPieComponent } from './share/contacto-pie/contacto-pie.component';
 import { ConceptoComponent } from './share/concepto/concepto.component';
 import { HablanosComponent } from './share/hablanos/hablanos.component'
-import { YouTubePlayerModule } from "@angular/youtube-player";
+
 
 
 @NgModule({
@@ -66,8 +66,8 @@ import { YouTubePlayerModule } from "@angular/youtube-player";
     HttpClientModule,
     AppRoutingModule,
     MaterialModule,
-    FlexLayoutModule,
-    YouTubePlayerModule
+    FlexLayoutModule
+
   ],
   providers: [
     InfoPaginaService

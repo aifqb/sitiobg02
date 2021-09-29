@@ -1,21 +1,17 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<div class="container-fluid cuerpo-evento bg-dark">
+<div class="hero-image-eventos">
+    <div class="container eventos">
+        <!-- <h2><span>un gusto diferente</span></h2> -->
+    </div>
+</div>
+
+<div class="container-fluid cuerpo-evento bg-light">
     <div class="row">
-        <div class="col-12">
-            <p class="row neon p-5 eventos logo-1">
-                Eventos
-            </p>
-        </div>
+
         <div class="col " *ngFor="let video of videos">
             <div class="card">
-                <div class="ratio ratio-16x9">
-                    <youtube-player videoId="{{video.enlace}}" suggestedQuality="highres" [startSeconds]="1"
-                        [endSeconds]="8">
-                    </youtube-player>
-
-                </div>
+                <!-- <div class="ratio ratio-16x9">
+                        <iframe src="https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/videos%2Fvideo%20conceptos%20bongusto.mp4?alt=media&token=4423457c-48f5-45f4-835a-57b06d0dd479" controls="true" title="clip Bon gusto tv" allowfullscreen></iframe>
+                    </div> -->
                 <div class="card-body text-light bg-dark">
                     <h4 class="card-title" style="font-size: 1.2rem; color: azure; ">{{video.titulo}}</h4>
                     <p class="card-text">
@@ -26,128 +22,3 @@
             </div>
         </div>
     </div>
-
-
-    <div class="container-fluid cuerpo-evento bg-light">
-        <div class="row">
-            <div class="col-12">
-                <p class="row neon p-5 eventos logo-1">
-                    Noticias
-                </p>
-            </div>
-            <div class="col " *ngFor="let video of videos">
-                <div class="card">
-                    <!-- <div class="ratio ratio-16x9">
-                        <iframe src="https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/videos%2Fvideo%20conceptos%20bongusto.mp4?alt=media&token=4423457c-48f5-45f4-835a-57b06d0dd479" controls="true" title="clip Bon gusto tv" allowfullscreen></iframe>
-                    </div> -->
-                    <div class="card-body text-light bg-dark">
-                        <h4 class="card-title" style="font-size: 1.2rem; color: azure; ">{{video.titulo}}</h4>
-                        <p class="card-text">
-                            {{video.descripcion}}
-                        </p>
-                        <a href="{{video.enlace}}" target="_blank" class="btn btn-danger">ver en youtube</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- 
-=======
-
-
-
-<div class="container">
-    <div>
-        <p class="row neon bg-dark p-5 eventos logo-1">
-            Eventos
-        </p>
-    </div>
->>>>>>> parent of 1165f5b (videos)
-    <div class="row noticias p-lg-3 p-0">
-=======
-<div class="hero-image-eventos">
-    <div class="container eventos">
-        <!-- <h2><span>un gusto diferente</span></h2> -->
-    </div>
-=======
-<div class="hero-image-eventos">
-    <div class="container eventos">
-        <!-- <h2><span>un gusto diferente</span></h2> -->
-    </div>
->>>>>>> parent of d47c868 (nosotros corregido)
-</div>
-<p class="fs-1 p-3 text-center text-dark">
-    Eventos
-</p>
-<div class="container">
-    <div class="row noticias p-lg-3 p-1">
-<<<<<<< HEAD
->>>>>>> parent of d47c868 (nosotros corregido)
-=======
->>>>>>> parent of d47c868 (nosotros corregido)
-        <div class="col-md-3 col-lg-3 col-12 m-3 p-0 tarjeta-video">
-            <div class="ratio ratio-16x9">
-                <iframe src="https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/videos%2Fvideo%20conceptos%20bongusto.mp4?alt=media&token=4423457c-48f5-45f4-835a-57b06d0dd479" title="clip Bon gusto tv" allowfullscreen></iframe>
-            </div>
-            <div class="shadow caption-video">
-                <p class="titulo-video">
-                    "Estreno Spot "Bon gusto linea embutidos y fiambres""
-                </p>
-                <mat-divider></mat-divider>
-                <p>
-                    Estimados clientes les compartimos nuestra ultima producci�n audiovisual, que se emitira a nivel nacional por las pantallas de RTP en el programa la Wislla Popular.                </p>
-            </div>
-        </div>
-        <div class="col-md-3 col-lg-3 col-12 m-3 p-0 tarjeta-video">
-            <div class="ratio ratio-16x9">
-                <iframe src="https://youtu.be/zUNwdF5dEb0" title="clip Bon gusto tv" allowfullscreen></iframe>
-            </div>
-            <div class="shadow caption-video">
-                <p class="titulo-video">
-                    Presentacion empresas autorizadas para la venta de salchichas 2020
-                </p>
-                <mat-divider></mat-divider>
-                <p>
-                    En conferencia de prensa se presento la lista oficial de empresas a nivel nacional que cuentan con Registro Sanitario y que est�n habilitadas para la venta de embutidos en fiestas de San Juan.
-                </p>
-            </div>
-        </div>
-        <div class="col-md-3 col-lg-3 col-12 m-3 p-0 tarjeta-video">
-            <div class="ratio ratio-16x9">
-                <iframe src="https://youtu.be/SYkRxEawrAk" title="clip Bon gusto tv" allowfullscreen></iframe>
-            </div>
-            <div class="shadow caption-video">
-                <p class="titulo-video">
-                    Felicidades, BOLIVIA!
-                </p>
-                <mat-divider></mat-divider>
-                <p>
-                    Celebramos el 195 aniversario de nuestra independencia ratificando nuestro compromiso de seguir trabajando por una #Bolivia mejor. !Viva Bolivia! #BonGusto #TienesQueProbarlo
-                </p>
-            </div>
-        </div>
-    </div>
-
-    </div>
-
-    <!-- 
-<div class="container">
-    <div class="row noticias p-lg-3 p-1">
-        <div *ngFor="let video of videos" class="col-md-3 col-lg-3 col-12 m-3 p-0 tarjeta-video">
-            <div class="ratio ratio-16x9">
-                <iframe [src]="{{video.enlace}}" title="clip Bon gusto tv" allowfullscreen></iframe>
-            </div>
-            <div class="shadow caption-video">
-                <p class="titulo-video">
-                    {{video.titulo}}
-                </p>
-                <mat-divider></mat-divider>
-                <p>
-                    {{video.descripcion}}
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div> -->
