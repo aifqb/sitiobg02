@@ -1,20 +1,18 @@
-.car1 span{
-    background-color: rgba(0, 0, 0, 0.9);
-        
-    }
-    
-    .car1 {
-        border-radius: 1rem;
-    }
-    
-    .car1 img{
-        border-radius: 1rem;
-    }
-.historia{
-    height: 70vh;
+.car1 span {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.car1 {
+  border-radius: 1rem;
 }
 
-p{
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+.car1 img {
+  border-radius: 1rem;
+}
+.historia {
+  height: 70vh;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
