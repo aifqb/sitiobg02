@@ -8,7 +8,6 @@
     position: sticky;
     top: 85px;
     z-index: 999;
-    height: 5vh;
     background-color: whitesmoke;
 }
 
@@ -24,5 +23,12 @@
     margin-bottom: 1rem;
   }
 
-  
+  button{
+      margin: 0.2rem;
+  }
+
+  button:hover{
+      color: white;
+      background-color: #f44336;
+  }
   
