@@ -10,7 +10,7 @@ export class BoliviaComponent implements  AfterViewInit {
   
   @ViewChild('mapa') divMapa!: ElementRef;
   mapa!: mapboxgl.Map;
-  zoomLevel: number = 7;
+  zoomLevel: number = 6;
   center: [number, number] = [-65.755062, -19.587636];
 
   constructor() {}
