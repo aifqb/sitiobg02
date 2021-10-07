@@ -19,7 +19,7 @@ export class puntosService {
       } 
 
       PuntosCb(): Observable<Puntoventa[]> {
-        return this.http.get<Puntoventa[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/bol.json')
+        return this.http.get<Puntoventa[]>('https://angular-html-517d8-default-rtdb.firebaseio.com/cbba.json')
       } 
 
       PuntosBo(): Observable<Puntoventa[]> {

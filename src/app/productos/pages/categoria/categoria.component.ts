@@ -9,7 +9,8 @@ import { ProductosServicesService } from '../../services/productos-services.serv
 })
 export class CategoriaComponent {
   categorias: string[] = [
-    'chorizo',
+    'Chorizo cocido',
+    'Chorizo frezco',
     'jamon',
     'mortadela',
     'peperoni',
