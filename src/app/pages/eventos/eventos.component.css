@@ -1,9 +1,9 @@
 .hero-image-eventos {
   position: relative;
-  height: 50vh;
+  height: 90vh;
   overflow: hidden;
-  background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/fotos%20de%20perfil%2Feventos.webp?alt=media&token=4532bafd-d265-4a9f-a8f7-aa4c3b5cc4c0")
-    no-repeat center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2F5574683_1.webp?alt=media&token=85bc3511-3ad1-4157-85ac-f071782aeaca")
+  no-repeat center;
   background-size: cover;
   border-radius: 15px;
 }
@@ -11,9 +11,7 @@ p{
   padding: 1rem;
 }
 
-iframe{
-  border-radius: 15px 15px 0px 0px;
-}
+
 .tarjeta-video{
   border-radius: 15px;
 }
@@ -30,6 +28,11 @@ div p{
   margin-bottom: 0;
 }
 
-.eventos{
-  color: whitesmoke;
-}
+.tuclase {
+  text-align: left; 
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 35px; 
+  color: #fff; 
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  }
