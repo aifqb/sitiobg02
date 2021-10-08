@@ -20,3 +20,13 @@ button:hover{
   background: #ffffff;
 }
 
+
+mat-card-header p{
+  font-size: medium ;
+  color:#00776E;
+  background-color: whitesmoke;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}

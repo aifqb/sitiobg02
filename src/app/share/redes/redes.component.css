@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+}
+
+p button{
+    color: #ff6307;
+}
+p button:hover{
+    color: whitesmoke;
+    background-color: #ff6307;
+}

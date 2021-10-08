@@ -11,4 +11,6 @@ mat-card{
   mat-card-subtitle {
     font-size: large;
   }
-  
+  a{
+    text-decoration:none;
+  }

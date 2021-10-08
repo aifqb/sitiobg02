@@ -31,7 +31,8 @@ import { InLineComponent } from './share/in-line/in-line.component';
 import { VideosComponent } from './share/videos/videos.component';
 import { ContactoPieComponent } from './share/contacto-pie/contacto-pie.component';
 import { ConceptoComponent } from './share/concepto/concepto.component';
-import { HablanosComponent } from './share/hablanos/hablanos.component'
+import { HablanosComponent } from './share/hablanos/hablanos.component';
+import { RedesComponent } from './share/redes/redes.component'
 
 
 
@@ -58,7 +59,8 @@ import { HablanosComponent } from './share/hablanos/hablanos.component'
     VideosComponent,
     ContactoPieComponent,
     ConceptoComponent,
-    HablanosComponent
+    HablanosComponent,
+    RedesComponent
   ],
   imports: [
     BrowserModule,

@@ -9,10 +9,10 @@
     <mat-card-header>
         <mat-card-title> {{ producto.menor_Nuevo| titlecase }} </mat-card-title>
         <mat-card-subtitle> 
-            <small class="text-info">
-                Presentacion:
-            </small>
-            <br>{{ producto.presentacion| titlecase }} </mat-card-subtitle>
+            <p>
+                {{ producto.presentacion| titlecase }}
+            </p>
+        </mat-card-subtitle>
     </mat-card-header>
     <img  mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
     <mat-card-content>

@@ -3,4 +3,5 @@ export interface Videos {
     enlace:      string;
     id:          number;
     titulo:      string;
+    pic:      string;
 }

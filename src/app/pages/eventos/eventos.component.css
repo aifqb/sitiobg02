@@ -28,11 +28,7 @@ div p{
   margin-bottom: 0;
 }
 
-.tuclase {
-  text-align: left; 
-  font-family: Arial Black; 
-  font-weight: bold; 
-  font-size: 35px; 
-  color: #fff; 
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  }
+.card{
+  width: 25rem;
+  margin-bottom: 3rem;
+}

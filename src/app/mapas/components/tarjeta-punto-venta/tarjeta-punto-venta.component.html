@@ -11,13 +11,11 @@
                 <p>{{ punto.CiudadLocalidad }}</p>
             </mat-card-content>
             <mat-card-actions>
-                <button mat-raised-button color="secondary">
-                    <a target="_blank" href="https://www.google.com/maps/place/{{punto.Google}}">
-                        <small>
-                            abrir en Maps
-                        </small>
-                    </a>
-                </button>
+                <button type="button" class="btn btn-outline-primary"><a class="text-reset" target="_blank" href="https://www.google.com/maps/place/{{punto.Google}}">
+                    <small>
+                        abrir en Maps
+                    </small>
+                </a></button>
             </mat-card-actions>
         </mat-card>
     </div>

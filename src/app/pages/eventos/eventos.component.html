@@ -2,15 +2,14 @@
 
     <div class="hero-image-eventos">
         <div class="container eventos">
-
         </div>
     </div>
 
-    <div>
+    <div class="container">
         <div class="row">
-            <p class="tuclase">Videos</p>
-            <div class="col " *ngFor="let video of videos">
-                <div class="card">
+            <p class="fs-1 m-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Videos</p>
+            <div class="col justify-content-evenly" *ngFor="let video of videos">
+                <div class="card shadow">
                     <img src="{{video.pic}}" class="card-img-top" alt="{{video.titulo}}">
                     <div class="card-body text-light bg-dark">
                         <h4 class="card-title" style="font-size: 1.2rem; color: azure; ">{{video.titulo}}</h4>
@@ -24,43 +23,4 @@
         </div>
     </div>
 
-    <div>
-        <div class="row">
-            <p>Noticias</p>
-            <div class="col " *ngFor="let video of videos">
-                <div class="card">
-                    <!-- <div class="ratio ratio-16x9">
-                            <iframe src="https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/videos%2Fvideo%20conceptos%20bongusto.mp4?alt=media&token=4423457c-48f5-45f4-835a-57b06d0dd479" controls="true" title="clip Bon gusto tv" allowfullscreen></iframe>
-                        </div> -->
-                    <div class="card-body text-light bg-dark">
-                        <h4 class="card-title" style="font-size: 1.2rem; color: azure; ">{{video.titulo}}</h4>
-                        <p class="card-text">
-                            {{video.descripcion}}
-                        </p>
-                        <a href="{{video.enlace}}" target="_blank" class="btn btn-danger">ver en youtube</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div>
-        <div class="row">
-            <p>Galeria</p>
-            <div class="col " *ngFor="let video of videos">
-                <div class="card">
-                    <!-- <div class="ratio ratio-16x9">
-                            <iframe src="https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/videos%2Fvideo%20conceptos%20bongusto.mp4?alt=media&token=4423457c-48f5-45f4-835a-57b06d0dd479" controls="true" title="clip Bon gusto tv" allowfullscreen></iframe>
-                        </div> -->
-                    <div class="card-body text-light bg-dark">
-                        <h4 class="card-title" style="font-size: 1.2rem; color: azure; ">{{video.titulo}}</h4>
-                        <p class="card-text">
-                            {{video.descripcion}}
-                        </p>
-                        <a href="{{video.enlace}}" target="_blank" class="btn btn-danger">ver en youtube</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>    
