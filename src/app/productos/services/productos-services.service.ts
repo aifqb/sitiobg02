@@ -22,12 +22,12 @@ export class ProductosServicesService {
     return this.http.get<Producto>(url) 
   }
   getSugerencias( termino: string ): Observable<Producto[]> { 
-    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=200&ProductoNombre=${ termino }`
+    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=7&CampoOrdenar=Peso_aprox&OrdenAscendente=false&ProductoNombre=${ termino }`
     return this.http.get<Producto[]>(url) 
   }
 
   buscarGrupoMayor( grupoMayor: string): Observable<Producto[]> {
-    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=200&CampoOrdenar=menor_Nuevo&OrdenAscendente=true&Grupo_Mayor=${ grupoMayor }`
+    const url = `${ this.apiUrl }/grupomayor?cantidadRegistrosPorPagina=50&CampoOrdenar=Menor_Nuevo&OrdenAscendente=true&CampoOrdenar2=Proceso&OrdenAscendente2=true&Grupo_Mayor=${ grupoMayor }`
     return this.http.get<Producto[]>(url) 
   }
 
