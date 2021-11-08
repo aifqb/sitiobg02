@@ -16,6 +16,7 @@ import { BoliviaComponent } from './pages/bolivia/bolivia.component';
 import { PvOrComponent } from './components/pv-or/pv-or.component';
 import { PvBoComponent } from './components/pv-bo/pv-bo.component';
 import { PvCbComponent } from './components/pv-cb/pv-cb.component';
+import { MapaPopComponent } from './components/mapa-pop/mapa-pop.component';
 
 @NgModule({
   declarations: 
@@ -32,6 +33,7 @@ import { PvCbComponent } from './components/pv-cb/pv-cb.component';
     PvOrComponent,
     PvBoComponent,
     PvCbComponent,
+    MapaPopComponent,
   ],
   imports: 
   [
