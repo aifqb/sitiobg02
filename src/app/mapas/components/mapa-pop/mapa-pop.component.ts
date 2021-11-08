@@ -1,3 +1,4 @@
+import { hostViewClassName } from '@angular/compiler';
 import {
   AfterViewInit,
   Component,
@@ -36,9 +37,7 @@ export class MapaPopComponent implements AfterViewInit {
 
     this.mapa.on('load', () => {
       this.mapa.addSource('places', {
-        // This GeoJSON contains features that include an "icon"
-        // property. The value of the "icon" property corresponds
-        // to an image in the Mapbox Streets style's sprite.
+
         type: 'geojson',
         data: {
           type: 'FeatureCollection',
@@ -46,6 +45,7 @@ export class MapaPopComponent implements AfterViewInit {
             {
               type: 'Feature',
               properties: {
+                title: 'Mapbox DC',
                 description:
                   '<strong>otro punto</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
                 icon: 'mapbox-marker-icon-orange',
@@ -154,7 +154,7 @@ export class MapaPopComponent implements AfterViewInit {
           ],
         },
       });
-      // Add a layer showing the places.
+
       this.mapa.addLayer({
         id: 'places',
         type: 'symbol',
@@ -162,19 +162,22 @@ export class MapaPopComponent implements AfterViewInit {
         layout: {
           'icon-image': '{icon}',
           'icon-allow-overlap': true,
+          'text-field': ['get', 'title'],
+                        'text-font': [
+                            'Open Sans Semibold',
+                            'Arial Unicode MS Bold'
+                        ],
+                        'text-offset': [0, 0.1],
+                        'text-size':14,
+                        'text-allow-overlap':false,
+                        'text-anchor': 'top'
         },
       });
-
-      // When a click event occurs on a feature in the places layer, open a popup at the
-      // location of the feature, with description HTML from its properties.
       this.mapa.on('click', 'places', (e: any) => {
-        // Copy coordinates array.
+
         const coordinates = e.features[0].geometry.coordinates.slice();
         const description = e.features[0].properties.description;
 
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
           coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -185,15 +188,14 @@ export class MapaPopComponent implements AfterViewInit {
           .addTo(this.mapa);
       });
 
-      // Change the cursor to a pointer when the mouse is over the places layer.
       this.mapa.on('mouseenter', 'places', () => {
         this.mapa.getCanvas().style.cursor = 'pointer';
       });
 
-      // Change it back to a pointer when it leaves.
       this.mapa.on('mouseleave', 'places', () => {
         this.mapa.getCanvas().style.cursor = '';
       });
+      this.mapa.addControl(new mapboxgl.FullscreenControl());
     });
   }
 }
