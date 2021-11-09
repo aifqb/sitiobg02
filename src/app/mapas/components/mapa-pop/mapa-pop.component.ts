@@ -25,7 +25,7 @@ export class MapaPopComponent implements AfterViewInit {
     this.mapa = new mapboxgl.Map({
       container: this.divMapa.nativeElement,
       style: 'mapbox://styles/alexqb/cktccupfp07ra17semcjfh4k5',
-    //   style: 'mapbox://styles/mapbox/streets-v11',
+      //   style: 'mapbox://styles/mapbox/streets-v11',
 
       center: this.center,
       zoom: this.zoomLevel,
@@ -37,7 +37,6 @@ export class MapaPopComponent implements AfterViewInit {
 
     this.mapa.on('load', () => {
       this.mapa.addSource('places', {
-
         type: 'geojson',
         data: {
           type: 'FeatureCollection',
@@ -163,18 +162,14 @@ export class MapaPopComponent implements AfterViewInit {
           'icon-image': '{icon}',
           'icon-allow-overlap': true,
           'text-field': ['get', 'title'],
-                        'text-font': [
-                            'Open Sans Semibold',
-                            'Arial Unicode MS Bold'
-                        ],
-                        'text-offset': [0, 0.1],
-                        'text-size':14,
-                        'text-allow-overlap':false,
-                        'text-anchor': 'top'
+          'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+          'text-offset': [0, 0.1],
+          'text-size': 14,
+          'text-allow-overlap': false,
+          'text-anchor': 'top',
         },
       });
       this.mapa.on('click', 'places', (e: any) => {
-
         const coordinates = e.features[0].geometry.coordinates.slice();
         const description = e.features[0].properties.description;
 
@@ -195,6 +190,37 @@ export class MapaPopComponent implements AfterViewInit {
       this.mapa.on('mouseleave', 'places', () => {
         this.mapa.getCanvas().style.cursor = '';
       });
+
+      this.mapa.on('click', 'places', (b: any) => {
+        this.mapa.flyTo({
+          center: b.features[0].geometry.coordinates,
+        });
+      });
+
+      var lp = document.getElementById('lp')!.addEventListener('click', () => {
+        // Fly to a random location by offsetting the point -74.50, 40
+        // by up to 5 degrees.
+        this.mapa.flyTo({
+            center: [
+              -68.143866,
+              -16.505482
+            ],
+            essential: true // this animation is considered essential with respect to prefers-reduced-motion
+        });
+    });
+    var or = document.getElementById('or')!.addEventListener('click', () => {
+      // Fly to a random location by offsetting the point -74.50, 40
+      // by up to 5 degrees.
+      this.mapa.flyTo({
+          center: [
+            -67.105221,
+            -17.964195
+          ],
+          essential: true // this animation is considered essential with respect to prefers-reduced-motion
+      });
+  });
+
+
       this.mapa.addControl(new mapboxgl.FullscreenControl());
     });
   }
