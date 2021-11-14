@@ -17,7 +17,7 @@ export class MapaPopComponent implements AfterViewInit {
   @ViewChild('mapa') divMapa!: ElementRef;
   mapa!: mapboxgl.Map;
   zoomLevel: number = 12;
-  center: [number, number] = [-77.04, 38.907];
+  center: [number, number] = [-67.1484375, -17.035777250427184];
 
   constructor() {}
 
@@ -38,120 +38,95 @@ export class MapaPopComponent implements AfterViewInit {
     this.mapa.on('load', () => {
       this.mapa.addSource('places', {
         type: 'geojson',
-        data: {
+        data: 
+        {
           type: 'FeatureCollection',
           features: [
             {
               type: 'Feature',
               properties: {
-                title: 'Mapbox DC',
-                description:
-                  '<strong>otro punto</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+                title: 'La cancha',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'La cancha'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.038659, 38.931567],
-              },
+              geometry: { type: 'Point', coordinates: [-66.152319, -17.404619] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>Mad Men Season Five Finale Watch Party</strong><p>Head to Lounge 201 (201 Massachusetts Avenue NE) Sunday for a <a href="http://madmens5finale.eventbrite.com/" target="_blank" title="Opens in a new window">Mad Men Season Five Finale Watch Party</a>, complete with 60s costume contest, Mad Men trivia, and retro food and drink. 8:00-11:00 p.m. $10 general admission, $20 admission and two hour open bar.</p>',
+                title: 'Mercado San Antonio',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'Mercado San Antonio'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.003168, 38.894651],
-              },
+              geometry: { type: 'Point', coordinates: [-66.155054, -17.40233] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>Big Backyard Beach Bash and Wine Fest</strong><p>EatBar (2761 Washington Boulevard Arlington VA) is throwing a <a href="http://tallulaeatbar.ticketleap.com/2012beachblanket/" target="_blank" title="Opens in a new window">Big Backyard Beach Bash and Wine Fest</a> on Saturday, serving up conch fritters, fish tacos and crab sliders, and Red Apron hot dogs. 12:00-3:00 p.m. $25.grill hot dogs.</p>',
+                title: 'Calle lanza entre Honduras y Brasil',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'Calle lanza entre Honduras y Brasil'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.090372, 38.881189],
-              },
+              geometry: { type: 'Point', coordinates: [-66.152166, -17.400282] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>Ballston Arts & Crafts Market</strong><p>The <a href="http://ballstonarts-craftsmarket.blogspot.com/" target="_blank" title="Opens in a new window">Ballston Arts & Crafts Market</a> sets up shop next to the Ballston metro this Saturday for the first of five dates this summer. Nearly 35 artists and crafters will be on hand selling their wares. 10:00-4:00 p.m.</p>',
+                title: 'Mercado Calatayud',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'Mercado Calatayud'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.111561, 38.882342],
-              },
+              geometry: { type: 'Point', coordinates: [-66.153311, -17.398647] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>Seersucker Bike Ride and Social</strong><p>Feeling dandy? Get fancy, grab your bike, and take part in this year\'s <a href="http://dandiesandquaintrelles.com/2012/04/the-seersucker-social-is-set-for-june-9th-save-the-date-and-start-planning-your-look/" target="_blank" title="Opens in a new window">Seersucker Social</a> bike ride from Dandies and Quaintrelles. After the ride enjoy a lawn party at Hillwood with jazz, cocktails, paper hat-making, and more. 11:00-7:00 p.m.</p>',
+                title: 'Mercado Quintanilla',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'Mercado Quintanilla'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.052477, 38.943951],
-              },
+              geometry: { type: 'Point', coordinates: [-66.110615, -17.387361] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>Capital Pride Parade</strong><p>The annual <a href="http://www.capitalpride.org/parade" target="_blank" title="Opens in a new window">Capital Pride Parade</a> makes its way through Dupont this Saturday. 4:30 p.m. Free.</p>',
+                title: 'Mercado abasto de sacaba',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'Mercado abasto de sacaba'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.043444, 38.909664],
-              },
+              geometry: { type: 'Point', coordinates: [-66.03761, -17.40192] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href="http://www.muhsinah.com" target="_blank" title="Opens in a new window">Muhsinah</a> plays the <a href="http://www.blackcatdc.com">Black Cat</a> (1811 14th Street NW) tonight with <a href="http://www.exitclov.com" target="_blank" title="Opens in a new window">Exit Clov</a> and <a href="http://godsilla.bandcamp.com" target="_blank" title="Opens in a new window">Gods’illa</a>. 9:00 p.m. $12.</p>',
+                title: 'Mercado 25 de Mayo',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'Mercado 25 de Mayo'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.031706, 38.914581],
-              },
+              geometry: { type: 'Point', coordinates: [-66.154631, -17.394753] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>A Little Night Music</strong><p>The Arlington Players\' production of Stephen Sondheim\'s  <a href="http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show" target="_blank" title="Opens in a new window"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>',
+                title: 'Mercado colcapirhua',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'Mercado colcapirhua'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.020945, 38.878241],
-              },
+              geometry: { type: 'Point', coordinates: [-66.243968, -17.390195] }
             },
             {
               type: 'Feature',
               properties: {
-                description:
-                  '<strong>punto de venta</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
+                title: 'mercado central Quillacollo',
                 icon: 'mapbox-marker-icon-orange',
+                description: 'mercado central Quillacollo'
               },
-              geometry: {
-                type: 'Point',
-                coordinates: [-77.007481, 38.876516],
-              },
-            },
-          ],
-        },
+              geometry: { type: 'Point', coordinates: [-66.27995, -17.397356] }
+            }
+          ]
+        }
+        
+        ,
       });
 
       this.mapa.addLayer({
@@ -201,25 +176,26 @@ export class MapaPopComponent implements AfterViewInit {
         // Fly to a random location by offsetting the point -74.50, 40
         // by up to 5 degrees.
         this.mapa.flyTo({
-            center: [
-              -68.143866,
-              -16.505482
-            ],
-            essential: true // this animation is considered essential with respect to prefers-reduced-motion
+          center: [-68.143866, -16.505482],
+          essential: true, // this animation is considered essential with respect to prefers-reduced-motion
         });
-    });
-    var or = document.getElementById('or')!.addEventListener('click', () => {
-      // Fly to a random location by offsetting the point -74.50, 40
-      // by up to 5 degrees.
-      this.mapa.flyTo({
-          center: [
-            -67.105221,
-            -17.964195
-          ],
-          essential: true // this animation is considered essential with respect to prefers-reduced-motion
       });
-  });
-
+      var or = document.getElementById('or')!.addEventListener('click', () => {
+        // Fly to a random location by offsetting the point -74.50, 40
+        // by up to 5 degrees.
+        this.mapa.flyTo({
+          center: [-67.105221, -17.964195],
+          essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+        });
+      });
+      var cb = document.getElementById('cb')!.addEventListener('click', () => {
+        // Fly to a random location by offsetting the point -74.50, 40
+        // by up to 5 degrees.
+        this.mapa.flyTo({
+          center: [-66.15477561950684, -17.398804053649485],
+          essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+        });
+      });
 
       this.mapa.addControl(new mapboxgl.FullscreenControl());
     });
