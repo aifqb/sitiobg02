@@ -115,6 +115,21 @@ export class MapaPopComponent implements AfterViewInit {
               geometry: { type: 'Point', coordinates: [-66.243968, -17.390195] }
             },
             {
+              type: "Feature",
+              properties: {
+                title: "Eliana ibarra",
+                description: "<strong>Eliana ibarra</strong><p><a class=\"text-reset\" target=\"_blank\" href=\"https://www.google.com/maps/place/-17.967235, -67.100734\">Eliana ibarra</a>puede encontarlo en la siguiente direccion: 2VMX+3WM, Oruro, Bolivia</p>",
+                icon: "mapbox-marker-icon-orange"
+              },
+              geometry: {
+                type: 'Point',
+                coordinates: [
+                  -67.100734,
+                  -17.967235
+                ]
+              }
+            },
+            {
               type: 'Feature',
               properties: {
                 title: 'mercado central Quillacollo',
