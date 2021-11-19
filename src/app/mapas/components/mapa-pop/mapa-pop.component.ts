@@ -24,8 +24,12 @@ export class MapaPopComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.mapa = new mapboxgl.Map({
       container: this.divMapa.nativeElement,
+      // basic bg
       style: 'mapbox://styles/alexqb/cktccupfp07ra17semcjfh4k5',
+      // con carretera
+      //style:'mapbox://styles/alexqb/ckw5qisj51hop14o4wmzabca8',
       //   style: 'mapbox://styles/mapbox/streets-v11',
+      
 
       center: this.center,
       zoom: this.zoomLevel,
@@ -943,7 +947,7 @@ export class MapaPopComponent implements AfterViewInit {
           'icon-allow-overlap': true,
           'text-field': ['get', 'title'],
           'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
-          'text-offset': [0, 0.1],
+          'text-offset': [0, 1],
           'text-size': 14,
           'text-allow-overlap': false,
           'text-anchor': 'top',

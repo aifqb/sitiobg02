@@ -11,11 +11,11 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      { path: 'lapaz', component: LapazComponent },
+      { path: 'puntosdeventa', component: LapazComponent },
       { path: 'oruro', component: OruroComponent },
       { path: 'cbba', component: CbbaComponent },
       { path: 'bolivia', component: BoliviaComponent },
-      { path: '**', redirectTo: 'lapaz' },
+      { path: '**', redirectTo: 'puntosdeventa' },
     ],
   },
 ];

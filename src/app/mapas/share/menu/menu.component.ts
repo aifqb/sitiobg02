@@ -13,8 +13,8 @@ export class MenuComponent {
 
   menuItems: MenuItem [] = [
     {
-      ruta: 'lapaz',
-      nombre: 'La paz'
+      ruta: 'puntosdeventa',
+      nombre: 'Puntos de venta'
     },
     {
       ruta: 'oruro',
