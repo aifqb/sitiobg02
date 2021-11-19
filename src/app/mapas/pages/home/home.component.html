@@ -1,4 +1,4 @@
-<div class="container-fluid shadow-sm pve" fxLayout="column" fxLayoutAlign="center">
+<div class="container-fluid pve" fxLayout="column" fxLayoutAlign="center">
     <p class="text-center py-4 fs-1 text-u" fxLayoutAlign="center">
         Puntos de venta
     </p>
@@ -7,8 +7,25 @@
     </p>
 </div>
 
-<app-menu>
-</app-menu>
+<div class="col justify-content-center bg-dark">
+    <button type="button" class="btn btn-warning" id="lp">La Paz</button>
+
+    <button type="button" class="btn btn-warning" id="ea">El Alto</button>
+
+    <button type="button" class="btn btn-warning" id="via">Viacha</button>
+
+    <button type="button" class="btn btn-warning" id="or">Oruro</button>
+
+    <button type="button" class="btn btn-warning" id="cb">Cochabamba</button>
+
+    <button type="button" class="btn btn-warning" id="pt">Potosi</button>
+</div>
+
+<div class="px-3 bg-light m-1 py-2">
+    <app-mapa-pop></app-mapa-pop>
+</div>
+<!-- <app-menu></app-menu>
+
 <div class="my-4 shadow-sm bg-light p-3" style="border-radius: 15px;">
     <router-outlet></router-outlet>
-</div>
+</div> -->

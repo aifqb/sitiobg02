@@ -17,17 +17,3 @@ div {
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-button {
-  display: block;
-  position: relative;
-  margin: 10px auto;
-  width: 20vh;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 12px;
-  text-align: center;
-  color: #fff;
-  background: #ee8a65;
-}

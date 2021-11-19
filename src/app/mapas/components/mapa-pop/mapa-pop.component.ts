@@ -1022,6 +1022,15 @@ export class MapaPopComponent implements AfterViewInit {
           essential: true, // this animation is considered essential with respect to prefers-reduced-motion
         });
       });
+      var pt = document.getElementById('pt')!.addEventListener('click', () => {
+        // Fly to a random location by offsetting the point -74.50, 40
+        // by up to 5 degrees.
+        this.mapa.flyTo({
+          center: [-65.755102, -19.58763],
+          zoom: 15,
+          essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+        });
+      });
 
       this.mapa.addControl(new mapboxgl.FullscreenControl());
     });

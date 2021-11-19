@@ -3,3 +3,17 @@
     color: #112542;
 
 }
+
+button {
+    display: inline;
+    margin: 0.2rem;
+    width: 15vh;
+    height: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #ff4f0c;
+  }
