@@ -1,10 +1,11 @@
 
 .hero-image {
     position: relative;
-    height: 50vh;
+    height: 80vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fp12021.webp?alt=media&token=13584325-32bc-4854-a0d3-49319d505e8d")
-    no-repeat center;
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fnavidad%20bon%20gusto.jpg?alt=media&token=7819ef64-2ba9-46d0-8d8e-d277a49584a4")
+    /* background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fp12021.webp?alt=media&token=13584325-32bc-4854-a0d3-49319d505e8d") */
+        no-repeat center;
     background-size: cover;
     border-radius: 15px;
   }
