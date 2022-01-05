@@ -3,9 +3,10 @@
     position: relative;
     height: 80vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fnavidad%20bon%20gusto.jpg?alt=media&token=7819ef64-2ba9-46d0-8d8e-d277a49584a4")
+    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsalchichas%20y%20chorizos.jpg?alt=media&token=cdff941b-936b-4119-9198-96c74f5199be")
+    /*background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fnavidad%20bon%20gusto.jpg?alt=media&token=7819ef64-2ba9-46d0-8d8e-d277a49584a4")
     /* background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fp12021.webp?alt=media&token=13584325-32bc-4854-a0d3-49319d505e8d") */
-        no-repeat center;
+    no-repeat center;
     background-size: cover;
     border-radius: 15px;
   }

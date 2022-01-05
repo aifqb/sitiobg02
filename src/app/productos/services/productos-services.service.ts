@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ProductosServicesService {
 
   //private apiUrl: string = 'https://webapiproductos.azurewebsites.net/api/productos';
-  private apiUrl: string = 'http://localhost:8080/api/productos';
+  private apiUrl: string = 'https://api-bg.herokuapp.com/api/productos';
 
   constructor( private http: HttpClient) { }
 
