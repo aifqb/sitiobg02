@@ -9,21 +9,24 @@ import { Observable } from 'rxjs';
 export class ProductosServicesService {
 
   //private apiUrl: string = 'https://webapiproductos.azurewebsites.net/api/productos';
-  private apiUrl: string = 'https://api-bg.herokuapp.com/api/productos';
+  // private apiUrl: string = 'https://api-bg.herokuapp.com/api/productos';
+  private apiUrl: string = 'http://localhost:8080/api';
+
+
 
   constructor( private http: HttpClient) { }
 
   getProductos(): Observable<Producto[]> {
-    const url = `${ this.apiUrl }`
+    const url = `${ this.apiUrl }/productos`
     return this.http.get<Producto[]>(url)
   }
   
   getProductosPorId( id: number): Observable<Producto> {
-    const url = `${ this.apiUrl }/Cod_Item_PF:int?Cod_Item_PF=${ id }`
+    const url = `${ this.apiUrl }/buscar/producto/${ id }`
     return this.http.get<Producto>(url) 
   }
   getSugerencias( termino: string ): Observable<Producto[]> { 
-    const url = `${ this.apiUrl }/busqueda?cantidadRegistrosPorPagina=7&CampoOrdenar=Peso_aprox&OrdenAscendente=false&ProductoNombre=${ termino }`
+    const url = `${ this.apiUrl }/buscar/producto/${ termino }`
     return this.http.get<Producto[]>(url) 
   }
 
