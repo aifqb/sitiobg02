@@ -22,7 +22,7 @@ export class ProductosServicesService {
   }
   
   getProductosPorId( id: number): Observable<Producto> {
-    const url = `${ this.apiUrl }/buscar/producto/${ id }`
+    const url = `${ this.apiUrl }/buscar/productoid/${ id }`
     return this.http.get<Producto>(url) 
   }
   getSugerencias( termino: string ): Observable<Producto[]> { 
@@ -31,7 +31,7 @@ export class ProductosServicesService {
   }
 
   buscarGrupoMayor( grupoMayor: string): Observable<Producto[]> {
-    const url = `${ this.apiUrl }/grupomayor?cantidadRegistrosPorPagina=50&CampoOrdenar=Menor_Nuevo&OrdenAscendente=true&CampoOrdenar2=Proceso&OrdenAscendente2=true&Grupo_Mayor=${ grupoMayor }`
+    const url = `${ this.apiUrl }/buscar/grupomayor/${ grupoMayor }`
     return this.http.get<Producto[]>(url) 
   }
 
