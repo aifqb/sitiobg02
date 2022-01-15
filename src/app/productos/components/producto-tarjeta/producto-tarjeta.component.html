@@ -1,10 +1,10 @@
-<mat-grid-list cols=1 *ngIf="!producto; else divproductot">
+<mat-grid-list cols=1 *ngIf="!producto; else divproducto">
     <mat-grid-tile>
       <mat-spinner></mat-spinner>
     </mat-grid-tile>
   </mat-grid-list>
 
-  <ng-template #divproductot>
+  <ng-template #divproducto>
 <mat-card class="mat-elevation-z8 m-0">
     <mat-card-header>
         <mat-card-title> {{ producto.menor_Nuevo| titlecase }} </mat-card-title>
@@ -23,7 +23,6 @@
         <button mat-raised-button 
                 color="warn"
                 [routerLink]="['/productos', producto.cod_Item_PF]">
-                
                 más detalles
             </button>
     </mat-card-actions>
