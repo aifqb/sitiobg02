@@ -23,7 +23,7 @@ export class ProductosServicesService {
     return this.http.get<Producto[]>(url)
   }
   
-  getProductosPorId( id: number): Observable<Producto> {
+  getProductosPorId( id: string): Observable<Producto> {
     const url = `${ this.baseUrl }/api/productos/${ id }`
     return this.http.get<Producto>(url) 
   }

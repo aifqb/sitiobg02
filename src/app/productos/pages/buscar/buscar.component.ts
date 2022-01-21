@@ -37,7 +37,7 @@ export class BuscarComponent implements OnInit {
     
     this.termino =  producto.producto_Nombre;
     
-    this.ProductosServicesService.getProductosPorId( producto.cod_Item_PF! )
+    this.ProductosServicesService.getProductosPorId( producto._id! )
       .subscribe( producto => this.productoSelecionado = producto );
   }
   
