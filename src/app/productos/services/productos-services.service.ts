@@ -24,7 +24,7 @@ export class ProductosServicesService {
   }
   
   getProductosPorId( id: number): Observable<Producto> {
-    const url = `${ this.baseUrl }/api/buscar/productoid/${ id }`
+    const url = `${ this.baseUrl }/api/productos/${ id }`
     return this.http.get<Producto>(url) 
   }
   getSugerencias( termino: string ): Observable<Producto[]> { 

@@ -1,6 +1,6 @@
 export interface Producto {
 
-  idPr: number;
+  _id: string
   producto_Nombre: string;
   grupoId: number;
   cod_Item_PF: number;

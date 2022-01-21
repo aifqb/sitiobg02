@@ -14,7 +14,7 @@
           <th> <img class="p-0 m-0" style="width: 120px;" mat-card-image src="assets/productos/imagen_ref.jpg"></th>    
           <td>{{producto.menor_Nuevo| titlecase}}<br> <small class="text-info mt-2"> Presentacion:</small><br>{{producto.presentacion| titlecase}}</td>
           <td style="width: 90px;">
-              <a class="link-secondary" [routerLink]="['/productos', producto.cod_Item_PF]">más detalles</a>
+              <a class="link-secondary" [routerLink]="['/productos', producto._id]">más detalles</a>
           </td>
         </tr>
       </tbody>
