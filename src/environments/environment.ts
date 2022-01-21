@@ -2,9 +2,12 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { baseApiUrl } from "mapbox-gl";
+
 export const environment = {
   production: false,
-  mapboxToken: 'pk.eyJ1IjoiYWxleHFiIiwiYSI6ImNrdGMxaHViaDIxdWYycHBrMTA4MnloNnMifQ.Dce7H29WPwgafcfz78QOoQ'
+  mapboxToken: 'pk.eyJ1IjoiYWxleHFiIiwiYSI6ImNrdGMxaHViaDIxdWYycHBrMTA4MnloNnMifQ.Dce7H29WPwgafcfz78QOoQ',
+  baseUrl: 'http://localhost:8080'
 };
 
 /*
