@@ -7,7 +7,8 @@ import { baseApiUrl } from "mapbox-gl";
 export const environment = {
   production: false,
   mapboxToken: 'pk.eyJ1IjoiYWxleHFiIiwiYSI6ImNrdGMxaHViaDIxdWYycHBrMTA4MnloNnMifQ.Dce7H29WPwgafcfz78QOoQ',
-  baseUrl: 'http://localhost:8080'
+  // baseUrl: 'http://localhost:8080',
+  baseUrl: 'https://api-bg.herokuapp.com'
 };
 
 /*
