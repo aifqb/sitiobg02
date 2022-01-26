@@ -1,7 +1,7 @@
 
 .hero-image {
     position: relative;
-    height: 80vh;
+    height: 55vh;
     overflow: hidden;
     background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsalchichas%20y%20chorizos.jpg?alt=media&token=cdff941b-936b-4119-9198-96c74f5199be")
     /*background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fnavidad%20bon%20gusto.jpg?alt=media&token=7819ef64-2ba9-46d0-8d8e-d277a49584a4")
@@ -17,6 +17,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    
     text-align: center;
     color: azure;
       }
@@ -33,6 +34,8 @@
     background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsalchipapa.webp?alt=media&token=7c58ee15-d35c-41cd-b20d-7020d6acb156")
     no-repeat center;
     background-size: cover;
+
+    
   }
   .hero-image3 {
     position: relative;
@@ -41,6 +44,8 @@
     background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsandwich-web.webp?alt=media&token=82416efd-9926-40fd-bfdc-49c0247cbccc")
     no-repeat center;
     background-size: cover;
+
+
   }
   
   .hero-image4 {
