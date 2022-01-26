@@ -13,7 +13,12 @@
     </div>
     <div fxFlex="50" fxLayoutAlign.xs="center center">
       <div>
-        <h2 class="text-sm-center text-lg-start py-3 m-0 fs-3">{{producto.producto_Nombre| titlecase}}</h2>
+        <h2 class="text-sm-center text-lg-start py-3 m-0 fs-3">
+          <small class="text-info">
+            Producto:
+          </small>
+          <br>
+          {{producto.producto_Nombre| titlecase}}</h2>
         <table class="table shadow" style="border-radius: 10px;">
           <tbody>
             <tr>
@@ -29,8 +34,8 @@
               <td colspan="2">{{producto.cod_Item_PF| number: '3.0'}}</td>
             </tr>
             <tr>
-              <th scope="row">Grupo:</th>
-              <td colspan="2"> {{producto.proceso}}</td>
+              <th scope="row">Modo de conservación</th>
+              <td colspan="2">Refrigerado a 5 ºC</td>
             </tr>
             <tr>
               <th scope="row">Precio:</th>
@@ -49,7 +54,7 @@
               lineas de productos
             </button>
             <a mat-raised-button class="btn-wp" style="text-decoration:none"
-              href="https://api.whatsapp.com/send?phone=69900944&text=hola%20estoy%20en%20el%20sitio%20web%20de%20bongusto%20y%20estoy%20interesado%20en%20el%20producto:%20{{producto.producto_Nombre| titlecase}}"
+              href="https://api.whatsapp.com/send?phone=+59169900944&text=hola%20estoy%20en%20el%20sitio%20web%20de%20bongusto%20y%20estoy%20interesado%20en%20el%20producto:%20{{producto.producto_Nombre| titlecase}}"
               target="_blank">
               <span>
                 <i class="fab fa-whatsapp">
