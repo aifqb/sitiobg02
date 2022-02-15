@@ -1,3 +1,17 @@
-.mat-form-field + .mat-form-field {
-    margin-left: 8px;
-  }
+h1{
+  height: 5rem;
+  text-align: center;
+}
+.descripcion{
+  height: 10rem;
+
+}
+p{
+  font-style: italic;
+  font-size: 18px;
+}
+.grupo {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: blueviolet;
+}

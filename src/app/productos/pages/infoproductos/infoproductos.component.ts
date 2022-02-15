@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoproductosComponent implements OnInit {
 
-  panelOpenState = false;
+
   
   constructor() { }
 
