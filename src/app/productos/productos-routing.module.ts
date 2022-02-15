@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
+import { InfoproductosComponent } from './pages/infoproductos/infoproductos.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: 'listado', component: ListadoComponent },
       { path: 'buscar', component: BuscarComponent },
       { path: 'categoria', component: CategoriaComponent },
+      { path: ':informacion', component: InfoproductosComponent },
       { path: ':id', component: ProductoComponent },
       { path: '**', redirectTo: 'listado' },
     ],

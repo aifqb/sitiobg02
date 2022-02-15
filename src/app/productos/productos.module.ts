@@ -10,6 +10,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
+import { InfoproductosComponent } from './pages/infoproductos/infoproductos.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { ProductoTablaComponent } from './components/producto-tabla/producto-tabla.component';
 import { ProductoSeachComponent } from './components/producto-seach/producto-seach.component';
@@ -31,7 +32,8 @@ import { ProductoTarjetaCategoriaComponent } from './components/producto-tarjeta
     ProductoTablaComponent,
     ProductoSeachComponent,
     ProductoTarjetaComponent,
-    ProductoTarjetaCategoriaComponent
+    ProductoTarjetaCategoriaComponent,
+    InfoproductosComponent
   ],
     
   imports: [
