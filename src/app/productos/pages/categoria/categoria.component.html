@@ -1,18 +1,15 @@
-<div class="container shadow-sm py-2">
-    <p fxLayoutAlign="center" class="pt-1 fw-light h4">Seleccione una opcion:</p>
+<div class="py-2">
+    <p fxLayoutAlign="center" class="pt-1 fw-light h4">Seleccione una categoria</p>
     <div class="col-12 text-center">
         <button *ngFor="let categoria of categorias" [class]="getClaseCSS( categoria )"
             (click)="activaCategoria( categoria )">
             {{categoria}}
         </button>
+
     </div>
 </div>
 
-<p class="text-center pt-lg-3 text-dark fs-3 m-2">Linea de producto:
-    <strong>
-        {{categoriaActiva | titlecase}}
-    </strong>
-</p>
+
 
 
 
@@ -25,7 +22,9 @@
 <ng-template #listado>
 
     <div>
-        <div>
+        <div class="bg-light">
+            <p *ngIf="categoriaActiva" class="text-center pt-lg-3 text-dark fs-4 m-2">Linea de producto {{categoriaActiva | lowercase}}
+            </p>
             <app-producto-tarjeta-categoria [productos]="productos"></app-producto-tarjeta-categoria>
         </div>
     </div>

@@ -17,7 +17,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatSelectModule} from '@angular/material/select';
-import {MatExpansionModule} from '@angular/material/expansion'; 
+import {MatExpansionModule} from '@angular/material/expansion';  
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -44,7 +45,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatPaginatorModule,
     MatSortModule,
     MatSelectModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatRadioModule
   ]
 })
 export class MaterialModule { }
