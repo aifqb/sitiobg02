@@ -10,7 +10,7 @@ button:hover {
   transition: 0.2s;
 }
 
-.bg-naranja {
+/* .bg-naranja {
   background: rgb(236, 233, 230);
   background: linear-gradient(
     to right,
@@ -18,8 +18,16 @@ button:hover {
     50%,
     rgba(255, 125, 0, 1) 100%
   );
-  border-radius: 15px;
+
   color: whitesmoke;
+} */
+
+.bg-naranja {
+  background: #F00000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+color: whitesmoke;
 }
 
 
