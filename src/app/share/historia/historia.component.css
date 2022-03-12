@@ -15,5 +15,14 @@
 p {
   font-size: 1.2rem;
   line-height: 1.7rem;
+  font-family: 'Snippet', sans-serif;
+  font-weight: 400;
 }
+
+  h2 {
+
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+  }
+
 
