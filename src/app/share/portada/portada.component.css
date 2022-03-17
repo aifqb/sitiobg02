@@ -1,12 +1,13 @@
 
 .hero-image {
     position: relative;
-    height: 55vh;
+    height: 75vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fplantilla%20de%20chorizos%20web%202.jpg?alt=media&token=04fe397b-2f55-4268-9c33-afb8203e6c5d")
+    background: url("https://apiproductos.blob.core.windows.net/portadas/portada.jpg")
     /*background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fnavidad%20bon%20gusto.jpg?alt=media&token=7819ef64-2ba9-46d0-8d8e-d277a49584a4")
     /* background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fp12021.webp?alt=media&token=13584325-32bc-4854-a0d3-49319d505e8d") */
     no-repeat center;
+    background-color: lavender;
     background-size: cover;
     border-radius: 15px;
   }
@@ -31,8 +32,9 @@
     position: relative;
     height: 40vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsalchipapa.webp?alt=media&token=7c58ee15-d35c-41cd-b20d-7020d6acb156")
+    background: url("https://apiproductos.blob.core.windows.net/portadas/portada1.jpg")
     no-repeat center;
+    background-color: antiquewhite;
     background-size: cover;
 
     
@@ -41,8 +43,9 @@
     position: relative;
     height: 40vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fsandwich-web.webp?alt=media&token=82416efd-9926-40fd-bfdc-49c0247cbccc")
+    background: url("https://apiproductos.blob.core.windows.net/portadas/portada2.jpg")
     no-repeat center;
+    background-color: azure;
     background-size: cover;
 
 
@@ -52,25 +55,28 @@
     position: relative;
     height: 40vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fingredientes-pizza.webp?alt=media&token=d5099fda-2b52-456d-8c78-495abaad68aa")
+    background: url("https://apiproductos.blob.core.windows.net/portadas/portada3.jpg")
     no-repeat center;
+    background-color: beige;
     background-size: cover;
   }
   .hero-image5 {
     position: relative;
     height: 40vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2FBACON-TOCINO.webp?alt=media&token=5b6d51ea-6e88-4eb9-b45c-905c15f58352")
+    background: url("https://apiproductos.blob.core.windows.net/portadas/portada4.jpg")
     no-repeat center;
     background-size: cover;
+    background-color: cornsilk;
   }
 
   .hero-image6 {
     position: relative;
     height: 40vh;
     overflow: hidden;
-    background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2Fgrilled-sausage.webp?alt=media&token=1ae47daf-3233-4909-a2a7-260c307e333c")
+    background: url("https://apiproductos.blob.core.windows.net/portadas/portada5.jpg")
     no-repeat center;
+    background-color: ghostwhite;
     background-size: cover;
   }
 
