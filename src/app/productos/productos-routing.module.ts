@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       { path: 'listado', component: ListadoComponent },
       { path: 'buscar', component: BuscarComponent },
-      { path: 'categoria', component: CategoriaComponent },
+      { path: 'lineadeproductos', component: CategoriaComponent },
       { path: 'promociones', component: InfoproductosComponent },
       { path: ':id', component: ProductoComponent },
       { path: '**', redirectTo: 'listado' },
