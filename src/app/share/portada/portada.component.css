@@ -11,7 +11,7 @@
     background-size: cover;
     border-radius: 15px;
   }
-  
+/*   
   .container {
     position: absolute;
     top: 50%;
@@ -21,6 +21,10 @@
     
     text-align: center;
     color: azure;
+      } */
+      .responsive {
+     
+        height: 100%;
       }
 
       a:hover{
@@ -81,7 +85,7 @@
   }
 
 
-a{
+/* a{
   height: 35vh;
 
-  }
+  } */
