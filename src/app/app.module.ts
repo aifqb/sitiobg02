@@ -32,7 +32,8 @@ import { VideosComponent } from './share/videos/videos.component';
 import { ContactoPieComponent } from './share/contacto-pie/contacto-pie.component';
 import { ConceptoComponent } from './share/concepto/concepto.component';
 import { HablanosComponent } from './share/hablanos/hablanos.component';
-import { RedesComponent } from './share/redes/redes.component'
+import { RedesComponent } from './share/redes/redes.component';
+import { YoutubePipe } from './pages/pipes/youtube.pipe'
 
 
 
@@ -60,7 +61,8 @@ import { RedesComponent } from './share/redes/redes.component'
     ContactoPieComponent,
     ConceptoComponent,
     HablanosComponent,
-    RedesComponent
+    RedesComponent,
+    YoutubePipe
   ],
   imports: [
     BrowserModule,
