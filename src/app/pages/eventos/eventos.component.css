@@ -32,3 +32,13 @@ div p{
   width: 25rem;
   margin-bottom: 3rem;
 }
+
+.example-card {
+  max-width: 450px;
+  margin-bottom: 15px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

@@ -25,12 +25,45 @@
         </div>
     </div> -->
 
-
-    <div class="container">
-        <div class="row">
-            <div *ngFor="let video of videos"  class="col-12 ratio ratio-16x9">
-                <p>{{video.titulo}}</p>
-                <iframe width="560" height="315" [src]="('https://www.youtube.com/embed/' + video.enlace) | youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 
+<div class="container">
+    <div class="row">
+        <div *ngFor="let video of videos" class="ratio ratio-16x9">
+            <div class="card">
+                <iframe width="560" [src]="('https://www.youtube.com/embed/' + video.enlace) | youtube"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">{{video.titulo}}</h5>
+                    <p class="card-text">{{video.descripcion}}</p>
+                </div>
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let video of videos">
+            <mat-card class="example-card bg-danger">
+                <mat-card-header>
+                    <mat-card-title>{{video.titulo}}</mat-card-title>
+                </mat-card-header>
+                <div class="ratio ratio-16x9">
+                    <iframe [src]="('https://www.youtube.com/embed/' + video.enlace) | youtube"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <mat-card-content>
+                    <p>{{video.descripcion}}</p>
+                </mat-card-content>
+                <!-- <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions> -->
+            </mat-card>
+        </div>
+    </div>
+</div>
