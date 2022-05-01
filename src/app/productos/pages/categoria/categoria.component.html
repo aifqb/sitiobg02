@@ -1,7 +1,7 @@
-<div class="py-2">
+<div class="py-2 bg-light">
     <p fxLayoutAlign="center" class="pt-1 fw-light h4">Seleccione una categoria</p>
     <div class="col-12 text-center">
-        <button *ngFor="let categoria of categorias" [class]="getClaseCSS( categoria )"
+        <button mat-stroked-button color="warn" *ngFor="let categoria of categorias" [class]="getClaseCSS( categoria )"
             (click)="activaCategoria( categoria )">
             {{categoria}}
         </button>

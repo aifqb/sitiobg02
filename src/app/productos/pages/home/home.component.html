@@ -1,45 +1,40 @@
 <!-- <div class="container-fluid home-prod shadow-sm " fxLayout="column" fxLayoutAlign="center">
-  <p class="py-4 fs-2" fxLayoutAlign="center">
+  <h2 class="py-4 fs-2" fxLayoutAlign="center">
+    Linea de productos
+  </h2>
+
+  <h2 fxLayoutAlign="center" class="text-center ">
+    Conoce nuestra línea de productos y déjate llevar por esta experiencia, nuestros productos tienen la calidad de las
+    marcas líderes a menor precio.
+  </h2>
+</div> -->
+
+<div class="container-fluid pve bg-light" fxLayout="column" fxLayoutAlign="center">
+  <p class="text-center py-4 fs-2 text-u" fxLayoutAlign="center">
     Linea de productos
   </p>
-
-  <p fxLayoutAlign="center" class="text-center ">
+  <p class="text-center fw-light h5 py-1 mb-2 px-lg-4">
     Conoce nuestra línea de productos y déjate llevar por esta experiencia, nuestros productos tienen la calidad de las
     marcas líderes a menor precio.
   </p>
-</div> -->
+</div>
 
-<div class="container-fluid shadow-sm home-producto hero-image-prod " fxLayout="column" fxLayoutAlign="center">
-  <div class="container">
-    <p class="text-center py-4 fs-1 text-u" fxLayoutAlign="center">
-      Linea de productos
-    </p>
-    <p class="text-center fw-light h4 py-1 mb-2 px-lg-4">
-      Conoce nuestra línea de productos y déjate llevar por esta experiencia, nuestros productos tienen la calidad de las
-      marcas líderes a menor precio.
-    </p>
+<div class="container">
+  <div class="row justify-content-center" >
+    <div class="col-lg-6 col-md-6 col-12">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-md text-center" *ngFor="let menu of menus">
+            <button mat-stroked-button color="warn" 
+            routerLink={{menu.ruta}}
+            routerLinkActive="active"
+            >{{menu.nombre}}</button>
+        </div>
+      </nav>
+    </div>
   </div>
 </div>
 
 
 
-<nav class="navbar navbar-expand-lg styki p-0 navbar-dark shadow-sm home-prod">
-  <div class="container">
-    <div class="row ">
-      <div class="col ">
-        <button mat-stroked-button color="warn" routerLink='listado'>Lista de productos</button>
-      </div>
-      <div class="col">
-        <button mat-stroked-button color="warn" routerLink='buscar'>Buscar producto</button>
-      </div>
-      <div class="col">
-        <button mat-stroked-button color="warn" routerLink='lineadeproductos'>Linea de productos</button>
-      </div>
-      <div class="col">
-        <button mat-stroked-button color="warn" routerLink='promociones'>Promociones</button>
-      </div>
-    </div>
-  </div>
-</nav>
 
 <router-outlet></router-outlet>

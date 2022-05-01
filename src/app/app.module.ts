@@ -33,7 +33,8 @@ import { ContactoPieComponent } from './share/contacto-pie/contacto-pie.componen
 import { ConceptoComponent } from './share/concepto/concepto.component';
 import { HablanosComponent } from './share/hablanos/hablanos.component';
 import { RedesComponent } from './share/redes/redes.component';
-import { YoutubePipe } from './pages/pipes/youtube.pipe'
+import { YoutubePipe } from './pages/pipes/youtube.pipe';
+import { TiktokComponent } from './share/tiktok/tiktok.component'
 
 
 
@@ -62,7 +63,8 @@ import { YoutubePipe } from './pages/pipes/youtube.pipe'
     ConceptoComponent,
     HablanosComponent,
     RedesComponent,
-    YoutubePipe
+    YoutubePipe,
+    TiktokComponent
   ],
   imports: [
     BrowserModule,

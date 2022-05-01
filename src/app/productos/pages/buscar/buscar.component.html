@@ -2,7 +2,7 @@
 
 <div fxLayout="column" class="container col-12 p-1 mb-3">
     <div class="my-1" fxLayout="column" >
-        <mat-form-field>
+        <mat-form-field color="warn">
             <mat-label>buscar producto</mat-label>
             <input type="text" placeholder="Escriba aqui" aria-label="Number" matInput [(ngModel)]="termino"
                 [matAutocomplete]="auto" (input)="buscando()">

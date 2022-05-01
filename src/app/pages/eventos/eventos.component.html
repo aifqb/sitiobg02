@@ -1,69 +1,10 @@
-<!-- <div class="eventos bg-light">
-
-    <div class="hero-image-eventos">
-        <div class="container eventos">
-        </div>
-    </div>
-</div>     -->
-
-<!-- 
-    <div class="container">
-        <div class="row">
-            <p class="fs-1 m-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Videos</p>
-            <div class="col justify-content-evenly" *ngFor="let video of videos">
-                <div class="card shadow">
-                    <img src="{{video.pic}}" class="card-img-top" alt="{{video.titulo}}">
-                    <div class="card-body text-light bg-dark">
-                        <h4 class="card-title" style="font-size: 1.2rem; color: azure; ">{{video.titulo}}</h4>
-                        <p class="card-text">
-                            {{video.descripcion}}
-                        </p>
-                        <a href="https://www.youtube.com/watch?v={{video.enlace}}" target="_blank" class="btn btn-danger">ver en youtube</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-<!-- 
 <div class="container">
     <div class="row">
-        <div *ngFor="let video of videos" class="ratio ratio-16x9">
-            <div class="card">
-                <iframe width="560" [src]="('https://www.youtube.com/embed/' + video.enlace) | youtube"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">{{video.titulo}}</h5>
-                    <p class="card-text">{{video.descripcion}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<div class="container">
-    <div class="row">
-        <div *ngFor="let video of videos">
-            <mat-card class="example-card bg-danger">
-                <mat-card-header>
-                    <mat-card-title>{{video.titulo}}</mat-card-title>
-                </mat-card-header>
-                <div class="ratio ratio-16x9">
-                    <iframe [src]="('https://www.youtube.com/embed/' + video.enlace) | youtube"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <mat-card-content>
-                    <p>{{video.descripcion}}</p>
-                </mat-card-content>
-                <!-- <mat-card-actions>
-                    <button mat-button>LIKE</button>
-                    <button mat-button>SHARE</button>
-                </mat-card-actions> -->
-            </mat-card>
+        <div class="col p-0">
+            <img src="https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2F5574683_1.webp?alt=media&token=85bc3511-3ad1-4157-85ac-f071782aeaca"
+                class="img-fluid rounded" alt="eventos">
         </div>
     </div>
 </div>
+
+<app-videos></app-videos>

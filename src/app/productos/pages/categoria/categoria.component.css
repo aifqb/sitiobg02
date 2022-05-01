@@ -4,3 +4,18 @@ button{
 
 }
 
+.rojito{
+    background-color: aqua;
+}
+
+
+.btn-grad {
+    background-color: #ff4c0d;
+    
+    }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

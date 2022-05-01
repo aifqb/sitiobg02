@@ -1,16 +1,29 @@
-<div class="row noticias p-lg-3 p-1" *ngFor="let video of videos">
-    <div class="col-md-4 col-lg-3 col-12 p-0 shadow tarjeta-video">
-        <div class="ratio ratio-16x9">
-            <iframe src=" {{video.enlace}} " title="clip Bon gusto tv" allowfullscreen></iframe>
+<div class="container-fluid " fxLayout="column" fxLayoutAlign="center">
+    <div class="row justify-content-start">
+        <div class="col-12 col-lg-8 col-md-10 py-2">
+            <p class="text-center fs-3 text-u" fxLayoutAlign="center">
+                Videos en YouTube
+            </p>
         </div>
-        <div class="shadow caption-video">
-            <p class="titulo-video">
-                {{video.titulo}}
-            </p>
-            <mat-divider></mat-divider>
-            <p>
-                {{video.descripcion}}
-            </p>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row justify-content-around pb-3 m-0">
+        <div class="col-lg-4 col-md-6 col-12 pt-lg-2  pt-md-3 pt-2 pb-4" *ngFor="let video of videos">
+            <div class="bg-light shadow pb-1" style="border-radius: 20px;">
+                <div class="ratio ratio-16x9">
+                    <iframe [src]="('https://www.youtube.com/embed/' + video.enlace) | youtube"
+                        style="border-radius: 20px 20px 0 0;" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title fw-bolder">{{video.titulo}}</h3>
+                    <p class="p-0 card-text">{{video.descripcion}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

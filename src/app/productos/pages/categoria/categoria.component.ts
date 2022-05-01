@@ -28,8 +28,8 @@ export class CategoriaComponent {
 
   getClaseCSS(categoria: string): string {
     return categoria === this.categoriaActiva
-      ? 'btn btn-danger'
-      : 'btn btn-outline-danger';
+      ? 'mat-raised-button'
+      : '';
   }
 
   activaCategoria(categoria: string) {

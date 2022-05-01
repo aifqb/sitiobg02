@@ -5,7 +5,7 @@
   background: url("https://firebasestorage.googleapis.com/v0/b/angular-html-517d8.appspot.com/o/portadas%2F5574683_1.webp?alt=media&token=85bc3511-3ad1-4157-85ac-f071782aeaca")
   no-repeat center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 1px;
 }
 p{
   padding: 1rem;
@@ -28,15 +28,19 @@ div p{
   margin-bottom: 0;
 }
 
-.card{
+/* .card{
   width: 25rem;
   margin-bottom: 3rem;
-}
+} */
 
 .example-card {
-  max-width: 450px;
+  max-width: 400px;
   margin-bottom: 15px;
+
+
 }
+
+
 
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
