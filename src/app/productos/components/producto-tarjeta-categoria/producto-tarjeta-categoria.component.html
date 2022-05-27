@@ -1,29 +1,27 @@
-<div fxLayout="row wrap" fxLayoutAlign="center" >
+<div fxLayout="row wrap" fxLayoutAlign="center">
 
-<mat-card *ngFor="let producto of productos"  class=" col-lg-2 col-5  col-md-3 m-sm-3 m-1 mb-2 animate__animated animate__fadeIn">
-    <mat-card-header fxLayoutAlign="center">
-        <mat-card-title> 
-                {{ producto.menor_Nuevo| titlecase }} 
-        </mat-card-title>
-        <mat-card-subtitle> 
-            <p>
-                {{ producto.presentacion| titlecase }}
+    <mat-card *ngFor="let producto of productos"
+        class="col-lg-2 col-5  col-md-3 m-sm-3 m-1 mb-2 animate__animated animate__fadeIn">
+        <mat-card-header fxLayoutAlign="center">
+            <mat-card-title>
+                {{ producto.menor_Nuevo| lowercase }}
+            </mat-card-title>
+            <mat-card-subtitle>
+                <p>
+                    {{ producto.presentacion| lowercase }}
+                </p>
+            </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
+        <mat-card-content>
+            <p> {{ producto.producto_Nombre }} </p>
+            <p class="fw-bold">
+                Codigo: {{ producto.cod_Item_PF|number: '3.0' }}
             </p>
-        </mat-card-subtitle>
-    </mat-card-header>
-    <img  mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
-    <mat-card-content>
-        <p> {{ producto.producto_Nombre }} </p>
-        <p class="fw-bold">
-            Codigo: {{ producto.cod_Item_PF|number: '3.0' }}
-        </p>
-    </mat-card-content>
-    <mat-card-actions>
-        <button mat-raised-button 
-                color="warn"
-                [routerLink]="['/productos', producto._id]">más detalles</button>
-    </mat-card-actions>
-</mat-card>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="warn" [routerLink]="['/productos', producto._id]">más detalles</button>
+        </mat-card-actions>
+    </mat-card>
 
 </div>
-

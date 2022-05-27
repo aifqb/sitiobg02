@@ -1,9 +1,16 @@
-<p fxLayoutAlign="center" class="m-2 fs-2 pb-lg-3 h3 pb-sm-1">Productos bon gusto</p>
+<h2 fxLayoutAlign="center" class="m-2 pb-lg-3 pb-sm-1">Lista de productos</h2>
 
-
+<!-- 
 <div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-evenly start" fxLayoutGap="20px">
     <div class="mx-lg-2 pb-2 animate__animated animate__fadeIn" fxFlex.gt-xs="15" fxFlex.lt-md="30"
         *ngFor="let producto of productos">
         <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
     </div>
-</div>
+</div> -->
+
+
+    <div class="pb-2 animate__animated animate__fadeIn" 
+        *ngFor="let producto of productos">
+        <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+    </div>
+

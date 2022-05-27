@@ -15,18 +15,19 @@ interface MenuItem {
 export class MenuprodComponent  {
 
   menus: MenuItem[] = [
+    // {
+    //   ruta: 'listado',
+    //   nombre: 'productos'
+    // },
     {
-      ruta: 'listado',
-      nombre: 'Lista de productos'
+      ruta: 'lineadeproductos',
+      nombre: 'Linea'
     },
     {
       ruta: 'buscar',
-      nombre: 'Buscar producto'
+      nombre: 'Buscar'
     },
-    {
-      ruta: 'lineadeproductos',
-      nombre: 'Linea de productos'
-    },
+
     {
       ruta: 'promociones',
       nombre: 'Promociones'

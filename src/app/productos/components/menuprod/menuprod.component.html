@@ -1,8 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-md text-center" *ngFor="let menu of menus">
         <button mat-stroked-button color="warn" 
         routerLink={{menu.ruta}}
         routerLinkActive="active"
         >{{menu.nombre}}</button>
     </div>
-  </nav>
+  </nav> -->
+
+  <div class="pt-2">
+    <mat-button-toggle-group *ngFor="let menu of menus" name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle
+        value={{menu.nombre}}
+        routerLink={{menu.ruta}}
+        >{{menu.nombre}}
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>

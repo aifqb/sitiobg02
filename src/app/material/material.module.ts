@@ -19,6 +19,7 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatSelectModule} from '@angular/material/select';
 import {MatExpansionModule} from '@angular/material/expansion';  
 import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonToggleModule} from '@angular/material/button-toggle'; 
 
 
 
@@ -46,7 +47,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatSortModule,
     MatSelectModule,
     MatExpansionModule,
-    MatRadioModule
+    MatRadioModule,
+    MatButtonToggleModule
   ]
 })
 export class MaterialModule { }

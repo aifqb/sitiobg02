@@ -9,17 +9,19 @@ import { ProductosServicesService } from '../../services/productos-services.serv
 })
 export class CategoriaComponent {
   categorias: string[] = [
-    'Chorizo cocido',
-    'Chorizo frezco',
+
     'jamon',
     'mortadela',
-    'peperoni',
-    'queso',
-    'salame',
+    'Chorizo cocido',
+    'Chorizo frezco',
     'salchicha con piel',
     'salchicha sin piel',
-    'salchichon',
     'tocino',
+    'salame',
+    'queso',
+    'salchichon',
+    'peperoni',
+
   ];
   categoriaActiva: string = '';
   productos: Producto[] = [];
