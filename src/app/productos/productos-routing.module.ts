@@ -17,7 +17,7 @@ const routes: Routes = [
       { path: 'lineadeproductos', component: CategoriaComponent },
       { path: 'promociones', component: InfoproductosComponent },
       { path: ':id', component: ProductoComponent },
-      { path: '**', redirectTo: 'lineadeproductos' },
+      { path: '**', redirectTo: 'listado' },
     ],
   },
 ];
