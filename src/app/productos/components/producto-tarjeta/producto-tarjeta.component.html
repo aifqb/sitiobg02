@@ -1,13 +1,5 @@
-<mat-grid-list cols=1 *ngIf="!producto; else divproducto">
-    <mat-grid-tile>
-        <mat-spinner></mat-spinner>
-    </mat-grid-tile>
-</mat-grid-list>
 
-<!-- <ng-template #divproducto>
-
-    <div fxLayout="row wrap" class="bg-danger container" fxLayoutAlign="center" >
-        <mat-card class="mat-elevation-z8 col-lg-2 col-5  col-md-3 m-sm-3 m-1 mb-2 animate__animated animate__fadeIn">
+        <mat-card class="mat-elevation-z8 animate__animated animate__fadeIn">
             <img mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
             <mat-card-content>
                 <p> {{ producto.producto_Nombre }} </p>
@@ -19,17 +11,15 @@
                 </button>
             </mat-card-actions>
         </mat-card>
-    </div>
 
-</ng-template> -->
 
 <!-- segunda linea -->
 
-<ng-template #divproducto>
+<!-- <ng-template #divproducto>
 <div class="container-fluid">
     <div class="row bg-danger">
         <div class="col-6 bg-warning">
-            <mat-card class="col-3 mat-elevation-z8 animate__animated animate__fadeIn">
+            <mat-card class="mat-elevation-z8 animate__animated animate__fadeIn">
                 <img mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
                 <mat-card-content>
                     <p> {{ producto.producto_Nombre }} </p>
@@ -45,7 +35,7 @@
     </div>
 </div>
 
-</ng-template>
+</ng-template> -->
 
 
 

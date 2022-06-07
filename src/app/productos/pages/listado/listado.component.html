@@ -1,4 +1,6 @@
-<h2 fxLayoutAlign="center" class="m-2 pb-lg-3 pb-sm-1">Lista de productos</h2>
+<div class="py-2">
+    <p fxLayoutAlign="center" class="pt-1 fw-light h4">Lista de productos</p>
+</div>
 
 <!-- 
 <div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-evenly start" fxLayoutGap="20px">
@@ -14,11 +16,22 @@
         <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
     </div> -->
 
+<mat-divider></mat-divider>
+<br>
 
     <!-- segunda linea -->
 
+<div    fxLayout="row wrap"
+        class="animate__animated animate__fadeIn"
 
-    <div class="animate__animated animate__fadeIn" 
-        *ngFor="let producto of productos">
-        <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
-    </div>
+        fxLayoutAlign="space-evenly start" 
+        fxLayoutGap="15px">
+            <div 
+                fxFlex="20"
+                fxFlex.lg="20"
+                fxFlex.sm="30"
+                fxFlex.xs="45"
+                *ngFor="let producto of productos">
+                <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+            </div>
+</div>
