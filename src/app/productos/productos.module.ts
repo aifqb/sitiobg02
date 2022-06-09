@@ -18,6 +18,7 @@ import { ProductoTarjetaComponent } from './components/producto-tarjeta/producto
 import { ProductoTarjetaCategoriaComponent } from './components/producto-tarjeta-categoria/producto-tarjeta-categoria.component';
 import { MenuprodComponent } from './components/menuprod/menuprod.component';
 import { ProdsjComponent } from './components/prodsj/prodsj.component';
+import { SjpuntosComponent } from './components/sjpuntos/sjpuntos.component';
 
 
 
@@ -40,7 +41,8 @@ import { ProdsjComponent } from './components/prodsj/prodsj.component';
     ProductoTarjetaCategoriaComponent,
     InfoproductosComponent,
     MenuprodComponent,
-    ProdsjComponent
+    ProdsjComponent,
+    SjpuntosComponent
   ],
     
   imports: [

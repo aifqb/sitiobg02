@@ -920,6 +920,21 @@ export class MapaPopComponent implements AfterViewInit {
                 coordinates: [-68.116728, -16.495368],
               },
             },
+            //santa cruz
+            {
+              type: 'Feature',
+              properties: {
+                title: 'Ole Quesito',
+                icon: 'mapbox-marker-icon-orange',
+                description:
+                  '<strong>Ole Quesito</strong><p>Direccion: <br>Radial 27 entre 4° y 5° anillo frente al colegio Santa Ana Santa Cruz - Bolivia <a target="_blank" href="https://www.google.com/maps/place/-17.74324604034698, -63.17667237115282">abrir en Google Maps</a></p>',
+              },
+              geometry: {
+                type: 'Point',
+                coordinates: [-63.17667237115282, -17.74324604034698],
+              },
+            },
+            //santa cruz
             {
               type: 'Feature',
               properties: {
@@ -1035,8 +1050,18 @@ export class MapaPopComponent implements AfterViewInit {
           essential: true, // this animation is considered essential with respect to prefers-reduced-motion
         });
       });
+      var sc = document.getElementById('sc')!.addEventListener('click', () => {
+        // Fly to a random location by offsetting the point -74.50, 40
+        // by up to 5 degrees.
+        this.mapa.flyTo({
+          center: [-63.17667237115282, -17.74324604034698],
+          zoom: 13,
+          essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+        });
+      });
 
       this.mapa.addControl(new mapboxgl.FullscreenControl());
     });
   }
 }
+

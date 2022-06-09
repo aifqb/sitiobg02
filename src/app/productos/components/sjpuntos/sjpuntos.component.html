@@ -1,0 +1,41 @@
+<div class="py-2">
+    <p fxLayoutAlign="center" class="pt-1 fw-light textjs fs-1 h1">Puntos de venta
+        <br>
+    </p>
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <p class="textjs text-center fw-light h3 mb-2 px-lg-4">
+                <span class="fw-normal fs-1 sj">
+                    Encuentra
+                </span>
+                la variedad de
+                <span class="fs-2 fw-bolder">salchichas</span>
+                <span class="sj2 fw-bold fs-1 text-uppercase">
+                    bon gusto
+                </span>
+                <br>
+                <span class="fs-4">
+                    en los siguientes puntos de venta
+                </span>
+            </p>
+        </div>
+    </div>
+
+
+    <div *ngFor="let punto of puntos" class="container bg-light pb-2 m-1">
+        <h2 class="mb-1">
+            <i class="fa fa-hand-o-right" aria-hidden="true"> {{ punto.nombre }}</i>
+        </h2>
+        <br>
+        departamento: {{ punto.departamento }}
+        <br>
+        {{ punto.zona}}
+        <br>
+        <button mat-icon-button>
+            <mat-icon mat-list-icon>
+                <a target="_blank" href="https://www.google.com/maps/place/{{ punto.coordenadas}} " class="text-reset">
+                    <i class="fa fa-map-o"> abrir en mapas</i>
+                </a>
+            </mat-icon>
+        </button>
+    </div>
