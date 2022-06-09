@@ -37,7 +37,6 @@ import { YoutubePipe } from './pages/pipes/youtube.pipe';
 import { TiktokComponent } from './share/tiktok/tiktok.component'
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

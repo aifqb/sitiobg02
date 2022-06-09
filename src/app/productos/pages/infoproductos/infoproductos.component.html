@@ -1,73 +1,54 @@
-<div class="bg-light">
-    <div class="py-2">
-        <p fxLayoutAlign="center" class="pt-1 fw-light h4">Oferta San Juan 2022
-            <br>
-        </p>
-        <div class="row justify-content-center">
-    
-            <div class="col-8">
-                <p class="textjs text-center fw-light h3 mb-2 px-lg-4">
-                    Para este 
-                    <span class="fw-normal fs-1 sj">
-                        san juan 
-                    </span>
-                    disfruta de las
-                    <span class="fs-2 fw-bolder">salchichas</span>
+<div class="bg-warning">
 
-                    <span class="sj2 fw-bold fs-1 text-uppercase">
-                        bon gusto    
-                    </span>
-                    <br>
-                    <span class="fs-4">
-                        en todas sus presentaciones
-                    </span>
+    <app-prodsj></app-prodsj>
+
+    <div    fxLayout="row wrap"
+            class="animate__animated animate__fadeIn"
+            fxLayoutAlign="space-evenly start" 
+            fxLayoutGap="15px">
+                <div 
+                    fxFlex="15"
+                    fxFlex.lg="20"
+                    fxFlex.sm="30"
+                    fxFlex.xs="45"
+                    *ngFor="let producto of productos"
+                    class="py-3 m-0"
+                    >
                     
-                </p>
-            </div>
-        </div>
-    
+                    <mat-card class=" mat-elevation-z8 animate__animated animate__fadeIn">
+                        <img mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.codigodeItem}}.jpg">
+                        <mat-card-content>
+                            <h3 class="tableau">
+                                Producto:
+                                <br>
+                                <span class=" fw-bolder">
+                                    {{ producto.nombreProducto }}
+                                </span>
+                            </h3>
+                            <hr>
+                            <h4 class="tableau">
+                                <span class="fw-bolder">
+                                    Descripcion:
+                                </span>
+                                <br>
+                                {{producto.unidades}} salchichas de {{producto.tamanoCm}}cm Aprox.
+                                <br>
+                                <span class="fw-bolder">
+                                    Precio sugerido:
+                                </span>
+                                {{producto.PrecioFinal|number: '1.00'}} Bs.
+                                <br>
+                                <span class="fw-bolder">
+                                    Codigo producto:
+                                </span>
+                                {{ producto.codigodeItem|number: '3.0' }}
+                            </h4>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
     </div>
-    
-    
-    <div class="container p-1">
-        <div class="row justify-content-center">
-    
-            <div class="col-12 col-lg-6 col-md-6">
-                <img class="img-fluid" style="max-width: 400px;"
-                    src="https://apiproductos.blob.core.windows.net/promociones/3. 14 cm combo 12.png" alt="">
-            </div>
-            <div class="col-12 col-md-6 col-lg-6">
-                <table class="table tableau">
-                    <thead>
-                        <tr>
-                            <th scope="col">Codigo</th>
-                            <th scope="col">Producto</th>
-                            <th scope="col">Precio sugerido</th>
-                            <th scope="col">Descripcion</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">173</th>
-                            <td>Combo 12</td>
-                            <td>28</td>
-                            <td>12 salchichas de 14 cm</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">174</th>
-                            <td>Combo 8</td>
-                            <td>28</td>
-                            <td>8 salchichas de 21 cm</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">175</th>
-                            <td>Combo super</td>
-                            <td>36</td>
-                            <td>12 salchichas extralargas de 21 cm</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+
+    <!-- <app-hablanos></app-hablanos> -->
+
 </div>
+

@@ -1,45 +1,4 @@
-h1{
-  height: 4rem;
-  text-align: center;
-  align-items: center;
-  color:#240d09;
-}
 
-
-.grupo {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding: 3rem;
-  width: 65%;
-  border-radius: 15px;
-
+mat-card{
+  border-radius: 10px;
 }
-td{
-  font-size: 1.15rem;
-}
-img{
-  width: 100%;
-  border-radius: 5px;
-}
-
-.info{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.sj{
-  color: #ff7d01;
-}
-
-.sj2{
-  color: #ff3c11;
-}
-
-.textjs{
-  font-family: 'Englebert', sans-serif;
-}
-
-.tableau{
-  font-family: 'Caudex', serif;
-}
-

@@ -17,6 +17,10 @@ import { ProductoSeachComponent } from './components/producto-seach/producto-sea
 import { ProductoTarjetaComponent } from './components/producto-tarjeta/producto-tarjeta.component';
 import { ProductoTarjetaCategoriaComponent } from './components/producto-tarjeta-categoria/producto-tarjeta-categoria.component';
 import { MenuprodComponent } from './components/menuprod/menuprod.component';
+import { ProdsjComponent } from './components/prodsj/prodsj.component';
+
+
+
 
 
 
@@ -35,7 +39,8 @@ import { MenuprodComponent } from './components/menuprod/menuprod.component';
     ProductoTarjetaComponent,
     ProductoTarjetaCategoriaComponent,
     InfoproductosComponent,
-    MenuprodComponent
+    MenuprodComponent,
+    ProdsjComponent
   ],
     
   imports: [
@@ -43,7 +48,9 @@ import { MenuprodComponent } from './components/menuprod/menuprod.component';
     ProductosRoutingModule,
     FlexLayoutModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+
+
   ]
 })
 export class ProductosModule { }
