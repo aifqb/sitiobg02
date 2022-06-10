@@ -22,20 +22,41 @@
     </div>
 
 
-    <div *ngFor="let punto of puntos" class="container bg-light pb-2 m-1">
-        <h2 class="mb-1">
-            <i class="fa fa-hand-o-right" aria-hidden="true"> {{ punto.nombre }}</i>
-        </h2>
-        <br>
-        departamento: {{ punto.departamento }}
-        <br>
-        {{ punto.zona}}
-        <br>
-        <button mat-icon-button>
-            <mat-icon mat-list-icon>
-                <a target="_blank" href="https://www.google.com/maps/place/{{ punto.coordenadas}} " class="text-reset">
-                    <i class="fa fa-map-o"> abrir en mapas</i>
-                </a>
-            </mat-icon>
-        </button>
+    
+    <div 
+    class="pb-2 m-1"
+    fxLayout="row wrap"
+            class="animate__animated animate__fadeIn"
+            fxLayoutAlign="space-evenly start" 
+            fxLayoutGap="15px">
+                <div 
+                    fxFlex="15"
+                    fxFlex.lg="20"
+                    fxFlex.sm="30"
+                    fxFlex.xs="90"
+                    *ngFor="let punto of puntos" 
+                    class="py-3 m-0 container"
+                    >
+                    <mat-card class="m-2">
+                        <mat-card-title class="text-uppercase">
+                            <i class="fa fa-hand-o-right" aria-hidden="true"> {{ punto.nombre }}</i>
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            <h3>
+                                Departamento: {{ punto.departamento }}
+                                <br>
+                                Zona: {{ punto.zona}}
+                            </h3>
+                        </mat-card-subtitle>
+                        <mat-card-content>
+                            
+                            <button mat-icon-button>
+                                <mat-icon mat-list-icon>
+                                    <a target="_blank" href="https://www.google.com/maps/place/{{ punto.coordenadas}} " class="text-reset">
+                                        <i class="fa fa-map-o"> abrir en mapas</i>
+                                    </a>
+                                </mat-icon>
+                            </button>
+                        </mat-card-content>
+                    </mat-card>
     </div>

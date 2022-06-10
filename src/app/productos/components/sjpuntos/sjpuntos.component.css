@@ -13,3 +13,13 @@
 .tableau {
     font-family: 'Caudex', serif;
 }
+
+mat-card{
+
+    background-color:beige
+}
+
+button:hover{
+    color: crimson;
+
+}
