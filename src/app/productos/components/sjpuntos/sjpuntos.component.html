@@ -28,24 +28,25 @@
     fxLayout="row wrap"
             class="animate__animated animate__fadeIn"
             fxLayoutAlign="space-evenly start" 
-            fxLayoutGap="15px">
+            fxLayoutGap="10px">
                 <div 
-                    fxFlex="15"
+                    fxFlex="35"
                     fxFlex.lg="20"
-                    fxFlex.sm="30"
+                    fxFlex.sm="40"
                     fxFlex.xs="90"
                     *ngFor="let punto of puntos" 
                     class="py-3 m-0 container"
                     >
                     <mat-card class="m-2">
-                        <mat-card-title class="text-uppercase">
+                        <mat-card-title class="pt-1 text-uppercase">
                             <i class="fa fa-hand-o-right" aria-hidden="true"> {{ punto.nombre }}</i>
                         </mat-card-title>
                         <mat-card-subtitle>
                             <h3>
-                                Departamento: {{ punto.departamento }}
-                                <br>
                                 Zona: {{ punto.zona}}
+                                <br>
+
+                                Departamento: {{ punto.departamento }}
                             </h3>
                         </mat-card-subtitle>
                         <mat-card-content>

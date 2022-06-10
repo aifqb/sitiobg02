@@ -52,7 +52,7 @@ export class SjpuntosComponent implements OnInit {
       "nombre": "todo queso",
       "zona": "este",
       "coordenadas": "-17.978956188858685, -67.1042844288365",
-      "departamento": "La paz"
+      "departamento": "Oruro"
 
     },
     {

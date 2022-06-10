@@ -5,32 +5,27 @@
     <div    fxLayout="row wrap"
             class="animate__animated animate__fadeIn"
             fxLayoutAlign="space-evenly start" 
-            fxLayoutGap="15px">
+            fxLayoutGap="10px"
+            >
                 <div 
-                    fxFlex="15"
-                    fxFlex.lg="25"
+                    fxFlex="20"
+                    fxFlex.lg="20"
                     fxFlex.sm="30"
-                    fxFlex.xs="45"
+                    fxFlex.xs="50"
                     *ngFor="let producto of productos"
                     class="py-3 m-0 container"
                     >
                     
                     <mat-card class=" mat-elevation-z8 animate__animated animate__fadeIn">
-                        <img mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.codigodeItem}}.jpg">
+                        <img mat-card-image src="https://apiproductos.blob.core.windows.net/promos/{{producto.codigodeItem}}.jpg">
                         <mat-card-content>
-                            <h3 class="tableau">
-                                Producto:
-                                <br>
+                            <h4 class="tableau">
                                 <span class=" fw-bolder">
                                     {{ producto.nombreProducto }}
                                 </span>
-                            </h3>
+                            </h4>
                             <hr>
-                            <h4 class="tableau">
-                                <span class="fw-bolder">
-                                    Descripcion:
-                                </span>
-                                <br>
+                            <h5 class="tableau">
                                 {{producto.unidades}} salchichas de {{producto.tamanoCm}}cm Aprox.
                                 <br>
                                 <span class="fw-bolder">
@@ -42,7 +37,7 @@
                                     Codigo producto:
                                 </span>
                                 {{ producto.codigodeItem|number: '3.0' }}
-                            </h4>
+                            </h5>
                         </mat-card-content>
                     </mat-card>
                 </div>
