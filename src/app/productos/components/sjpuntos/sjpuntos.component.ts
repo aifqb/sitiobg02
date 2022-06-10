@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 interface Depto {
   lugar: string;
 }
@@ -85,7 +85,11 @@ export class SjpuntosComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+
+  constructor(private router: Router ) { }
 
   ngOnInit(): void { }
+  regresar(){
+    this.router.navigate(['mapas/puntosdeventa'])
+  }
 }

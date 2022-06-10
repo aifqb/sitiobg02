@@ -109,3 +109,21 @@
     font-weight: 400;
   }
 
+  .enlace:hover{
+    cursor: pointer;
+    color: #ff430f;
+
+  }
+
+  
+
+.padre {
+  display: flex;
+  justify-content: center;
+}
+.hijo {
+  padding: 5px;
+  margin: 2px;
+
+}
+
