@@ -122,7 +122,7 @@ export class InfoproductosComponent {
     },
     {
      "codigodeItem": 137,
-     "nombreProducto": "Salchicha con piel rosada pop - a granel",
+     "nombreProducto": "Salchicha con piel pink - a granel",
      "unidades": 26,
      "pesoGr.": 1000,
      "PrecioCalc": 25,

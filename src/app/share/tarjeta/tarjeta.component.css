@@ -1,9 +1,18 @@
 h1 {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Snippet', sans-serif;
   font-weight: 400;
   color: #240d09;
 
 }
+
+p {
+  font-family: 'Snippet', sans-serif;
+  font-weight: 400;
+  color: #240d09;
+
+}
+
+
 
 .pag-inicio {
   background: rgb(255, 255, 255);
@@ -42,5 +51,9 @@ mat-card-title{
 
 .tarjetas{
   background-color: royalblue;
+}
+
+mat-card{
+  background-color: aqua;
 }
 

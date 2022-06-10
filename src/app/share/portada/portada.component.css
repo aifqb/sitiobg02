@@ -92,3 +92,20 @@
   height: 35vh;
 
   } */
+
+  img {
+    transition: all 0.6s ease;
+    z-index: -20;
+  }
+  
+  img:hover {
+    overflow: hidden;
+    transform: scale(1.03);
+  
+  }
+  p {
+
+    font-family: 'Snippet', sans-serif;
+    font-weight: 400;
+  }
+

@@ -1,8 +1,10 @@
 p {
 
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Snippet', sans-serif;
   font-weight: 400;
 }
+
+
   mat-card{
     background-color: whitesmoke;
   }
@@ -19,6 +21,7 @@ p {
     color: #0F223D;
     margin: 15px;
     border-radius: 10px;
+    font-family: 'Snippet', sans-serif;
   }
   
   .example-header-image {
