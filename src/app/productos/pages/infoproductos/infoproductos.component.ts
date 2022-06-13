@@ -26,7 +26,7 @@ export class InfoproductosComponent {
      "unidades": 16,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 24.5,
+     "PrecioFinal": 27.5,
      "tamanoCm": 22,
      "vigente": "true"
     },
@@ -36,7 +36,7 @@ export class InfoproductosComponent {
      "unidades": 16,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 25,
+     "PrecioFinal": 28,
      "tamanoCm": 22,
      "vigente": "true"
     },
@@ -46,7 +46,7 @@ export class InfoproductosComponent {
      "unidades": 8,
      "pesoGr.": 500,
      "PrecioCalc": 12.5,
-     "PrecioFinal": 13,
+     "PrecioFinal": 16,
      "tamanoCm": 22,
      "vigente": "true"
     },
@@ -56,7 +56,7 @@ export class InfoproductosComponent {
      "unidades": 12,
      "pesoGr.": 780,
      "PrecioCalc": 19.5,
-     "PrecioFinal": 20,
+     "PrecioFinal": 23,
      "tamanoCm": 22,
      "vigente": "true"
     },
@@ -66,7 +66,7 @@ export class InfoproductosComponent {
      "unidades": 21,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 25,
+     "PrecioFinal": 28,
      "tamanoCm": 17,
      "vigente": "true"
     },
@@ -76,7 +76,7 @@ export class InfoproductosComponent {
      "unidades": 21,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 25,
+     "PrecioFinal": 28,
      "tamanoCm": 17,
      "vigente": "true"
     },
@@ -86,7 +86,7 @@ export class InfoproductosComponent {
      "unidades": 22,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 25,
+     "PrecioFinal": 28,
      "tamanoCm": 14,
      "vigente": "true"
     },
@@ -96,7 +96,7 @@ export class InfoproductosComponent {
      "unidades": 12,
      "pesoGr.": 500,
      "PrecioCalc": 12.5,
-     "PrecioFinal": 13,
+     "PrecioFinal": 16,
      "tamanoCm": 14,
      "vigente": "true"
     },
@@ -106,7 +106,7 @@ export class InfoproductosComponent {
      "unidades": 6,
      "pesoGr.": 250,
      "PrecioCalc": 6.3,
-     "PrecioFinal": 6.5,
+     "PrecioFinal": 9.5,
      "tamanoCm": 14,
      "vigente": "true"
     },
@@ -116,7 +116,7 @@ export class InfoproductosComponent {
      "unidades": 26,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 24,
+     "PrecioFinal": 27,
      "tamanoCm": 12,
      "vigente": "true"
     },
@@ -126,7 +126,7 @@ export class InfoproductosComponent {
      "unidades": 26,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 24,
+     "PrecioFinal": 27,
      "tamanoCm": 12,
      "vigente": "true"
     },
@@ -136,7 +136,7 @@ export class InfoproductosComponent {
      "unidades": 26,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 24,
+     "PrecioFinal": 27,
      "tamanoCm": 12,
      "vigente": "true"
     },
@@ -146,7 +146,7 @@ export class InfoproductosComponent {
      "unidades": 26,
      "pesoGr.": 1000,
      "PrecioCalc": 25,
-     "PrecioFinal": 24,
+     "PrecioFinal": 27,
      "tamanoCm": 12,
      "vigente": "true"
     },
@@ -156,7 +156,7 @@ export class InfoproductosComponent {
      "unidades": 12,
      "pesoGr.": 200,
      "PrecioCalc": 5,
-     "PrecioFinal": 7,
+     "PrecioFinal": 10,
      "tamanoCm": 10,
      "vigente": "true"
     }
