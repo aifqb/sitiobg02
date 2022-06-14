@@ -1,14 +1,38 @@
 <div class="container p-0">
     <div>
         <p class="text-center fs-5 p-1 m-0 p-md-4">
-            Contáctanos mediante nuestros WhatsApp para hacernos llegar tu mensaje directo.
+            Contáctanos mediante nuestros WhatsApp para hacernos llegar tu mensaje directo (clic en el icono de WhatsApp).
         </p>
     </div>
     <div class="row justify-content-evenly py-3 m-3">
         <div class="col-md-6 col-lg-4 col-12 p-0" *ngFor="let contacto of contactos">
             <mat-card class="example-card shadow m-1">
                 <mat-card-header>
-                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-icon mat-list-icon class="social">
+                        <a href="https://api.whatsapp.com/send?phone=+591{{contacto.celular}}&text=%C2%A1Hola!%20{{contacto.titular}},%20deseo%20mayor%20informaci%C3%B3n%20sobre%20los%20productos%20Bongusto.%20Me%20encuentro%20en%20la%20p%C3%A1gina%20de%20Contacto%20%7C%20Bongusto%20-%20http://www.bongusto.com.bo/contacto"
+                            target="_blank" class="text-reset">
+                            <span style="font-size: 30px">
+                                <i class="fab fa-whatsapp fa-lg"></i>
+                            </span>
+                        </a>
+                    </mat-icon> 
+                    <mat-card-title class="fw-bold"> {{contacto.titular}}
+                    </mat-card-title>
+                    <mat-card-subtitle> {{ contacto.cargo }} | <strong> {{contacto.ciudad}}</strong>
+                    </mat-card-subtitle>
+                    <mat-card-title> <small>Cel.: </small><strong>{{ contacto.celular }}</strong>
+                    </mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+                    <!-- <div mat-card-avatar class="example-header-image"></div>
                     <mat-icon mat-list-icon class="social">
                         <a href="https://api.whatsapp.com/send?phone={{contacto.celular}}&text=%C2%A1Hola!%20Deseo%20mayor%20informaci%C3%B3n%20sobre%20los%20productos%20Bongusto.%20Me%20encuentro%20en%20la%20p%C3%A1gina%20de%20Contacto%20%7C%20Bongusto%20-%20http://www.bongusto.com.bo/contacto"
                             target="_blank" class="text-reset">
@@ -16,14 +40,4 @@
                                 <i class="fab fa-whatsapp fa-lg"></i>
                             </span>
                         </a>
-                    </mat-icon>
-                    <mat-card-title> <small>Celular</small>: <br>{{ contacto.celular }} </mat-card-title>
-                    <mat-card-subtitle class="fw-bold"> {{contacto.titular}} </mat-card-subtitle>
-                    <mat-card-subtitle> {{ contacto.cargo }} | <strong>
-                            {{contacto.ciudad}}
-                        </strong></mat-card-subtitle>
-                </mat-card-header>
-            </mat-card>
-        </div>
-    </div>
-</div>
+                    </mat-icon>-->
