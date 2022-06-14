@@ -31,10 +31,11 @@ import { InLineComponent } from './share/in-line/in-line.component';
 import { VideosComponent } from './share/videos/videos.component';
 import { ContactoPieComponent } from './share/contacto-pie/contacto-pie.component';
 import { ConceptoComponent } from './share/concepto/concepto.component';
-import { HablanosComponent } from './share/hablanos/hablanos.component';
+
 import { RedesComponent } from './share/redes/redes.component';
 import { YoutubePipe } from './pages/pipes/youtube.pipe';
 import { TiktokComponent } from './share/tiktok/tiktok.component'
+import { ShareModule } from './share/share.module';
 
 
 @NgModule({
@@ -60,7 +61,7 @@ import { TiktokComponent } from './share/tiktok/tiktok.component'
     VideosComponent,
     ContactoPieComponent,
     ConceptoComponent,
-    HablanosComponent,
+
     RedesComponent,
     YoutubePipe,
     TiktokComponent
@@ -71,12 +72,14 @@ import { TiktokComponent } from './share/tiktok/tiktok.component'
     HttpClientModule,
     AppRoutingModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ShareModule,
 
   ],
   providers: [
     InfoPaginaService
   ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -19,6 +19,7 @@ import { ProductoTarjetaCategoriaComponent } from './components/producto-tarjeta
 import { MenuprodComponent } from './components/menuprod/menuprod.component';
 import { ProdsjComponent } from './components/prodsj/prodsj.component';
 import { SjpuntosComponent } from './components/sjpuntos/sjpuntos.component';
+import { ShareModule } from '../share/share.module';
 
 
 
@@ -51,6 +52,7 @@ import { SjpuntosComponent } from './components/sjpuntos/sjpuntos.component';
     FlexLayoutModule,
     MaterialModule,
     FormsModule,
+    ShareModule
 
 
   ]
